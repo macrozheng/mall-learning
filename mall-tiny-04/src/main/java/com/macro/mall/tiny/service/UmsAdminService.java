@@ -1,6 +1,5 @@
 package com.macro.mall.tiny.service;
 
-import com.macro.mall.tiny.dto.UmsAdminLoginParam;
 import com.macro.mall.tiny.mbg.model.UmsAdmin;
 import com.macro.mall.tiny.mbg.model.UmsPermission;
 
