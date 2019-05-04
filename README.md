@@ -32,13 +32,19 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 ## 技术要点篇
 > mall中一些功能的技术要点解析
 
+## 部署篇
+> mall开发及生产环境的搭建
+
+- [mall在Window环境下的部署](https://github.com/macrozheng/mall/blob/master/document/reference/deploy-windows.md)
+- [mall在Linux环境下的部署（基于Docker容器）](https://github.com/macrozheng/mall/blob/master/document/docker/docker-deploy.md)
+
 ## 参考篇
 > mall中所使用技术的快速入门教程
 
 - [IDEA常用设置及推荐插件](https://mp.weixin.qq.com/s/reEjg7XQqMeKhWpa4ypVhA)
-- MySql常用命令整理
-- Linux常用命令整理
-- Docker入门教程
+- [MySql常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/mysql.md)
+- [Linux常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/linux.md)
+- [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
 
 ## 公众号
 
