@@ -1,1 +1,47 @@
-# mall-learning
+# mall学习教程
+<p>
+<a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
+<a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
+<a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
+</p>
+
+## 简介
+mall学习教程，架构、业务、技术要点全方位解析，基于SpringBoot2.1.3。
+
+## 序章
+- mall架构及功能概览
+- mall学习所需知识点（推荐资料）
+
+## 架构篇
+> 手把手教你搭建一个mall在使用的项目骨架
+
+- mall整合SpringBoot+MyBatis搭建基本骨架
+- mall整合Swagger-UI实现在线API文档
+- mall整合Redis实现缓存功能
+- mall整合SpringSecurity和JWT实现认证和授权（一）
+- mall整合SpringSecurity和JWT实现认证和授权（二）
+- mall整合SpringTask实现定时任务
+- mall整合Elasticsearch实现搜索
+- mall整合Mongodb实现文档操作
+- mall整合RabbitMq实现延迟消息
+- mall整合oss实现文件上传
+
+## 业务篇
+> 全面解析mall中使用的数据库表结构
+
+## 技术要点篇
+> mall中一些功能的技术要点解析
+
+## 参考篇
+> mall中所使用技术的快速入门教程
+
+- [IDEA常用设置及推荐插件](https://mp.weixin.qq.com/s/reEjg7XQqMeKhWpa4ypVhA)
+- MySql常用命令整理
+- Linux常用命令整理
+- Docker入门教程
+
+## 公众号
+
+mall项目全套学习教程连载中，**关注公众号**第一时间获取。
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
