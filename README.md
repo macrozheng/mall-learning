@@ -9,7 +9,7 @@
 mall学习教程，架构、业务、技术要点全方位解析，基于SpringBoot2.1.3。
 
 ## 序章
-- mall架构及功能概览
+- [mall架构及功能概览](https://mp.weixin.qq.com/s/5zgJy8wD2zLoLxyCKSzm2w)
 - mall学习所需知识点（推荐资料）
 
 ## 架构篇
