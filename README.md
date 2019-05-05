@@ -10,7 +10,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 
 ## 序章
 - [mall架构及功能概览](https://mp.weixin.qq.com/s/5zgJy8wD2zLoLxyCKSzm2w)
-- mall学习所需知识点（推荐资料）
+- [mall学习所需知识点（推荐资料）](https://mp.weixin.qq.com/s/X07aqD553AKbctqdicFmSQ)
 
 ## 架构篇
 > 手把手教你搭建一个mall在使用的项目骨架
