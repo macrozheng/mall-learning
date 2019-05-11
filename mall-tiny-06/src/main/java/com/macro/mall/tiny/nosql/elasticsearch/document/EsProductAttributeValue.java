@@ -1,4 +1,4 @@
-package com.macro.mall.tiny.nosql.document;
+package com.macro.mall.tiny.nosql.elasticsearch.document;
 
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;

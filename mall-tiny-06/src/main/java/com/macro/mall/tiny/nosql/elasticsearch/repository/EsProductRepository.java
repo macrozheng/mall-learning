@@ -1,6 +1,6 @@
-package com.macro.mall.tiny.nosql.repository;
+package com.macro.mall.tiny.nosql.elasticsearch.repository;
 
-import com.macro.mall.tiny.nosql.document.EsProduct;
+import com.macro.mall.tiny.nosql.elasticsearch.document.EsProduct;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

@@ -2,7 +2,7 @@ package com.macro.mall.tiny.controller;
 
 import com.macro.mall.tiny.common.api.CommonPage;
 import com.macro.mall.tiny.common.api.CommonResult;
-import com.macro.mall.tiny.nosql.document.EsProduct;
+import com.macro.mall.tiny.nosql.elasticsearch.document.EsProduct;
 import com.macro.mall.tiny.service.EsProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
