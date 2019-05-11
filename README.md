@@ -35,7 +35,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 ## 部署篇
 > mall开发及生产环境的搭建
 
-- [mall在Window环境下的部署](https://github.com/macrozheng/mall/blob/master/document/reference/deploy-windows.md)
+- [mall在Windows环境下的部署](https://github.com/macrozheng/mall/blob/master/document/reference/deploy-windows.md)
 - [mall在Linux环境下的部署（基于Docker容器）](https://github.com/macrozheng/mall/blob/master/document/docker/docker-deploy.md)
 
 ## 参考篇
