@@ -19,7 +19,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [mall整合Swagger-UI实现在线API文档](https://mp.weixin.qq.com/s/HZwrt5611fc0KKNPWj244Q)
 - [mall整合Redis实现缓存功能](https://mp.weixin.qq.com/s/j-Vx1vu4AqFJa-oxHdykaA)
 - [mall整合SpringSecurity和JWT实现认证和授权（一）](https://mp.weixin.qq.com/s/HFAfcSGANrdVJeTmT-7X_A)
-- mall整合SpringSecurity和JWT实现认证和授权（二）
+- [mall整合SpringSecurity和JWT实现认证和授权（二）](https://mp.weixin.qq.com/s/yO_8nAN-zoCB86ep4nuAOg)
 - mall整合SpringTask实现定时任务
 - mall整合Elasticsearch实现搜索
 - mall整合Mongodb实现文档操作
