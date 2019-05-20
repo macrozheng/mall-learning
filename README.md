@@ -21,7 +21,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [mall整合SpringSecurity和JWT实现认证和授权（一）](https://mp.weixin.qq.com/s/HFAfcSGANrdVJeTmT-7X_A)
 - [mall整合SpringSecurity和JWT实现认证和授权（二）](https://mp.weixin.qq.com/s/yO_8nAN-zoCB86ep4nuAOg)
 - [mall整合SpringTask实现定时任务](https://mp.weixin.qq.com/s/CuBCpi-8sSYFtAwMVmcwOg)
-- mall整合Elasticsearch实现搜索
+- [mall整合Elasticsearch实现搜索](https://mp.weixin.qq.com/s/op7CTQS5dGOKv5BvRbeFow)
 - mall整合Mongodb实现文档操作
 - mall整合RabbitMq实现延迟消息
 - mall整合oss实现文件上传
