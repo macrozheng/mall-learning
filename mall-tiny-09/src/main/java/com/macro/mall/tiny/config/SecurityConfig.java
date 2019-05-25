@@ -63,7 +63,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers("/admin/login", "/admin/register")// 对登录注册要允许匿名访问
                 .permitAll()
-                .antMatchers("/esProduct/**","/member/readHistory/**","/order/**")// 测试时放开
+                .antMatchers("/esProduct/**","/member/readHistory/**","/order/**","/aliyun/oss/**")// 测试时放开
                 .permitAll()
                 .antMatchers(HttpMethod.OPTIONS)//跨域请求会先进行一次options请求
                 .permitAll()
