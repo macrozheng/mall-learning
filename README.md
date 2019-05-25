@@ -23,7 +23,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [mall整合SpringTask实现定时任务](https://mp.weixin.qq.com/s/CuBCpi-8sSYFtAwMVmcwOg)
 - [mall整合Elasticsearch实现搜索](https://mp.weixin.qq.com/s/op7CTQS5dGOKv5BvRbeFow)
 - [mall整合Mongodb实现文档操作](https://mp.weixin.qq.com/s/YZUnpp3QRHGKyuvN7UnWNw)
-- mall整合RabbitMq实现延迟消息
+- [mall整合RabbitMq实现延迟消息](https://mp.weixin.qq.com/s/Rp4TfejQkYN00oQ-kMCRcg)
 - mall整合oss实现文件上传
 
 ## 业务篇
