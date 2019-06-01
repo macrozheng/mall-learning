@@ -24,7 +24,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [mall整合Elasticsearch实现搜索](https://mp.weixin.qq.com/s/op7CTQS5dGOKv5BvRbeFow)
 - [mall整合Mongodb实现文档操作](https://mp.weixin.qq.com/s/YZUnpp3QRHGKyuvN7UnWNw)
 - [mall整合RabbitMq实现延迟消息](https://mp.weixin.qq.com/s/Rp4TfejQkYN00oQ-kMCRcg)
-- mall整合oss实现文件上传
+- [mall整合OSS实现文件上传](https://mp.weixin.qq.com/s/Tlep9XZEwofFyvkUZR0M6w)
 
 ## 业务篇
 > 全面解析mall中使用的数据库表结构
@@ -35,7 +35,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 ## 部署篇
 > mall开发及生产环境的搭建
 
-- [mall在Windows环境下的部署](https://github.com/macrozheng/mall/blob/master/document/reference/deploy-windows.md)
+- [mall在Windows环境下的部署](https://mp.weixin.qq.com/s/Q9ybpfq8IEdbZmvlaMXJdg)
 - [mall在Linux环境下的部署（基于Docker容器）](https://github.com/macrozheng/mall/blob/master/document/docker/docker-deploy.md)
 
 ## 参考篇
@@ -45,6 +45,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [MySql常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/mysql.md)
 - [Linux常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/linux.md)
 - [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
+- [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
 
 ## 公众号
 
