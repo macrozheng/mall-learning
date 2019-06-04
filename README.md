@@ -42,10 +42,10 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 > mall中所使用技术的快速入门教程
 
 - [IDEA常用设置及推荐插件](https://mp.weixin.qq.com/s/reEjg7XQqMeKhWpa4ypVhA)
-- [MySql常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/mysql.md)
-- [Linux常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/linux.md)
-- [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
+- [开发者必备Mysql命令](https://mp.weixin.qq.com/s/M5181QN-weZc8Z-gd9q2Sg)
+- [开发者必备Linux命令](https://mp.weixin.qq.com/s/TVZU43r6TuPDXLuTGCQAOg)
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
+- [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
 
 ## 公众号
 
