@@ -21,9 +21,9 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [mall整合SpringSecurity和JWT实现认证和授权（一）](https://mp.weixin.qq.com/s/HFAfcSGANrdVJeTmT-7X_A)
 - [mall整合SpringSecurity和JWT实现认证和授权（二）](https://mp.weixin.qq.com/s/yO_8nAN-zoCB86ep4nuAOg)
 - [mall整合SpringTask实现定时任务](https://mp.weixin.qq.com/s/CuBCpi-8sSYFtAwMVmcwOg)
-- [mall整合Elasticsearch实现搜索](https://mp.weixin.qq.com/s/op7CTQS5dGOKv5BvRbeFow)
+- [mall整合Elasticsearch实现商品搜索](https://mp.weixin.qq.com/s/op7CTQS5dGOKv5BvRbeFow)
 - [mall整合Mongodb实现文档操作](https://mp.weixin.qq.com/s/YZUnpp3QRHGKyuvN7UnWNw)
-- [mall整合RabbitMq实现延迟消息](https://mp.weixin.qq.com/s/Rp4TfejQkYN00oQ-kMCRcg)
+- [mall整合RabbitMQ实现延迟消息](https://mp.weixin.qq.com/s/Rp4TfejQkYN00oQ-kMCRcg)
 - [mall整合OSS实现文件上传](https://mp.weixin.qq.com/s/Tlep9XZEwofFyvkUZR0M6w)
 
 ## 业务篇
@@ -39,13 +39,14 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [mall在Linux环境下的部署（基于Docker容器）](https://github.com/macrozheng/mall/blob/master/document/docker/docker-deploy.md)
 
 ## 参考篇
-> mall中所使用技术的快速入门教程
+> mall相关技术的使用教程
 
 - [IDEA常用设置及推荐插件](https://mp.weixin.qq.com/s/reEjg7XQqMeKhWpa4ypVhA)
-- [MySql常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/mysql.md)
-- [Linux常用命令整理](https://github.com/macrozheng/mall/blob/master/document/reference/linux.md)
-- [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
+- [开发者必备Mysql命令](https://mp.weixin.qq.com/s/M5181QN-weZc8Z-gd9q2Sg)
+- [开发者必备Linux命令](https://mp.weixin.qq.com/s/TVZU43r6TuPDXLuTGCQAOg)
+- [Linux防火墙Firewall和Iptables的使用](https://mp.weixin.qq.com/s/ZEcWmqs7eODUwcfY-WajYQ)
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
+- [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
 
 ## 公众号
 
