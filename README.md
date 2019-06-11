@@ -9,22 +9,22 @@
 mall学习教程，架构、业务、技术要点全方位解析，基于SpringBoot2.1.3。
 
 ## 序章
-- [mall架构及功能概览](https://mp.weixin.qq.com/s/5zgJy8wD2zLoLxyCKSzm2w)
-- [mall学习所需知识点（推荐资料）](https://mp.weixin.qq.com/s/X07aqD553AKbctqdicFmSQ)
+- [mall架构及功能概览](https://juejin.im/post/5cf7c305e51d4510b71da5c5)
+- [mall学习所需知识点（推荐资料）](https://juejin.im/post/5cf7c3aef265da1ba84a7fdc)
 
 ## 架构篇
 > 手把手教你搭建一个mall在使用的项目骨架
 
-- [mall整合SpringBoot+MyBatis搭建基本骨架](https://mp.weixin.qq.com/s/ev3LOAKnU9CVJh1LkrHwAQ)
-- [mall整合Swagger-UI实现在线API文档](https://mp.weixin.qq.com/s/HZwrt5611fc0KKNPWj244Q)
-- [mall整合Redis实现缓存功能](https://mp.weixin.qq.com/s/j-Vx1vu4AqFJa-oxHdykaA)
-- [mall整合SpringSecurity和JWT实现认证和授权（一）](https://mp.weixin.qq.com/s/HFAfcSGANrdVJeTmT-7X_A)
-- [mall整合SpringSecurity和JWT实现认证和授权（二）](https://mp.weixin.qq.com/s/yO_8nAN-zoCB86ep4nuAOg)
-- [mall整合SpringTask实现定时任务](https://mp.weixin.qq.com/s/CuBCpi-8sSYFtAwMVmcwOg)
-- [mall整合Elasticsearch实现商品搜索](https://mp.weixin.qq.com/s/op7CTQS5dGOKv5BvRbeFow)
-- [mall整合Mongodb实现文档操作](https://mp.weixin.qq.com/s/YZUnpp3QRHGKyuvN7UnWNw)
-- [mall整合RabbitMQ实现延迟消息](https://mp.weixin.qq.com/s/Rp4TfejQkYN00oQ-kMCRcg)
-- [mall整合OSS实现文件上传](https://mp.weixin.qq.com/s/Tlep9XZEwofFyvkUZR0M6w)
+- [mall整合SpringBoot+MyBatis搭建基本骨架](https://juejin.im/post/5cf7c4a7e51d4577790c1c50)
+- [mall整合Swagger-UI实现在线API文档](https://juejin.im/post/5cf9035cf265da1bb47d54f8)
+- [mall整合Redis实现缓存功能](https://juejin.im/post/5cf90e9ee51d454f6f16eba0)
+- [mall整合SpringSecurity和JWT实现认证和授权（一）](https://juejin.im/post/5cf90fa5e51d455d6d5357d3)
+- [mall整合SpringSecurity和JWT实现认证和授权（二）](https://juejin.im/post/5cfa0933f265da1b8f1ab2da)
+- [mall整合SpringTask实现定时任务](https://juejin.im/post/5cfa0ea16fb9a07eaf2b8261)
+- [mall整合Elasticsearch实现商品搜索](https://juejin.im/post/5cfba3e9f265da1b614fea60)
+- [mall整合Mongodb实现文档操作](https://juejin.im/post/5cfba5b0f265da1bcc1933fe)
+- [mall整合RabbitMQ实现延迟消息](https://juejin.im/post/5cff98986fb9a07ed36ea139)
+- [mall整合OSS实现文件上传](https://juejin.im/post/5cff9944e51d4577555508a9)
 
 ## 业务篇
 > 全面解析mall中使用的数据库表结构
@@ -46,7 +46,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [开发者必备Linux命令](https://mp.weixin.qq.com/s/TVZU43r6TuPDXLuTGCQAOg)
 - [Linux防火墙Firewall和Iptables的使用](https://mp.weixin.qq.com/s/ZEcWmqs7eODUwcfY-WajYQ)
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
-- [Docker入门教程](https://github.com/macrozheng/mall/blob/master/document/reference/docker.md)
+- [开发者必备Docker命令](https://mp.weixin.qq.com/s/d_CuljDTJq680NTndAay)
 
 ## 公众号
 
