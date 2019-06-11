@@ -46,7 +46,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [开发者必备Linux命令](https://mp.weixin.qq.com/s/TVZU43r6TuPDXLuTGCQAOg)
 - [Linux防火墙Firewall和Iptables的使用](https://mp.weixin.qq.com/s/ZEcWmqs7eODUwcfY-WajYQ)
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
-- [开发者必备Docker命令](https://mp.weixin.qq.com/s/d_CuljDTJq680NTndAay)
+- [开发者必备Docker命令](https://mp.weixin.qq.com/s/d_CuljDTJq680NTndAay8g)
 
 ## 公众号
 
