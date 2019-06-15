@@ -36,7 +36,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 > mall开发及生产环境的搭建
 
 - [mall在Windows环境下的部署](https://mp.weixin.qq.com/s/Q9ybpfq8IEdbZmvlaMXJdg)
-- [mall在Linux环境下的部署（基于Docker容器）](https://github.com/macrozheng/mall/blob/master/document/docker/docker-deploy.md)
+- [mall在Linux环境下的部署（基于Docker容器）](https://mp.weixin.qq.com/s/0fVMK107i5bBq8kGQqg8KA)
 
 ## 参考篇
 > mall相关技术的使用教程
@@ -47,6 +47,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [Linux防火墙Firewall和Iptables的使用](https://mp.weixin.qq.com/s/ZEcWmqs7eODUwcfY-WajYQ)
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
 - [开发者必备Docker命令](https://mp.weixin.qq.com/s/d_CuljDTJq680NTndAay8g)
+- [使用Maven插件构建Docker镜像](https://mp.weixin.qq.com/s/q2KDzHbPkf3Q0EY8qYjYgw)
 
 ## 公众号
 
