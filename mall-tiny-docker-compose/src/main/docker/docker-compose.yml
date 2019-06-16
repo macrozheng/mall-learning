@@ -1,0 +1,32 @@
+version: '3'
+services:
+  # 指定服务名称
+  db:
+    # 指定服务使用的镜像
+    image: mysql:5.7
+    # 指定容器名称
+    container_name: mysql
+    # 指定服务运行的端口
+    ports:
+      - 3306:3306
+    # 指定容器中需要挂载的文件
+    volumes:
+      - /mydata/mysql/log:/var/log/mysql
+      - /mydata/mysql/data:/var/lib/mysql
+      - /mydata/mysql/conf:/etc/mysql
+    # 指定容器的环境变量
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  # 指定服务名称
+  mall-tiny-docker-compose:
+    # 指定服务使用的镜像
+    image: mall-tiny/mall-tiny-docker-compose:0.0.1-SNAPSHOT
+    # 指定容器名称
+    container_name: mall-tiny-docker-compose
+    # 指定服务运行的端口
+    ports:
+      - 8080:8080
+    # 指定容器中需要挂载的文件
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /mydata/app/mall-tiny-docker-compose/logs:/var/logs
