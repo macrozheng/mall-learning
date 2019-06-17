@@ -48,6 +48,7 @@ mall学习教程，架构、业务、技术要点全方位解析，基于SpringB
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
 - [开发者必备Docker命令](https://mp.weixin.qq.com/s/d_CuljDTJq680NTndAay8g)
 - [使用Maven插件构建Docker镜像](https://mp.weixin.qq.com/s/q2KDzHbPkf3Q0EY8qYjYgw)
+- [使用DockerFile为SpringBoot应用构建Docker镜像](https://mp.weixin.qq.com/s/U_OcNMpLAJJum_s9jbZLGg)
 
 ## 公众号
 
