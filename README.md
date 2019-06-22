@@ -33,6 +33,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目是
 ## 技术要点篇
 > mall中一些功能的技术要点解析
 
+- [MyBatis Generator使用过程中踩过的一个坑](https://mp.weixin.qq.com/s/3HYLdK2gYZeRU3_PMuNMiA)
+
 ## 部署篇
 > mall开发及生产环境的搭建
 
