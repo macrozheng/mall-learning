@@ -1,0 +1,36 @@
+version: '3'
+services:
+  elasticsearch:
+    image: elasticsearch:6.4.0
+    container_name: elasticsearch
+    environment:
+      - "cluster.name=elasticsearch" #设置集群名称为elasticsearch
+      - "discovery.type=single-node" #以单一节点模式启动
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m" #设置使用jvm内存大小
+    volumes:
+      - /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins #插件文件挂载
+      - /mydata/elasticsearch/data:/usr/share/elasticsearch/data #数据文件挂载
+    ports:
+      - 9200:9200
+  kibana:
+    image: kibana:6.4.0
+    container_name: kibana
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    depends_on:
+      - elasticsearch #kibana在elasticsearch启动之后再启动
+    environment:
+      - "elasticsearch.hosts=http://es:9200" #设置访问elasticsearch的地址
+    ports:
+      - 5601:5601
+  logstash:
+    image: logstash:6.4.0
+    container_name: logstash
+    volumes:
+      - /mydata/logstash/logstash-springboot.conf:/usr/share/logstash/pipeline/logstash.conf #挂载logstash的配置文件
+    depends_on:
+      - elasticsearch #kibana在elasticsearch启动之后再启动
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    ports:
+      - 4560:4560
