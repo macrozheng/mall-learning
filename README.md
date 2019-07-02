@@ -35,6 +35,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目是
 
 - [MyBatis Generator使用过程中踩过的一个坑](https://mp.weixin.qq.com/s/3HYLdK2gYZeRU3_PMuNMiA)
 - [SpringBoot应用中使用AOP记录接口访问日志](https://mp.weixin.qq.com/s/mNujRjejQ1bITveFI6gkcg)
+- [SpringBoot应用整合ELK实现日志收集](https://mp.weixin.qq.com/s/ll_A6ddBaU99LSYmKdttYw)
 
 ## 部署篇
 > mall开发及生产环境的搭建
