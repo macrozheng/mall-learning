@@ -222,7 +222,7 @@ firewall-cmd --reload
 docker pull mongo:3.2
 ```
 - 使用docker命令启动：
-  ```shell
+```shell
   docker run -p 27017:27017 --name mongo \
   -v /mydata/mongo/db:/data/db \
   -d mongo:3.2
