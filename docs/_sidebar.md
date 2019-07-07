@@ -5,3 +5,4 @@
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
   * [mall在Linux环境下的部署（基于Docker容器）](deploy/mall_deploy_docker.md)
+  * [mall在Linux环境下的部署（基于Docker Compose）](deploy/mall_deploy_docker_compose.md)
