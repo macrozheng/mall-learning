@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # mall在Windows环境下的部署
 
 > 本文主要以图文的形式讲解mall项目所需环境在windows下的安装，主要包括IDEA、Mysql、Redis、Elasticsearch、Mongodb、RabbitMQ、OSS。
@@ -210,3 +212,7 @@ rabbitmq-plugins enable rabbitmq_management
 
 - 启动mall-portal项目：直接运行com.macro.mall.portal.MallPortalApplication的main方法即可
 - 接口文档地址：[http://localhost:8085/swagger-ui.html](http://localhost:8085/swagger-ui.html)
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)

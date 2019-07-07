@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # mall在Linux环境下的部署（基于Docker容器）
 > 本文主要以图文的形式讲解mall在Linux环境下的部署，涉及在Docker容器中安装Mysql、Redis、Nginx、RabbitMQ、Elasticsearch、Mongodb，以及SpringBoot应用部署，基于CenterOS7.6。
 
@@ -292,3 +294,7 @@ firewall-cmd --reload
 ![展示图片](../images/refer_screen_88.png)
 - mall-portal的api接口文档地址：http://192.168.3.101:8085/swagger-ui.html
 ![展示图片](../images/refer_screen_89.png)
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)

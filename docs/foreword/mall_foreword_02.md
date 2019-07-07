@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # mall学习所需知识点
 
 > 由于mall项目涉及到很多知识点，比如SpringBoot、ElasticSearch、Redis、Mongodb等，本教程不会详细讲述这些，只会讲述本项目相关部分，所以推荐以下资料。对其中一些知识点并不熟悉的同学，可以看下下面推荐的资料。
@@ -45,3 +47,7 @@
 
 ## 结语
 > 如果你按照我的推荐看了以上部分的资料，或者你已经有了以上部分的基础，那么你学习mall的时候会非常顺利。
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)

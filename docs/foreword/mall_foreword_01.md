@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # mall架构及功能概览
 
 > mall架构、功能及数据库结构概览
@@ -69,3 +71,7 @@ Lombok | 1.18.6 | 简化对象封装工具
 - pms_*：商品模块相关表
 - sms_*：营销模块相关表
 - ums_*：会员模块相关表
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
