@@ -10,3 +10,4 @@
   
 * 参考篇
   * [开发者必备Docker命令](reference/docker.md)
+  * [使用Maven插件为SpringBoot应用构建Docker镜像](reference/docker_maven.md)
