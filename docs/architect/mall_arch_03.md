@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # mall整合Redis实现缓存功能
 
 > 本文主要讲解mall整合Redis的过程，以短信验证码的存储验证为例。
@@ -295,3 +297,7 @@ public class UmsMemberServiceImpl implements UmsMemberService {
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-03](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-03)
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
