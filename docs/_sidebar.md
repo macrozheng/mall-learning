@@ -5,6 +5,7 @@
 * 架构篇
   * [mall整合SpringBoot+MyBatis搭建基本骨架](architect/mall_arch_01.md)
   * [mall整合Swagger-UI实现在线API文档](architect/mall_arch_02.md)
+  * [mall整合Redis实现缓存功能](architect/mall_arch_03.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
