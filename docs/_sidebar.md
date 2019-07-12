@@ -8,6 +8,7 @@
   * [mall整合Redis实现缓存功能](architect/mall_arch_03.md)
   * [mall整合SpringSecurity和JWT实现认证和授权（一）](architect/mall_arch_04.md)
   * [mall整合SpringSecurity和JWT实现认证和授权（二）](architect/mall_arch_05.md)
+  * [mall整合SpringTask实现定时任务](architect/mall_arch_06.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)

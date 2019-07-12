@@ -31,6 +31,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目是
 > 全面解析mall中使用的数据库表结构
 
 - [mall数据库表结构概览](https://mp.weixin.qq.com/s/xKP2urANmYKjA7veWmyA_A)
+- [商品模块数据库表解析（一）](https://mp.weixin.qq.com/s/u0lWlqKRE_IJC4xjceUjog)
 
 ## 技术要点篇
 > mall中一些功能的技术要点解析
