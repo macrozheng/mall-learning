@@ -11,6 +11,8 @@
   * [mall整合SpringTask实现定时任务](architect/mall_arch_06.md)
   * [mall整合Elasticsearch实现商品搜索](architect/mall_arch_07.md)
   * [mall整合Mongodb实现文档操作](architect/mall_arch_08.md)
+  * [mall整合RabbitMQ实现延迟消息](architect/mall_arch_09.md)
+  * [mall整合OSS实现文件上传](architect/mall_arch_10.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
