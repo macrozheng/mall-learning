@@ -104,8 +104,8 @@ MAINTAINER macrozheng
 
 ### 使用maven打包应用
 
-在IDEA中双击package命令进行打包:
-![展示图片](../images/refer_screen_91.png)
+在IDEA中双击package命令进行打包:  
+![展示图片](../images/refer_screen_91.png)  
 打包成功后展示：
 ```shell
 [INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (repackage) @ mall-tiny-docker-file ---
