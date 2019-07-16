@@ -21,6 +21,8 @@
   * [mall前端项目的安装与部署](deploy/mall_deploy_web.md)
   
 * 参考篇
+  * [开发者必备Mysql命令](reference/mysql.md)
+  * [开发者必备Linux命令](reference/linux.md)
   * [开发者必备Docker命令](reference/docker.md)
   * [使用Maven插件为SpringBoot应用构建Docker镜像](reference/docker_maven.md)
   * [使用DockerFile为SpringBoot应用构建Docker镜像](reference/docker_file.md)
