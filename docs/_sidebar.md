@@ -21,6 +21,8 @@
   * [mall前端项目的安装与部署](deploy/mall_deploy_web.md)
   
 * 参考篇
+  * [IDEA常用设置及推荐插件](reference/idea.md)
+  * [Navicat实用功能：数据备份与结构同步](reference/navicat.md)
   * [开发者必备Mysql命令](reference/mysql.md)
   * [开发者必备Linux命令](reference/linux.md)
   * [开发者必备Docker命令](reference/docker.md)
