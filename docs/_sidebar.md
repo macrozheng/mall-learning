@@ -14,6 +14,9 @@
   * [mall整合RabbitMQ实现延迟消息](architect/mall_arch_09.md)
   * [mall整合OSS实现文件上传](architect/mall_arch_10.md)
 
+* 技术要点篇
+  * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
+
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
   * [mall在Linux环境下的部署（基于Docker容器）](deploy/mall_deploy_docker.md)
@@ -25,6 +28,7 @@
   * [Navicat实用功能：数据备份与结构同步](reference/navicat.md)
   * [开发者必备Mysql命令](reference/mysql.md)
   * [开发者必备Linux命令](reference/linux.md)
+  * [Linux防火墙Firewall和Iptables的使用](reference/linux_firewall.md)
   * [开发者必备Docker命令](reference/docker.md)
   * [使用Maven插件为SpringBoot应用构建Docker镜像](reference/docker_maven.md)
   * [使用DockerFile为SpringBoot应用构建Docker镜像](reference/docker_file.md)
