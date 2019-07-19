@@ -16,6 +16,8 @@
 
 * 技术要点篇
   * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
+  * [SpringBoot应用中使用AOP记录接口访问日志](technology/aop_log.md)
+  * [SpringBoot应用整合ELK实现日志收集](technology/mall_tiny_elk.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
