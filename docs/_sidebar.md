@@ -14,6 +14,10 @@
   * [mall整合RabbitMQ实现延迟消息](architect/mall_arch_09.md)
   * [mall整合OSS实现文件上传](architect/mall_arch_10.md)
 
+* 业务篇
+  * [mall数据库表结构概览](database/mall_database_overview.md)
+  * [商品模块数据库表解析（一）](database/mall_pms_01.md)
+
 * 技术要点篇
   * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
   * [SpringBoot应用中使用AOP记录接口访问日志](technology/aop_log.md)
