@@ -17,6 +17,8 @@
 * 业务篇
   * [mall数据库表结构概览](database/mall_database_overview.md)
   * [商品模块数据库表解析（一）](database/mall_pms_01.md)
+  * [商品模块数据库表解析（二）](database/mall_pms_02.md)
+  * [订单模块数据库表解析（一）](database/mall_oms_01.md)
 
 * 技术要点篇
   * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
