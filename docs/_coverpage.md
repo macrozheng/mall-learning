@@ -9,5 +9,5 @@ mall项目是一套电商系统，使用现阶段主流技术实现。
 RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，  
 采用Docker容器化部署。
 
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/macrozheng/mall-learning)
 [Get Started](README.md)
