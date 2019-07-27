@@ -38,6 +38,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [商品模块数据库表解析（一）](https://juejin.im/post/5d385a7e518825680e4577ee)
 - [商品模块数据库表解析（二）](https://juejin.im/post/5d39ba2cf265da1bc23fbd26)
 - [订单模块数据库表解析（一）](https://mp.weixin.qq.com/s/OcZQpT3b9YjR8xAZHblHAw)
+- [订单模块数据库表解析（二）](https://mp.weixin.qq.com/s/z8NhTTK5eMdvBln2_dYrdw)
+- [订单模块数据库表解析（三）](https://mp.weixin.qq.com/s/801enGhhAET0VYDDQOJTWg)
 
 ## 技术要点篇
 > mall中一些功能的技术要点解析
