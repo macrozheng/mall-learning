@@ -59,8 +59,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 ## 参考篇
 > mall相关技术的使用教程
 
-- [IDEA常用设置及推荐插件](https://mp.weixin.qq.com/s/reEjg7XQqMeKhWpa4ypVhA)
-- [开发者必备Mysql命令](https://mp.weixin.qq.com/s/M5181QN-weZc8Z-gd9q2Sg)
+- [IDEA常用设置及推荐插件](https://juejin.im/post/5d0458085188256aa76bc678)
+- [开发者必备Mysql命令](https://juejin.im/post/5d00fd40f265da1bb67a11b3)
 - [开发者必备Linux命令](https://mp.weixin.qq.com/s/TVZU43r6TuPDXLuTGCQAOg)
 - [Linux防火墙Firewall和Iptables的使用](https://mp.weixin.qq.com/s/ZEcWmqs7eODUwcfY-WajYQ)
 - [Navicat实用功能：数据备份与结构同步](https://mp.weixin.qq.com/s/Km7lg-T0p9Kzb_WeyHVaqw)
