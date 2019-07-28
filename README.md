@@ -13,6 +13,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - 后台项目：[https://github.com/macrozheng/mall](https://github.com/macrozheng/mall)
 - 前端项目：[https://github.com/macrozheng/mall-admin-web](https://github.com/macrozheng/mall-admin-web)
 
+## 更好的阅读体验
+- 文档地址：[https://macrozheng.github.io/mall-learning](https://macrozheng.github.io/mall-learning)
+
 ## 序章
 - [mall架构及功能概览](https://juejin.im/post/5cf7c305e51d4510b71da5c5)
 - [mall学习所需知识点（推荐资料）](https://juejin.im/post/5cf7c3aef265da1ba84a7fdc)
