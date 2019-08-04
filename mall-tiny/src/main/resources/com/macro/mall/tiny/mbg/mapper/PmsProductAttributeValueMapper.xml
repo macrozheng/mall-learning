@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.macro.mall.tiny.mbg.mapper.UmsRoleMapper">
-  <resultMap id="BaseResultMap" type="com.macro.mall.tiny.mbg.model.UmsRole">
+<mapper namespace="com.macro.mall.tiny.mbg.mapper.PmsProductAttributeValueMapper">
+  <resultMap id="BaseResultMap" type="com.macro.mall.tiny.mbg.model.PmsProductAttributeValue">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="description" jdbcType="VARCHAR" property="description" />
-    <result column="admin_count" jdbcType="INTEGER" property="adminCount" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-    <result column="status" jdbcType="INTEGER" property="status" />
-    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="product_id" jdbcType="BIGINT" property="productId" />
+    <result column="product_attribute_id" jdbcType="BIGINT" property="productAttributeId" />
+    <result column="value" jdbcType="VARCHAR" property="value" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -69,15 +66,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, description, admin_count, create_time, status, sort
+    id, product_id, product_attribute_id, value
   </sql>
-  <select id="selectByExample" parameterType="com.macro.mall.tiny.mbg.model.UmsRoleExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValueExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from ums_role
+    from pms_product_attribute_value
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -88,105 +85,76 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from ums_role
+    from pms_product_attribute_value
     where id = #{id,jdbcType=BIGINT}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
-    delete from ums_role
+    delete from pms_product_attribute_value
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.macro.mall.tiny.mbg.model.UmsRoleExample">
-    delete from ums_role
+  <delete id="deleteByExample" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValueExample">
+    delete from pms_product_attribute_value
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.macro.mall.tiny.mbg.model.UmsRole">
+  <insert id="insert" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValue">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into ums_role (name, description, admin_count, 
-      create_time, status, sort
+    insert into pms_product_attribute_value (product_id, product_attribute_id, value
       )
-    values (#{name,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{adminCount,jdbcType=INTEGER}, 
-      #{createTime,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}, #{sort,jdbcType=INTEGER}
+    values (#{productId,jdbcType=BIGINT}, #{productAttributeId,jdbcType=BIGINT}, #{value,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.macro.mall.tiny.mbg.model.UmsRole">
+  <insert id="insertSelective" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValue">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into ums_role
+    insert into pms_product_attribute_value
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="name != null">
-        name,
+      <if test="productId != null">
+        product_id,
       </if>
-      <if test="description != null">
-        description,
+      <if test="productAttributeId != null">
+        product_attribute_id,
       </if>
-      <if test="adminCount != null">
-        admin_count,
-      </if>
-      <if test="createTime != null">
-        create_time,
-      </if>
-      <if test="status != null">
-        status,
-      </if>
-      <if test="sort != null">
-        sort,
+      <if test="value != null">
+        value,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
+      <if test="productId != null">
+        #{productId,jdbcType=BIGINT},
       </if>
-      <if test="description != null">
-        #{description,jdbcType=VARCHAR},
+      <if test="productAttributeId != null">
+        #{productAttributeId,jdbcType=BIGINT},
       </if>
-      <if test="adminCount != null">
-        #{adminCount,jdbcType=INTEGER},
-      </if>
-      <if test="createTime != null">
-        #{createTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="status != null">
-        #{status,jdbcType=INTEGER},
-      </if>
-      <if test="sort != null">
-        #{sort,jdbcType=INTEGER},
+      <if test="value != null">
+        #{value,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.macro.mall.tiny.mbg.model.UmsRoleExample" resultType="java.lang.Long">
-    select count(*) from ums_role
+  <select id="countByExample" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValueExample" resultType="java.lang.Long">
+    select count(*) from pms_product_attribute_value
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update ums_role
+    update pms_product_attribute_value
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=BIGINT},
       </if>
-      <if test="record.name != null">
-        name = #{record.name,jdbcType=VARCHAR},
+      <if test="record.productId != null">
+        product_id = #{record.productId,jdbcType=BIGINT},
       </if>
-      <if test="record.description != null">
-        description = #{record.description,jdbcType=VARCHAR},
+      <if test="record.productAttributeId != null">
+        product_attribute_id = #{record.productAttributeId,jdbcType=BIGINT},
       </if>
-      <if test="record.adminCount != null">
-        admin_count = #{record.adminCount,jdbcType=INTEGER},
-      </if>
-      <if test="record.createTime != null">
-        create_time = #{record.createTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.status != null">
-        status = #{record.status,jdbcType=INTEGER},
-      </if>
-      <if test="record.sort != null">
-        sort = #{record.sort,jdbcType=INTEGER},
+      <if test="record.value != null">
+        value = #{record.value,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -194,50 +162,35 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update ums_role
+    update pms_product_attribute_value
     set id = #{record.id,jdbcType=BIGINT},
-      name = #{record.name,jdbcType=VARCHAR},
-      description = #{record.description,jdbcType=VARCHAR},
-      admin_count = #{record.adminCount,jdbcType=INTEGER},
-      create_time = #{record.createTime,jdbcType=TIMESTAMP},
-      status = #{record.status,jdbcType=INTEGER},
-      sort = #{record.sort,jdbcType=INTEGER}
+      product_id = #{record.productId,jdbcType=BIGINT},
+      product_attribute_id = #{record.productAttributeId,jdbcType=BIGINT},
+      value = #{record.value,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.macro.mall.tiny.mbg.model.UmsRole">
-    update ums_role
+  <update id="updateByPrimaryKeySelective" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValue">
+    update pms_product_attribute_value
     <set>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
+      <if test="productId != null">
+        product_id = #{productId,jdbcType=BIGINT},
       </if>
-      <if test="description != null">
-        description = #{description,jdbcType=VARCHAR},
+      <if test="productAttributeId != null">
+        product_attribute_id = #{productAttributeId,jdbcType=BIGINT},
       </if>
-      <if test="adminCount != null">
-        admin_count = #{adminCount,jdbcType=INTEGER},
-      </if>
-      <if test="createTime != null">
-        create_time = #{createTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="status != null">
-        status = #{status,jdbcType=INTEGER},
-      </if>
-      <if test="sort != null">
-        sort = #{sort,jdbcType=INTEGER},
+      <if test="value != null">
+        value = #{value,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.macro.mall.tiny.mbg.model.UmsRole">
-    update ums_role
-    set name = #{name,jdbcType=VARCHAR},
-      description = #{description,jdbcType=VARCHAR},
-      admin_count = #{adminCount,jdbcType=INTEGER},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      status = #{status,jdbcType=INTEGER},
-      sort = #{sort,jdbcType=INTEGER}
+  <update id="updateByPrimaryKey" parameterType="com.macro.mall.tiny.mbg.model.PmsProductAttributeValue">
+    update pms_product_attribute_value
+    set product_id = #{productId,jdbcType=BIGINT},
+      product_attribute_id = #{productAttributeId,jdbcType=BIGINT},
+      value = #{value,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>
