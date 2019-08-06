@@ -43,6 +43,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [订单模块数据库表解析（一）](https://mp.weixin.qq.com/s/OcZQpT3b9YjR8xAZHblHAw)
 - [订单模块数据库表解析（二）](https://mp.weixin.qq.com/s/z8NhTTK5eMdvBln2_dYrdw)
 - [订单模块数据库表解析（三）](https://mp.weixin.qq.com/s/801enGhhAET0VYDDQOJTWg)
+- [营销模块数据库表解析：限时购功能](https://mp.weixin.qq.com/s/_3E2-s2m-cBwbElwCxKr9A)
 
 ## 技术要点篇
 > mall中一些功能的技术要点解析
