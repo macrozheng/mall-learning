@@ -72,7 +72,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [开发者必备Docker命令](https://juejin.im/post/5d0781f56fb9a07f014ef6be)
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
-- [使用Docker Compose部署SpringBoot应用](https://mp.weixin.qq.com/s/iMl9bJ4SxUsNHBbiS5VUcw)
+- [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
 
 ## 公众号
 
