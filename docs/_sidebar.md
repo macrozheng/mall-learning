@@ -23,6 +23,7 @@
   * [订单模块数据库表解析（三）](database/mall_oms_03.md)
   * [营销模块数据库表解析（一）](database/mall_sms_01.md)
   * [营销模块数据库表解析（二）](database/mall_sms_02.md)
+  * [营销模块数据库表解析（三）](database/mall_sms_03.md)
 
 * 技术要点篇
   * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
