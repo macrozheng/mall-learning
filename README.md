@@ -76,6 +76,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
 - [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
+- [Postman：API接口调试利器](https://juejin.im/post/5d5a9032e51d4561db5e3a4a)
+
 
 ## 公众号
 
