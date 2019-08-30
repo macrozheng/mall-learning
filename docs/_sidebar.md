@@ -48,3 +48,4 @@
   * [使用DockerFile为SpringBoot应用构建Docker镜像](reference/docker_file.md)
   * [使用Docker Compose部署SpringBoot应用](reference/docker_compose.md)
   * [Postman：API接口调试利器](reference/postman.md)
+  * [10分钟搭建自己的Git仓库](reference/gitlab.md)
