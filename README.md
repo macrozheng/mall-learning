@@ -44,9 +44,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [订单模块数据库表解析（一）](https://juejin.im/post/5d4196fef265da03bd04fa31)
 - [订单模块数据库表解析（二）](https://juejin.im/post/5d46db2a5188255d1e013ca0)
 - [订单模块数据库表解析（三）](https://juejin.im/post/5d497f92e51d4561e0516a9d)
-- [营销模块数据库表解析：限时购功能](https://juejin.im/post/5d5012856fb9a06ad45135a6)
-- [营销模块数据库表解析：优惠券功能](https://juejin.im/post/5d555c7ae51d453b386a6302)
-- [营销模块数据库表解析：首页内容推荐功能](https://juejin.im/post/5d5bf6676fb9a06b0703c0c5)
+- [营销模块数据库表解析（一）](https://juejin.im/post/5d5012856fb9a06ad45135a6)
+- [营销模块数据库表解析（二）](https://juejin.im/post/5d555c7ae51d453b386a6302)
+- [营销模块数据库表解析（三）](https://juejin.im/post/5d5bf6676fb9a06b0703c0c5)
 
 ## 技术要点篇
 > mall中一些功能的技术要点解析
