@@ -55,6 +55,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [SpringBoot应用中使用AOP记录接口访问日志](https://juejin.im/post/5d2001bb6fb9a07edf276593)
 - [SpringBoot应用整合ELK实现日志收集](https://juejin.im/post/5d2738a2f265da1bac404299)
 - [前后端分离项目，如何解决跨域问题](https://juejin.im/post/5d4c162351882560b9545358)
+- [Java 8都出那么久了，Stream API了解下？](https://juejin.im/post/5d6d2016e51d453c135c5b25)
 
 ## 部署篇
 > mall开发及生产环境的搭建
