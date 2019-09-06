@@ -30,6 +30,7 @@
   * [SpringBoot应用中使用AOP记录接口访问日志](technology/aop_log.md)
   * [SpringBoot应用整合ELK实现日志收集](technology/mall_tiny_elk.md)
   * [前后端分离项目，如何解决跨域问题](technology/springboot_cors.md)
+  * [Java 8都出那么久了，Stream API了解下？](technology/java_stream.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
