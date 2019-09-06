@@ -37,6 +37,7 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 ![](../images/gitlab_screen_26.png)
 - 这里我们需要一个.gitignore文件来防止一些IDEA自动生成的代码被提交到Git仓库去：
+
 ```
 # Maven #
 target/
