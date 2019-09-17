@@ -15,6 +15,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 
 ## 更好的阅读体验
 - 文档地址：[https://macrozheng.github.io/mall-learning](https://macrozheng.github.io/mall-learning)
+- 备用地址：[https://macrozheng.gitee.io/mall-learning](https://macrozheng.gitee.io/mall-learning)
 
 ## 序章
 - [mall架构及功能概览](https://juejin.im/post/5cf7c305e51d4510b71da5c5)
@@ -40,10 +41,12 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [mall数据库表结构概览](https://juejin.im/post/5d34684c6fb9a07ef562724b)
 - [商品模块数据库表解析（一）](https://juejin.im/post/5d385a7e518825680e4577ee)
 - [商品模块数据库表解析（二）](https://juejin.im/post/5d39ba2cf265da1bc23fbd26)
-- [订单模块数据库表解析（一）](https://mp.weixin.qq.com/s/OcZQpT3b9YjR8xAZHblHAw)
-- [订单模块数据库表解析（二）](https://mp.weixin.qq.com/s/z8NhTTK5eMdvBln2_dYrdw)
-- [订单模块数据库表解析（三）](https://mp.weixin.qq.com/s/801enGhhAET0VYDDQOJTWg)
-- [营销模块数据库表解析：限时购功能](https://mp.weixin.qq.com/s/_3E2-s2m-cBwbElwCxKr9A)
+- [订单模块数据库表解析（一）](https://juejin.im/post/5d4196fef265da03bd04fa31)
+- [订单模块数据库表解析（二）](https://juejin.im/post/5d46db2a5188255d1e013ca0)
+- [订单模块数据库表解析（三）](https://juejin.im/post/5d497f92e51d4561e0516a9d)
+- [营销模块数据库表解析（一）](https://juejin.im/post/5d5012856fb9a06ad45135a6)
+- [营销模块数据库表解析（二）](https://juejin.im/post/5d555c7ae51d453b386a6302)
+- [营销模块数据库表解析（三）](https://juejin.im/post/5d5bf6676fb9a06b0703c0c5)
 
 ## 技术要点篇
 > mall中一些功能的技术要点解析
@@ -51,7 +54,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [MyBatis Generator使用过程中踩过的一个坑](https://juejin.im/post/5d107037e51d45599e019de8)
 - [SpringBoot应用中使用AOP记录接口访问日志](https://juejin.im/post/5d2001bb6fb9a07edf276593)
 - [SpringBoot应用整合ELK实现日志收集](https://juejin.im/post/5d2738a2f265da1bac404299)
-- [前后端分离项目，如何解决跨域问题](https://mp.weixin.qq.com/s/5UT-7POsvVPyaBSoLMfdwA)
+- [前后端分离项目，如何解决跨域问题](https://juejin.im/post/5d4c162351882560b9545358)
+- [Java 8都出那么久了，Stream API了解下？](https://juejin.im/post/5d6d2016e51d453c135c5b25)
 
 ## 部署篇
 > mall开发及生产环境的搭建
@@ -73,6 +77,11 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
 - [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
+- [Postman：API接口调试利器](https://juejin.im/post/5d5a9032e51d4561db5e3a4a)
+- [10分钟搭建自己的Git仓库](https://juejin.im/post/5d63d600e51d453c135c5af3)
+- [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
+- [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
+
 
 ## 公众号
 

@@ -21,11 +21,16 @@
   * [订单模块数据库表解析（一）](database/mall_oms_01.md)
   * [订单模块数据库表解析（二）](database/mall_oms_02.md)
   * [订单模块数据库表解析（三）](database/mall_oms_03.md)
+  * [营销模块数据库表解析（一）](database/mall_sms_01.md)
+  * [营销模块数据库表解析（二）](database/mall_sms_02.md)
+  * [营销模块数据库表解析（三）](database/mall_sms_03.md)
 
 * 技术要点篇
   * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
   * [SpringBoot应用中使用AOP记录接口访问日志](technology/aop_log.md)
   * [SpringBoot应用整合ELK实现日志收集](technology/mall_tiny_elk.md)
+  * [前后端分离项目，如何解决跨域问题](technology/springboot_cors.md)
+  * [Java 8都出那么久了，Stream API了解下？](technology/java_stream.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
@@ -43,3 +48,7 @@
   * [使用Maven插件为SpringBoot应用构建Docker镜像](reference/docker_maven.md)
   * [使用DockerFile为SpringBoot应用构建Docker镜像](reference/docker_file.md)
   * [使用Docker Compose部署SpringBoot应用](reference/docker_compose.md)
+  * [Postman：API接口调试利器](reference/postman.md)
+  * [10分钟搭建自己的Git仓库](reference/gitlab.md)
+  * [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
+  * [Hutool中那些常用的工具类和方法 ](reference/hutool.md)

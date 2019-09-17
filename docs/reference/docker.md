@@ -10,31 +10,31 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 ## Docker 环境安装
 - 安装yum-utils：
-```shell
+```bash
 yum install -y yum-utils device-mapper-persistent-data lvm2
 ```
 - 为yum源添加docker仓库位置：
-```shell
+```bash
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 - 安装docker:
-```shell
+```bash
 yum install docker-ce
 ```
 - 启动docker:
-```shell
+```bash
 systemctl start docker
 ```
 
 ## Docker 镜像常用命令
 
 ### 搜索镜像
-```shell
+```bash
 docker search java
 ```
 ![展示图片](../images/refer_screen_51.png)
 ### 下载镜像
-```shell
+```bash
 docker pull java:8
 ```
 ### 如何查找镜像支持的版本
@@ -47,32 +47,32 @@ docker pull java:8
 ![展示图片](../images/refer_screen_53.png)
 
 - 进行镜像的下载操作：
-```shell
+```bash
 docker pull nginx:1.17.0
 ```
 
 ### 列出镜像
-```shell
+```bash
 docker images
 ```
 ![展示图片](../images/refer_screen_54.png)
 ### 删除镜像
 - 指定名称删除镜像
-```shell
+```bash
 docker rmi java:8
 ```
 - 指定名称删除镜像（强制）
-```shell
+```bash
 docker rmi -f java:8
 ```
 - 强制删除所有镜像
-```shell
+```bash
 docker rmi -f $(docker images)
 ```
 
 ## Docker 容器常用命令
 ### 新建并启动容器
-```shell
+```bash
 docker run -p 80:80 --name nginx -d nginx:1.17.0
 ```
 - -d选项：表示后台运行
@@ -81,100 +81,105 @@ docker run -p 80:80 --name nginx -d nginx:1.17.0
 
 ### 列出容器
 - 列出运行中的容器：
-```shell
+```bash
 docker ps
 ```
 ![展示图片](../images/refer_screen_55.png)
 - 列出所有容器
-```shell
+```bash
 docker ps -a
 ```
 ![展示图片](../images/refer_screen_56.png)
 ### 停止容器
-```shell
+```bash
 # $ContainerName及$ContainerId可以用docker ps命令查询出来
 docker stop $ContainerName(或者$ContainerId)
 ```
 比如：
-```shell
+```bash
 docker stop nginx
 #或者
 docker stop c5f5d5125587
 ```
 ### 强制停止容器
-```shell
+```bash
 docker kill $ContainerName(或者$ContainerId)
 ```
 ### 启动已停止的容器
-```shell
+```bash
 docker start $ContainerName(或者$ContainerId)
 ```
 ### 进入容器
 - 先查询出容器的pid：
-```shell
+```bash
 docker inspect --format "{{.State.Pid}}" $ContainerName(或者$ContainerId)
 ```
 - 根据容器的pid进入容器：
-```shell
+```bash
 nsenter --target "$pid" --mount --uts --ipc --net --pid
 ```
 ![展示图片](../images/refer_screen_57.png)
 ### 删除容器
 - 删除指定容器：
-```shell
+```bash
 docker rm $ContainerName(或者$ContainerId)
 ```
 - 强制删除所有容器；
-```shell
+```bash
 docker rm -f $(docker ps -a -q)
 ```
 ### 查看容器的日志
-```shell
+- 查看当前全部日志
+```bash
 docker logs $ContainerName(或者$ContainerId)
+```
+- 动态查看日志
+```bash
+docker logs $ContainerName(或者$ContainerId) -f
 ```
 ![展示图片](../images/refer_screen_58.png)
 ### 查看容器的IP地址
-```shell
+```bash
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' $ContainerName(或者$ContainerId)
 ```
 ![展示图片](../images/refer_screen_59.png)
 ### 同步宿主机时间到容器
-```shell
+```bash
 docker cp /etc/localtime $ContainerName(或者$ContainerId):/etc/
 ```
 ### 在宿主机查看docker使用cpu、内存、网络、io情况
 - 查看指定容器情况：
-```shell
+```bash
 docker stats $ContainerName(或者$ContainerId)
 ```
 ![展示图片](../images/refer_screen_60.png)
 - 查看所有容器情况：
-```shell
+```bash
 docker stats -a
 ```
 ![展示图片](../images/refer_screen_61.png)
 ### 进入Docker容器内部的bash
-```shell
+```bash
 docker exec -it $ContainerName /bin/bash
 ```
 ![展示图片](../images/refer_screen_62.png)
 
 ## 修改Docker镜像的存放位置
 - 查看Docker镜像的存放位置：
-```shell
+```bash
 docker info | grep "Docker Root Dir"
 ```
 ![展示图片](../images/refer_screen_63.png)
 - 关闭Docker服务：
-```shell
+```bash
 systemctl stop docker
 ```
 - 移动目录到目标路径：
-```shell
+```bash
 mv /var/lib/docker /mydata/docker
 ```
 - 建立软连接：
-```shell
+```bash
 ln -s /mydata/docker /var/lib/docker
 ```
 ![展示图片](../images/refer_screen_64.png)
