@@ -69,7 +69,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 ## 进阶篇
 > 一套实用的SpringCloud系列教程，基于最新的Greenwich版本
 
-- [SpringCloud整体架构概览](https://juejin.im/post/5d764f05e51d4561fb04bfd7)
+- [Spring Cloud 整体架构概览](https://juejin.im/post/5d764f05e51d4561fb04bfd7)
 - [Spring Cloud Eureka：服务注册与发现](https://juejin.im/post/5d78cd53f265da03d55e8351)
 - [Spring Cloud Ribbon：负载均衡的服务调用](https://juejin.im/post/5d7f9006f265da03951a260c)
 - [Spring Cloud Hystrix：服务容错保护](https://juejin.im/post/5d822d27e51d45621479ad92)
