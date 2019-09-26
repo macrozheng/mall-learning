@@ -61,7 +61,6 @@ Lombok | 1.18.6 | 简化对象封装工具
 ## mall数据库表概览
 > mall项目目前有71张数据表，业务逻辑有一定复杂度，平时做项目参考也够了。
 
-<!-- <img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/mall_mysql_all.png" width = "720" alt="mall数据库表展示" align="center" /> -->
 ![mall数据库表展示](../images/mall_mysql_all.png)
 
 ### 数据库表前缀说明
