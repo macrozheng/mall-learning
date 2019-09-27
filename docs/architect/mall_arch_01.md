@@ -41,7 +41,7 @@ PageInfo<PmsBrand> pageInfo = new PageInfo<PmsBrand>(list);
 
 ### 使用IDEA初始化一个SpringBoot项目
 
-![展示图片](../images/arch_screen_01.png)
+![](../images/arch_screen_01.png)
 
 ### 添加项目依赖
 > 在pom.xml中添加相关依赖。
@@ -119,7 +119,7 @@ mybatis:
 
 ### 项目结构说明
 
-![展示图片](../images/arch_screen_02.png)
+![](../images/arch_screen_02.png)
 
 ### Mybatis generator 配置文件
 
