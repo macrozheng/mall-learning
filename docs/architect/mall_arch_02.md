@@ -284,28 +284,28 @@ public class CommentGenerator extends DefaultCommentGenerator {
 
 > 运行com.macro.mall.tiny.mbg.Generator的main方法，重新生成mbg中的代码，可以看到PmsBrand类中已经自动根据数据库注释添加了@ApiModelProperty注解
 
-![展示图片](../images/arch_screen_03.png)
+![](../images/arch_screen_03.png)
 
 ### 运行项目，查看结果
 
 #### 访问Swagger-UI接口文档地址
 接口地址：http://localhost:8080/swagger-ui.html
 
-![展示图片](../images/arch_screen_04.png)
+![](../images/arch_screen_04.png)
 
 #### 对请求参数已经添加说明
 
-![展示图片](../images/arch_screen_05.png)
+![](../images/arch_screen_05.png)
 
 #### 对返回结果已经添加说明
 
-![展示图片](../images/arch_screen_06.png)
+![](../images/arch_screen_06.png)
 
 ### 直接在在线文档上面进行接口测试
 
-![展示图片](../images/arch_screen_07.png)
+![](../images/arch_screen_07.png)
 
-![展示图片](../images/arch_screen_08.png)
+![](../images/arch_screen_08.png)
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-02](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-02)
