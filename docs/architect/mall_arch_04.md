@@ -36,7 +36,7 @@ String signature = HMACSHA512(base64UrlEncode(header) + "." +base64UrlEncode(pay
 eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImNyZWF0ZWQiOjE1NTY3NzkxMjUzMDksImV4cCI6MTU1NzM4MzkyNX0.d-iki0193X0bBOETf2UN3r3PotNIEAV7mzIxxeI5IxFyzzkOZxS0PGfF_SK6wxCv2K8S0cZjMkv6b5bCqc0VBw
 ```
 可以在该网站上获得解析结果：https://jwt.io/
-![展示图片](../images/arch_screen_13.png)
+![](../images/arch_screen_13.png)
 
 #### JWT实现认证和授权的原理
 
