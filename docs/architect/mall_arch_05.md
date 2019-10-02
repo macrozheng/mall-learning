@@ -334,49 +334,49 @@ public CommonResult<List<PmsBrand>> getBrandList() {
 ### 运行项目，访问API
 Swagger api地址：http://localhost:8080/swagger-ui.html
 
-![展示图片](../images/arch_screen_14.png)
+![](../images/arch_screen_14.png)
 
 ### 未登录前访问接口
 
-![展示图片](../images/arch_screen_15.png)
+![](../images/arch_screen_15.png)
 
-![展示图片](../images/arch_screen_16.png)
+![](../images/arch_screen_16.png)
 
 ### 登录后访问接口
 
 - 进行登录操作：登录帐号test 123456
 
-![展示图片](../images/arch_screen_17.png)
+![](../images/arch_screen_17.png)
 
-![展示图片](../images/arch_screen_18.png)
+![](../images/arch_screen_18.png)
 
 - 点击Authorize按钮，在弹框中输入登录接口中获取到的token信息
 
-![展示图片](../images/arch_screen_19.png)
+![](../images/arch_screen_19.png)
 
-![展示图片](../images/arch_screen_20.png)
+![](../images/arch_screen_20.png)
 
 - 登录后访问获取权限列表接口，发现已经可以正常访问
 
-![展示图片](../images/arch_screen_15.png)
+![](../images/arch_screen_15.png)
 
-![展示图片](../images/arch_screen_21.png)
+![](../images/arch_screen_21.png)
 
 ### 访问需要权限的接口
 
 > 由于test帐号并没有设置任何权限，所以他无法访问具有pms:brand:read权限的获取品牌列表接口。
 
-![展示图片](../images/arch_screen_22.png)
+![](../images/arch_screen_22.png)
 
-![展示图片](../images/arch_screen_23.png)
+![](../images/arch_screen_23.png)
 
 ### 改用其他有权限的帐号登录
 
 > 改用admin 123456登录后访问，点击Authorize按钮打开弹框,点击logout登出后再重新输入新token。
 
-![展示图片](../images/arch_screen_22.png)
+![](../images/arch_screen_22.png)
 
-![展示图片](../images/arch_screen_24.png)
+![](../images/arch_screen_24.png)
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-04](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-04)
