@@ -13,27 +13,27 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 1. 下载Elasticsearch6.2.2的zip包，并解压到指定目录，下载地址：[https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-2-2](https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-2-2)
 
-![展示图片/arch_screen_25.png](../images/arch_screen_25.png)
+![](../images/arch_screen_25.png)
 
 2. 安装中文分词插件，在elasticsearch-6.2.2\bin目录下执行以下命令：elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.2.2/elasticsearch-analysis-ik-6.2.2.zip
 
-![/arch_screen_26.png](../images/arch_screen_26.png)
+![](../images/arch_screen_26.png)
 
 3. 运行bin目录下的elasticsearch.bat启动Elasticsearch
 
-![展示图片/arch_screen_27.png](../images/arch_screen_27.png)
+![](../images/arch_screen_27.png)
 
 4. 下载Kibana,作为访问Elasticsearch的客户端，请下载6.2.2版本的zip包，并解压到指定目录，下载地址：[https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-windows-x86_64.zip](https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-windows-x86_64.zip)
 
-![展示图片/arch_screen_28.png](../images/arch_screen_28.png)
+![](../images/arch_screen_28.png)
 
 5. 运行bin目录下的kibana.bat，启动Kibana的用户界面
 
-![展示图片/arch_screen_29.png](../images/arch_screen_29.png)
+![](../images/arch_screen_29.png)
 
 6. 访问[http://localhost:5601](http://localhost:5601) 即可打开Kibana的用户界面
 
-![展示图片/arch_screen_30.png](../images/arch_screen_30.png)
+![](../images/arch_screen_30.png)
 
 ### Spring Data Elasticsearch
 > Spring Data Elasticsearch是Spring提供的一种以Spring Data风格来操作数据存储的方式，它可以避免编写大量的样板代码。
@@ -55,14 +55,14 @@ public @interface Document {
 
 }
 ```
-#### @Id
+##### @Id
 ```java
 //表示是文档的id，文档可以认为是mysql中表行的概念
 public @interface Id {
 }
 ```
 
-#### @Field
+##### @Field
 ```java
 public @interface Field {
   //文档中字段的类型
@@ -98,7 +98,7 @@ public enum FieldType {
 #### Sping Data方式的数据操作
 
 ##### 继承ElasticsearchRepository接口可以获得常用的数据操作方法
-![展示图片/arch_screen_31.png](../images/arch_screen_31.png)
+![](../images/arch_screen_31.png)
 
 ##### 可以使用衍生查询
 >在接口中直接指定查询方法名称便可查询，无需进行实现，如商品表中有商品名称、标题和关键字，直接定义以下查询，就可以对这三个字段进行全文搜索。
@@ -117,7 +117,7 @@ public enum FieldType {
 ```
 > 在idea中直接会提示对应字段
 
-![展示图片/arch_screen_32.png](../images/arch_screen_32.png)
+![](../images/arch_screen_32.png)
 
 ##### 使用@Query注解可以用Elasticsearch的DSL语句进行查询
 ```java
@@ -452,13 +452,13 @@ public class EsProductController {
 
 ### 将数据库中数据导入到Elasticsearch
 
-![展示图片/arch_screen_33.png](../images/arch_screen_33.png)
-![展示图片/arch_screen_34.png](../images/arch_screen_34.png)
+![](../images/arch_screen_33.png)
+![](../images/arch_screen_34.png)
 
 ### 进行商品搜索
 
-![展示图片/arch_screen_35.png](../images/arch_screen_35.png)
-![展示图片/arch_screen_36.png](../images/arch_screen_36.png)
+![](../images/arch_screen_35.png)
+![](../images/arch_screen_36.png)
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-06](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-06)
