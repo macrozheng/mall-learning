@@ -16,13 +16,13 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 2. 选择安装路径进行安装
 
-![展示图片/arch_screen_37.png](../images/arch_screen_37.png)
+![](../images/arch_screen_37.png)
 
-![展示图片/arch_screen_38.png](../images/arch_screen_38.png)
+![](../images/arch_screen_38.png)
 
 3. 在安装路径下创建data\\db和data\\log两个文件夹
 
-![展示图片/arch_screen_39.png](../images/arch_screen_39.png)
+![](../images/arch_screen_39.png)
 
 4. 在安装路径下创建mongod.cfg配置文件
 ```
@@ -37,7 +37,7 @@ storage:
 ```
 D:\developer\env\MongoDB\bin\mongod.exe --config "D:\developer\env\MongoDB\mongod.cfg" --install
 ```
-![展示图片/arch_screen_40.png](../images/arch_screen_40.png)
+![](../images/arch_screen_40.png)
 
 6. 服务相关命令
 ```
@@ -50,7 +50,7 @@ D:\developer\env\MongoDB\bin\mongod.exe --config "D:\developer\env\MongoDB\mongo
 
 7. 解压到指定目录，打开robo3t.exe并连接到localhost:27017
 
-![展示图片/arch_screen_41.png](../images/arch_screen_41.png)
+![](../images/arch_screen_41.png)
 
 ### Spring Data Mongodb
 
@@ -66,7 +66,7 @@ D:\developer\env\MongoDB\bin\mongod.exe --config "D:\developer\env\MongoDB\mongo
 
 ##### 继承MongoRepository接口可以获得常用的数据操作方法
 
-![展示图片/arch_screen_42.png](../images/arch_screen_42.png)
+![](../images/arch_screen_42.png)
 
 ##### 可以使用衍生查询
 > 在接口中直接指定查询方法名称便可查询，无需进行实现，以下为根据会员id按时间倒序获取浏览记录的例子。
@@ -87,7 +87,7 @@ public interface MemberReadHistoryRepository extends MongoRepository<MemberReadH
 
 > 在idea中直接会提示对应字段
 
-![展示图片/arch_screen_43.png](../images/arch_screen_43.png)
+![](../images/arch_screen_43.png)
 
 ##### 使用@Query注解可以用Mongodb的JSON查询语句进行查询
 ```java
@@ -328,13 +328,13 @@ public class MemberReadHistoryController {
 
 ### 添加商品浏览记录到Mongodb
 
-![展示图片/arch_screen_44.png](../images/arch_screen_44.png)
-![展示图片/arch_screen_45.png](../images/arch_screen_45.png)
+![](../images/arch_screen_44.png)
+![](../images/arch_screen_45.png)
 
 ### 查询Mongodb中的商品浏览记录
 
-![展示图片/arch_screen_46.png](../images/arch_screen_46.png)
-![展示图片/arch_screen_47.png](../images/arch_screen_47.png)
+![](../images/arch_screen_46.png)
+![](../images/arch_screen_47.png)
 
 ## 项目源码地址
 [https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-07](https://github.com/macrozheng/mall-learning/tree/master/mall-tiny-07)
