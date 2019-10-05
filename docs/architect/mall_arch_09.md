@@ -14,49 +14,49 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 1. 安装Erlang，下载地址：[http://erlang.org/download/otp_win64_21.3.exe](http://erlang.org/download/otp_win64_21.3.exe)
 
-![展示图片/arch_screen_53.png](../images/arch_screen_53.png)
+![](../images/arch_screen_53.png)
 
 2. 安装RabbitMQ，下载地址：[https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.14/rabbitmq-server-3.7.14.exe](https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.14/rabbitmq-server-3.7.14.exe)
 
-![展示图片/arch_screen_54.png](../images/arch_screen_54.png)
+![](../images/arch_screen_54.png)
 
 3. 安装完成后，进入RabbitMQ安装目录下的sbin目录
 
-![展示图片/arch_screen_55.png](../images/arch_screen_55.png)
+![](../images/arch_screen_55.png)
 
 4. 在地址栏输入cmd并回车启动命令行，然后输入以下命令启动管理功能：
 ```
 rabbitmq-plugins enable rabbitmq_management
 ```
-![展示图片/arch_screen_56.png](../images/arch_screen_56.png)
+![](../images/arch_screen_56.png)
 
 5. 访问地址查看是否安装成功：[http://localhost:15672/](http://localhost:15672/)
 
-![展示图片/arch_screen_57.png](../images/arch_screen_57.png)
+![](../images/arch_screen_57.png)
 
 6. 输入账号密码并登录：guest guest
 
 7. 创建帐号并设置其角色为管理员：mall mall
 
-![展示图片/arch_screen_58.png](../images/arch_screen_58.png)
+![](../images/arch_screen_58.png)
 
 8. 创建一个新的虚拟host为：/mall
 
-![展示图片/arch_screen_59.png](../images/arch_screen_59.png)
+![](../images/arch_screen_59.png)
 
 9. 点击mall用户进入用户配置页面
 
-![展示图片/arch_screen_60.png](../images/arch_screen_60.png)
+![](../images/arch_screen_60.png)
 
 10. 给mall用户配置该虚拟host的权限
 
-![展示图片/arch_screen_61.png](../images/arch_screen_61.png)
+![](../images/arch_screen_61.png)
 
 11. 至此，RabbitMQ的安装和配置完成。
 
 #### RabbitMQ的消息模型
 
-![展示图片/arch_screen_52.png](../images/arch_screen_52.png)
+![](../images/arch_screen_52.png)
 
 标志 | 中文名 | 英文名| 描述
 ----|----|----|----
@@ -72,7 +72,7 @@ type | 交换机类型 |type |direct表示直接根据路由键（orange/black�
 
 注意：需要安装idea的Lombok插件，并在项目中的pom文件中添加依赖。
 
-![展示图片/arch_screen_48.png](../images/arch_screen_48.png)
+![](../images/arch_screen_48.png)
 
 ## 业务场景说明
 > 用于解决用户下单以后，订单超时如何取消订单的问题。
@@ -248,11 +248,11 @@ public class RabbitMqConfig {
 
 #### 在RabbitMQ管理页面可以看到以下交换机和队列
 
-![示例图片](../images/arch_screen_62.png)
-![示例图片](../images/arch_screen_63.png)
+![](../images/arch_screen_62.png)
+![](../images/arch_screen_63.png)
 
-![示例图片](../images/arch_screen_64.png)
-![示例图片](../images/arch_screen_65.png)
+![](../images/arch_screen_64.png)
+![](../images/arch_screen_65.png)
 
 #### 交换机及队列说明
 
@@ -459,11 +459,11 @@ public class OmsPortalOrderController {
 
 注意：已经将延迟消息时间设置为30秒
 
-![展示图片/arch_screen_49.png](../images/arch_screen_49.png)
+![](../images/arch_screen_49.png)
 
-![展示图片/arch_screen_50.png](../images/arch_screen_50.png)
+![](../images/arch_screen_50.png)
 
-![展示图片/arch_screen_51.png](../images/arch_screen_51.png)
+![](../images/arch_screen_51.png)
 
 
 ## 项目源码地址
