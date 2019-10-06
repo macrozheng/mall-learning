@@ -258,6 +258,26 @@ netstat -atunp
 
 ![展示图片](../images/refer_screen_30.png)
 
+## 文件上传下载
+
+### 安装上传下载工具
+
+```bash
+yum install -y lrzsz
+```
+
+### 上传文件
+
+```bash
+rz
+```
+
+### 下载文件
+
+```bash
+sz fileName
+```
+
 ## 软件的安装与管理
 
 ### rpm
