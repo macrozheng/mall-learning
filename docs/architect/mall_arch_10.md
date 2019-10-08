@@ -26,19 +26,19 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 - 点击网页右上角控制台按钮进入控制台
 
-![展示图片/arch_screen_77.png](../images/arch_screen_77.png)
+![](../images/arch_screen_77.png)
 
 - 选择我的云产品中的对象存储OSS
 
-![展示图片/arch_screen_78.png](../images/arch_screen_78.png)
+![](../images/arch_screen_78.png)
 
 - 点击左侧存储空间的加号新建存储空间
 
-![展示图片/arch_screen_79.png](../images/arch_screen_79.png)
+![](../images/arch_screen_79.png)
 
 - 新建存储空间并设置读写权限为公共读
 
-![展示图片/arch_screen_80.png](../images/arch_screen_80.png)
+![](../images/arch_screen_80.png)
 
 
 #### 跨域资源共享（CORS）的设置
@@ -47,25 +47,25 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 - 选择一个存储空间，打开其基础设置
 
-![展示图片/arch_screen_81.png](../images/arch_screen_81.png)
+![](../images/arch_screen_81.png)
 
 - 点击跨越设置的设置按钮
 
-![展示图片/arch_screen_82.png](../images/arch_screen_82.png)
+![](../images/arch_screen_82.png)
 
 - 点击创建规则
 
-![展示图片/arch_screen_83.png](../images/arch_screen_83.png)
+![](../images/arch_screen_83.png)
 
 - 进行跨域规则设置
 
-![展示图片/arch_screen_84.png](../images/arch_screen_84.png)
+![](../images/arch_screen_84.png)
 
 ### 服务端签名后前端直传的相关说明
 
 #### 流程示例图
 
-![展示图片/arch_screen_85.png](../images/arch_screen_85.png)
+![](../images/arch_screen_85.png)
 
 #### 流程介绍
 
@@ -420,11 +420,11 @@ public class OssController {
 
 ### 测试获取上传策略的接口
 
-![展示图片/arch_screen_66.png](../images/arch_screen_66.png)
+![](../images/arch_screen_66.png)
 
-![展示图片/arch_screen_67.png](../images/arch_screen_67.png)
+![](../images/arch_screen_67.png)
 
-![展示图片/arch_screen_68.png](../images/arch_screen_68.png)
+![](../images/arch_screen_68.png)
 
 ### 启动mall-admin-web前端项目来测试上传接口
 
@@ -432,27 +432,27 @@ public class OssController {
 
 - 点击添加商品品牌的上传按钮进行测试
 
-![展示图片/arch_screen_69.png](../images/arch_screen_69.png)
+![](../images/arch_screen_69.png)
 
 - 会调用两次请求，第一次访问本地接口获取上传的策略
 
-![展示图片/arch_screen_70.png](../images/arch_screen_70.png)
+![](../images/arch_screen_70.png)
 
-![展示图片/arch_screen_71.png](../images/arch_screen_71.png)
+![](../images/arch_screen_71.png)
 
 - 第二次调用oss服务 的接口进行文件上传
 
-![展示图片/arch_screen_72.png](../images/arch_screen_72.png)
+![](../images/arch_screen_72.png)
 
-![展示图片/arch_screen_73.png](../images/arch_screen_73.png)
+![](../images/arch_screen_73.png)
 
 - 可以看到上面接口调用并没有传入回调参数callback,所以接口返回了204 no content,这次我们传入回调参数callback试试，可以发现oss服务回调了我们自己定义的回调接口，并返回了相应结果。
 
-![展示图片/arch_screen_74.png](../images/arch_screen_74.png)
+![](../images/arch_screen_74.png)
 
-![展示图片/arch_screen_75.png](../images/arch_screen_75.png)
+![](../images/arch_screen_75.png)
 
-![展示图片/arch_screen_76.png](../images/arch_screen_76.png)
+![](../images/arch_screen_76.png)
 
 ## 项目源码地址
 
