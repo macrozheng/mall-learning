@@ -67,7 +67,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 
 
 ## 进阶篇
-> 一套实用的SpringCloud系列教程，基于最新的Greenwich版本
+> 一套实用的SpringCloud系列教程，涵盖了大部分核心组件的使用，基于最新的Greenwich版本
 
 - [Spring Cloud 整体架构概览](https://juejin.im/post/5d764f05e51d4561fb04bfd7)
 - [Spring Cloud Eureka：服务注册与发现](https://juejin.im/post/5d78cd53f265da03d55e8351)
