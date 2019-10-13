@@ -32,7 +32,7 @@ systemctl start docker
 ```bash
 docker search java
 ```
-![展示图片](../images/refer_screen_51.png)
+![](../images/refer_screen_51.png)
 ### 下载镜像
 ```bash
 docker pull java:8
@@ -42,9 +42,9 @@ docker pull java:8
 
 - 进入docker hub的官网，地址：[https://hub.docker.com](https://hub.docker.com)
 - 然后搜索需要的镜像：
-![展示图片](../images/refer_screen_52.png)
+![](../images/refer_screen_52.png)
 - 查看镜像支持的版本：
-![展示图片](../images/refer_screen_53.png)
+![](../images/refer_screen_53.png)
 
 - 进行镜像的下载操作：
 ```bash
@@ -55,7 +55,7 @@ docker pull nginx:1.17.0
 ```bash
 docker images
 ```
-![展示图片](../images/refer_screen_54.png)
+![](../images/refer_screen_54.png)
 ### 删除镜像
 - 指定名称删除镜像
 ```bash
@@ -84,12 +84,12 @@ docker run -p 80:80 --name nginx -d nginx:1.17.0
 ```bash
 docker ps
 ```
-![展示图片](../images/refer_screen_55.png)
+![](../images/refer_screen_55.png)
 - 列出所有容器
 ```bash
 docker ps -a
 ```
-![展示图片](../images/refer_screen_56.png)
+![](../images/refer_screen_56.png)
 ### 停止容器
 ```bash
 # $ContainerName及$ContainerId可以用docker ps命令查询出来
@@ -118,7 +118,7 @@ docker inspect --format "{{.State.Pid}}" $ContainerName(或者$ContainerId)
 ```bash
 nsenter --target "$pid" --mount --uts --ipc --net --pid
 ```
-![展示图片](../images/refer_screen_57.png)
+![](../images/refer_screen_57.png)
 ### 删除容器
 - 删除指定容器：
 ```bash
@@ -137,12 +137,12 @@ docker logs $ContainerName(或者$ContainerId)
 ```bash
 docker logs $ContainerName(或者$ContainerId) -f
 ```
-![展示图片](../images/refer_screen_58.png)
+![](../images/refer_screen_58.png)
 ### 查看容器的IP地址
 ```bash
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' $ContainerName(或者$ContainerId)
 ```
-![展示图片](../images/refer_screen_59.png)
+![](../images/refer_screen_59.png)
 ### 同步宿主机时间到容器
 ```bash
 docker cp /etc/localtime $ContainerName(或者$ContainerId):/etc/
@@ -152,24 +152,24 @@ docker cp /etc/localtime $ContainerName(或者$ContainerId):/etc/
 ```bash
 docker stats $ContainerName(或者$ContainerId)
 ```
-![展示图片](../images/refer_screen_60.png)
+![](../images/refer_screen_60.png)
 - 查看所有容器情况：
 ```bash
 docker stats -a
 ```
-![展示图片](../images/refer_screen_61.png)
+![](../images/refer_screen_61.png)
 ### 进入Docker容器内部的bash
 ```bash
 docker exec -it $ContainerName /bin/bash
 ```
-![展示图片](../images/refer_screen_62.png)
+![](../images/refer_screen_62.png)
 
 ## 修改Docker镜像的存放位置
 - 查看Docker镜像的存放位置：
 ```bash
 docker info | grep "Docker Root Dir"
 ```
-![展示图片](../images/refer_screen_63.png)
+![](../images/refer_screen_63.png)
 - 关闭Docker服务：
 ```bash
 systemctl stop docker
@@ -182,8 +182,8 @@ mv /var/lib/docker /mydata/docker
 ```bash
 ln -s /mydata/docker /var/lib/docker
 ```
-![展示图片](../images/refer_screen_64.png)
-![展示图片](../images/refer_screen_65.png)
+![](../images/refer_screen_64.png)
+![](../images/refer_screen_65.png)
 
 ## 公众号
 
