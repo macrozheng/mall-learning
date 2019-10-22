@@ -78,6 +78,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Cloud Zuul：API网关服务](https://juejin.im/post/5d9f2dea6fb9a04e3e724067)
 - [Spring Cloud Config：外部集中化配置管理](https://juejin.im/post/5da4709af265da5baa5b06ac)
 - [Spring Cloud Bus：消息总线](https://juejin.im/post/5da70d1351882509615bea34)
+- [Spring Cloud Sleuth：分布式请求链路跟踪](https://juejin.im/post/5dadb4d36fb9a04e02409a7d)
 
 ## 参考篇
 > mall相关技术的使用教程
