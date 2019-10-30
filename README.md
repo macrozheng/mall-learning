@@ -79,6 +79,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Cloud Config：外部集中化配置管理](https://juejin.im/post/5da4709af265da5baa5b06ac)
 - [Spring Cloud Bus：消息总线](https://juejin.im/post/5da70d1351882509615bea34)
 - [Spring Cloud Sleuth：分布式请求链路跟踪](https://juejin.im/post/5dadb4d36fb9a04e02409a7d)
+- [Spring Cloud Consul：服务治理与配置中心](https://juejin.im/post/5db05582f265da4d4c20180f)
+- [Spring Cloud Gateway：新一代API网关服务](https://juejin.im/post/5db6eed6518825644076d0b6)
+- [Spring Boot Admin：微服务应用监控](https://juejin.im/post/5db98a2d518825649c730f81)
 
 ## 参考篇
 > mall相关技术的使用教程
