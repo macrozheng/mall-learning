@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 </head>
 <body>
   <div id="app"></div>
@@ -19,7 +20,7 @@
       coverpage: true,
       auto2top: true,
       maxLevel: 2,
-      subMaxLevel: 4,
+      subMaxLevel: 1,
       search: {
         placeholder: '搜索',
         noData: '找不到结果!',
@@ -29,7 +30,25 @@
         '/.*/_sidebar.md': '/_sidebar.md',//防止意外回退
         '/.*/_navbar.md': '/_navbar.md'
       },
-      ga: 'UA-144208445-1'
+      ga: 'UA-144208445-1',
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h2, h3, h4',
+        title: '概览'
+      },
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer style="text-align: center">',
+            '<span><a href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备19059396号-1</a></span>',
+            '</footer>'
+          ].join('');
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -39,5 +58,6 @@
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
 </body>
 </html>
