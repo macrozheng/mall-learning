@@ -10,8 +10,8 @@ mall项目是一套电商系统，包括前台商城系统及后台管理系统�
 
 ## 项目演示
 
-- 后台项目演示：[http://39.98.190.128/index.html](http://39.98.190.128/index.html)
-- 移动端项目演示：[http://39.98.190.128/mall-app/mainpage.html](http://39.98.190.128/mall-app/mainpage.html)
+- 后台项目演示：[http://www.macrozheng.com/admin/index.html](http://www.macrozheng.com/admin/index.html)
+- 移动端项目演示：[http://www.macrozheng.com/app/index.html](http://www.macrozheng.com/app/index.html)
 
 ## mall中使用的技术
 
@@ -37,7 +37,7 @@ Lombok | 1.18.6 | 简化对象封装工具
 
 ## mall实现的功能概览
 
-> 具体可以看下演示地址，亲自体验下：[http://39.98.190.128/index.html](http://39.98.190.128/index.html)
+> 具体可以看下演示地址，亲自体验下：[http://www.macrozheng.com/admin/index.html](http://www.macrozheng.com/admin/index.html)
 
 - 商品模块
   - 商品管理

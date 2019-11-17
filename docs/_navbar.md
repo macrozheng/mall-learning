@@ -1,6 +1,6 @@
 * 演示
-  * [后台管理](http://39.98.190.128/index.html)
-  * [移动端](http://39.98.190.128/mall-app/mainpage.html)
+  * [后台管理](http://www.macrozheng.com/admin/index.html)
+  * [移动端](http://www.macrozheng.com/app/index.html)
 
 * 项目地址
   * [后台项目](https://github.com/macrozheng/mall)
