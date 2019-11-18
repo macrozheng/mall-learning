@@ -103,6 +103,7 @@ docker logs gitlab -f
   
 ![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/gitlab_screen_18.png)
 - 执行以下命令clone项目到本地：
+
 ```bash
 git clone http://192.168.3.101:1080/macrozheng/hello.git
 
