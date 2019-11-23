@@ -262,7 +262,7 @@ public class WebLogAspect {
 ## 进行接口测试
 运行项目并访问：http://localhost:8080/swagger-ui.html
 
-![展示图片](../images/refer_screen_107.png)
+![](../images/refer_screen_107.png)
 
 可以看到控制住台中会打印如下日志信息：
 ```json
