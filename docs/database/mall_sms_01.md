@@ -80,46 +80,46 @@ create table sms_flash_promotion_log
 ## 管理端展现
 
 ### 限时购数据列表
-![展示图片](../images/database_screen_72.png)
+![](../images/database_screen_72.png)
 
 ### 编辑限时购活动
-![展示图片](../images/database_screen_73.png)
+![](../images/database_screen_73.png)
 
 ### 限时购场次列表
-![展示图片](../images/database_screen_74.png)
+![](../images/database_screen_74.png)
 
 ### 编辑限时购场次
-![展示图片](../images/database_screen_75.png)
+![](../images/database_screen_75.png)
 
 ### 添加商品到限时购场次
 
 #### 点击设置商品
-![展示图片](../images/database_screen_76.png)
+![](../images/database_screen_76.png)
 
 #### 点击商品列表
-![展示图片](../images/database_screen_77.png)
+![](../images/database_screen_77.png)
 
 #### 选择商品进行添加
-![展示图片](../images/database_screen_78.png)
+![](../images/database_screen_78.png)
 
 **注意：添加到限时购的商品需要修改`pms_product`表的`promotion_type`为5，优惠计算规则也应该改成使用限时购的优惠。**
 
 ### 编辑限时购商品信息
-![展示图片](../images/database_screen_79.png)
+![](../images/database_screen_79.png)
 
 ## 移动端展现
 
 ### 已开抢的限时购
-![展示图片](../images/database_screen_80.png)
+![](../images/database_screen_80.png)
 
 ### 抢购中的限时购
-![展示图片](../images/database_screen_81.png)
+![](../images/database_screen_81.png)
 
 ### 即将开始的限时购
-![展示图片](../images/database_screen_82.png)
+![](../images/database_screen_82.png)
 
 ### 即将开始的限时购可以设置预约提醒
-![展示图片](../images/database_screen_83.png)
+![](../images/database_screen_83.png)
 
 ## 公众号
 
