@@ -70,31 +70,31 @@ create table oms_company_address
 ### 管理端展现
 
 - 退货申请列表
-![展示图片](../images/database_screen_55.png)
+![](../images/database_screen_55.png)
 - 待处理状态的详情
-![展示图片](../images/database_screen_56.png)
-![展示图片](../images/database_screen_57.png)
+![](../images/database_screen_56.png)
+![](../images/database_screen_57.png)
 - 退货中状态的详情
-![展示图片](../images/database_screen_58.png)
-![展示图片](../images/database_screen_59.png)
+![](../images/database_screen_58.png)
+![](../images/database_screen_59.png)
 - 已完成状态的详情
-![展示图片](../images/database_screen_60.png)
-![展示图片](../images/database_screen_61.png)
+![](../images/database_screen_60.png)
+![](../images/database_screen_61.png)
 - 已拒绝状态的详情
-![展示图片](../images/database_screen_62.png)
-![展示图片](../images/database_screen_63.png)
+![](../images/database_screen_62.png)
+![](../images/database_screen_63.png)
 
 ### 移动端展现
 - 在我的中打开售后服务  
-![展示图片](../images/database_screen_64.png)
+![](../images/database_screen_64.png)
 - 点击申请退货进行退货申请  
-![展示图片](../images/database_screen_65.png)
+![](../images/database_screen_65.png)
 - 提交退货申请  
-![展示图片](../images/database_screen_66.png)
+![](../images/database_screen_66.png)
 - 在申请记录中查看退货申请记录  
-![展示图片](../images/database_screen_67.png)
+![](../images/database_screen_67.png)
 - 查看退货申请进度详情  
-![展示图片](../images/database_screen_68.png)
+![](../images/database_screen_68.png)
 
 ## 订单退货原因设置
 
@@ -117,14 +117,14 @@ create table oms_order_return_reason
 ### 管理端展现
 
 - 退货原因列表  
-![展示图片](../images/database_screen_69.png)
+![](../images/database_screen_69.png)
 - 添加退货原因  
-![展示图片](../images/database_screen_70.png)
+![](../images/database_screen_70.png)
 
 ### 移动端展现
 
 - 退货申请时选择退货原因  
-![展示图片](../images/database_screen_71.png)
+![](../images/database_screen_71.png)
 
 ## 公众号
 
