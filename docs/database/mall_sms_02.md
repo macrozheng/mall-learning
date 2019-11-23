@@ -92,37 +92,37 @@ create table sms_coupon_product_category_relation
 ## 管理端展现
 
 ### 优惠券列表
-![展示图片](../images/database_screen_84.png)
+![](../images/database_screen_84.png)
 
 ### 编辑优惠券
 
 #### 全场通用
-![展示图片](../images/database_screen_85.png)
+![](../images/database_screen_85.png)
 
 #### 指定商品
-![展示图片](../images/database_screen_86.png)
+![](../images/database_screen_86.png)
 
 #### 指定分类
-![展示图片](../images/database_screen_87.png)
+![](../images/database_screen_87.png)
 
 ### 查看优惠券
-![展示图片](../images/database_screen_88.png)
+![](../images/database_screen_88.png)
 
 ## 移动端展现
 
 ### 我的优惠券
 
 #### 未使用
-![展示图片](../images/database_screen_89.png)
+![](../images/database_screen_89.png)
 
 #### 已使用
-![展示图片](../images/database_screen_90.png)
+![](../images/database_screen_90.png)
 
 #### 已过期
-![展示图片](../images/database_screen_91.png)
+![](../images/database_screen_91.png)
 
 ### 优惠券详情
-![展示图片](../images/database_screen_92.png)
+![](../images/database_screen_92.png)
 
 ## 公众号
 
