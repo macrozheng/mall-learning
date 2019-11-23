@@ -82,6 +82,13 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Cloud Consul：服务治理与配置中心](https://juejin.im/post/5db05582f265da4d4c20180f)
 - [Spring Cloud Gateway：新一代API网关服务](https://juejin.im/post/5db6eed6518825644076d0b6)
 - [Spring Boot Admin：微服务应用监控](https://juejin.im/post/5db98a2d518825649c730f81)
+- [Spring Cloud Security：Oauth2使用入门](https://juejin.im/post/5dc013bae51d456e817cec30)
+- [Spring Cloud Security：Oauth2结合JWT使用](https://juejin.im/post/5dc2bec6f265da4d4f65bebe)
+- [Spring Cloud Security：Oauth2实现单点登录](https://juejin.im/post/5dc95a675188256e040db43f)
+- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
+- [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
+- [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
+- [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
 
 ## 参考篇
 > mall相关技术的使用教程
