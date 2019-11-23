@@ -34,17 +34,17 @@ firewall-cmd --reload
 ```shell
 firewall-cmd --zone=public --add-port=8080/tcp --permanent
 ```
-![展示图片](../images/refer_screen_31.png)
+![](../images/refer_screen_31.png)
 - 查看开放的端口：
 ```shell
 firewall-cmd --list-ports
 ```
-![展示图片](../images/refer_screen_32.png)
+![](../images/refer_screen_32.png)
 - 关闭端口：
 ```shell
 firewall-cmd --zone=public --remove-port=8080/tcp --permanent
 ```
-![展示图片](../images/refer_screen_33.png)
+![](../images/refer_screen_33.png)
 
 ## Iptables
 
@@ -53,7 +53,7 @@ firewall-cmd --zone=public --remove-port=8080/tcp --permanent
 > 由于CenterOS7.0以上版本并没有预装Iptables,我们需要自行装。
 
 - 安装前先关闭firewall防火墙
-![展示图片](../images/refer_screen_34.png)
+![](../images/refer_screen_34.png)
 - 安装iptables:
 ```shell
 yum install iptables
@@ -69,7 +69,7 @@ yum install iptables-services
 ```shell
 systemctl start iptables.service
 ```
-![展示图片](../images/refer_screen_35.png)
+![](../images/refer_screen_35.png)
 - 关闭防火墙：
 ```shell
 systemctl stop iptables.service
@@ -90,12 +90,12 @@ systemctl disable iptables.service
 ```shell
 iptables -L -n
 ```
-![展示图片](../images/refer_screen_36.png)
+![](../images/refer_screen_36.png)
 - 查看NAT表的链规则：
 ```shell
 iptables -t nat -L -n
 ```
-![展示图片](../images/refer_screen_37.png)
+![](../images/refer_screen_37.png)
 - 清除防火墙所有规则：
 ```shell
 iptables -F
@@ -110,17 +110,17 @@ iptables -Z
 ```shell
 iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 ```
-![展示图片](../images/refer_screen_38.png)
+![](../images/refer_screen_38.png)
 - 查找规则所在行号：
 ```shell
 iptables -L INPUT --line-numbers -n
 ```
-![展示图片](../images/refer_screen_39.png)
+![](../images/refer_screen_39.png)
 - 根据行号删除过滤规则（关闭8080端口）：
 ```shell
 iptables -D INPUT 1
 ```
-![展示图片](../images/refer_screen_40.png)
+![](../images/refer_screen_40.png)
 
 ## 公众号
 
