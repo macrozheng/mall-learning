@@ -135,36 +135,36 @@ create table pms_member_price
 ### 管理端展现
 
 #### 填写商品信息
-![展示图片](../images/database_screen_22.png)
+![](../images/database_screen_22.png)
 
 #### 填写商品促销
-![展示图片](../images/database_screen_17.png)
+![](../images/database_screen_17.png)
 ##### 特惠促销
-![展示图片](../images/database_screen_18.png)
+![](../images/database_screen_18.png)
 ##### 会员价格
-![展示图片](../images/database_screen_19.png)
+![](../images/database_screen_19.png)
 ##### 阶梯价格
-![展示图片](../images/database_screen_20.png)
+![](../images/database_screen_20.png)
 ##### 满减价格
-![展示图片](../images/database_screen_21.png)
+![](../images/database_screen_21.png)
 
 #### 填写商品属性
-![展示图片](../images/database_screen_23.png)
-![展示图片](../images/database_screen_24.png)
-![展示图片](../images/database_screen_25.png)
+![](../images/database_screen_23.png)
+![](../images/database_screen_24.png)
+![](../images/database_screen_25.png)
 
 #### 选择商品关联
 
-![展示图片](../images/database_screen_26.png)
+![](../images/database_screen_26.png)
 
 ### 移动端展现
 
 #### 商品介绍
-![展示图片](../images/database_screen_27.png)
+![](../images/database_screen_27.png)
 #### 图文详情
-![展示图片](../images/database_screen_28.png)
+![](../images/database_screen_28.png)
 #### 相关专题
-![展示图片](../images/database_screen_29.png)
+![](../images/database_screen_29.png)
 
 ## 商品评价及回复
 
@@ -212,13 +212,13 @@ create table pms_comment_replay
 ### 移动端展现
 
 #### 商品评价列表
-![展示图片](../images/database_screen_30.png)
+![](../images/database_screen_30.png)
 
 #### 商品评价详情
-![展示图片](../images/database_screen_31.png)
+![](../images/database_screen_31.png)
 
 #### 商品回复列表
-![展示图片](../images/database_screen_32.png)
+![](../images/database_screen_32.png)
 
 
 ## 商品审核及操作记录
