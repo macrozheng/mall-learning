@@ -97,47 +97,47 @@ create table sms_home_advertise
 ## 管理端展现
 
 ### 品牌推荐列表
-![展示图片](../images/database_screen_93.png)
+![](../images/database_screen_93.png)
 
 ### 选择品牌
-![展示图片](../images/database_screen_94.png)
+![](../images/database_screen_94.png)
 
 ### 新品推荐列表
-![展示图片](../images/database_screen_95.png)
+![](../images/database_screen_95.png)
 
 ### 选择商品
-![展示图片](../images/database_screen_96.png)
+![](../images/database_screen_96.png)
 
 ### 人气推荐列表
-![展示图片](../images/database_screen_97.png)
+![](../images/database_screen_97.png)
 
 ### 选择商品
-![展示图片](../images/database_screen_98.png)
+![](../images/database_screen_98.png)
 
 ### 专题推荐列表
-![展示图片](../images/database_screen_99.png)
+![](../images/database_screen_99.png)
 
 ### 选择专题
-![展示图片](../images/database_screen_100.png)
+![](../images/database_screen_100.png)
 
 ### 广告列表
-![展示图片](../images/database_screen_101.png)
+![](../images/database_screen_101.png)
 
 ### 编辑广告
-![展示图片](../images/database_screen_102.png)
+![](../images/database_screen_102.png)
 
 ## 移动端展现
 
 ### 首页轮播广告
-![展示图片](../images/database_screen_103.png)
+![](../images/database_screen_103.png)
 ### 品牌制造商直供
-![展示图片](../images/database_screen_104.png)
+![](../images/database_screen_104.png)
 ### 新鲜好物
-![展示图片](../images/database_screen_105.png)
+![](../images/database_screen_105.png)
 ### 人气推荐
-![展示图片](../images/database_screen_106.png)
+![](../images/database_screen_106.png)
 ### 专题精选
-![展示图片](../images/database_screen_107.png)
+![](../images/database_screen_107.png)
 
 ## 公众号
 
