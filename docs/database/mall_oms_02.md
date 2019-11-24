@@ -40,22 +40,22 @@ create table oms_cart_item
 
 ### 整体流程示意图
 
-![展示图片](../images/database_screen_44.png)
+![](../images/database_screen_44.png)
 
 ### 移动端流程展示
 
 - 会员选择商品规格  
-![展示图片](../images/database_screen_45.png)
+![](../images/database_screen_45.png)
 - 选择购物车中商品去结算  
-![展示图片](../images/database_screen_46.png)
+![](../images/database_screen_46.png)
 - 查看确认单  
-![展示图片](../images/database_screen_47.png)
+![](../images/database_screen_47.png)
 - 支付订单  
-![展示图片](../images/database_screen_48.png)
+![](../images/database_screen_48.png)
 - 支付成功  
-![展示图片](../images/database_screen_49.png)
+![](../images/database_screen_49.png)
 - 查看订单  
-![展示图片](../images/database_screen_50.png)
+![](../images/database_screen_50.png)
 
 ### 实现逻辑
 
@@ -65,7 +65,7 @@ create table oms_cart_item
 
 ##### 购物车优惠计算流程
 
-![展示图片](../images/database_screen_51.jpg)
+![](../images/database_screen_51.jpg)
 
 ##### 相关注意点
 
@@ -78,7 +78,7 @@ create table oms_cart_item
 
 ##### 生成确认单流程
 
-![展示图片](../images/database_screen_52.jpg)
+![](../images/database_screen_52.jpg)
 
 ##### 相关注意点
 
@@ -93,7 +93,7 @@ create table oms_cart_item
 
 ##### 下单流程
 
-![展示图片](../images/database_screen_53.jpg)
+![](../images/database_screen_53.jpg)
 
 ##### 相关注意点
 
@@ -113,7 +113,7 @@ create table oms_cart_item
 
 ##### 订单取消流程
 
-![展示图片](../images/database_screen_54.jpg)
+![](../images/database_screen_54.jpg)
 
 ##### 相关注意点
 
