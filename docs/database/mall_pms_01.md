@@ -30,15 +30,14 @@ create table pms_product_category
 ### 管理端展现
 
 - 商品分类列表
-![展示图片](../images/database_screen_02.png)
+![](../images/database_screen_02.png)
 - 添加商品分类
-![展示图片](../images/database_screen_01.png)
-
+![](../images/database_screen_01.png)
 
 
 ### 移动端展现
 
-![展示图片](../images/database_screen_03.png)
+![](../images/database_screen_03.png)
 
 ## 品牌管理
 
@@ -65,13 +64,13 @@ create table pms_brand
 ### 管理端展现
 
 - 品牌列表
-![展示图片](../images/database_screen_04.png)
+![](../images/database_screen_04.png)
 - 添加品牌
-![展示图片](../images/database_screen_05.png)
+![](../images/database_screen_05.png)
 
 ### 移动端展现
 
-![展示图片](../images/database_screen_06.png)
+![](../images/database_screen_06.png)
 
 ## 商品类型
 
@@ -147,28 +146,28 @@ create table pms_product_category_attribute_relation
 ### 管理端展现
 
 - 商品属性分类列表
-![展示图片](../images/database_screen_07.png)
+![](../images/database_screen_07.png)
 - 添加商品属性分类  
-![展示图片](../images/database_screen_08.png)
+![](../images/database_screen_08.png)
 - 商品规格列表
-![展示图片](../images/database_screen_09.png)
+![](../images/database_screen_09.png)
 - 商品参数列表
-![展示图片](../images/database_screen_10.png)
+![](../images/database_screen_10.png)
 - 添加商品属性
-![展示图片](../images/database_screen_11.png)
+![](../images/database_screen_11.png)
 - 添加商品时，选中商品属性分类，就会显示该分类的属性，用于生成sku
-![展示图片](../images/database_screen_12.png)
+![](../images/database_screen_12.png)
 - 添加商品时，选中商品属性分类，会显示该分类的参数用于录入
-![展示图片](../images/database_screen_13.png)
+![](../images/database_screen_13.png)
 
 ### 移动端展现
 
 - 选择商品规格  
-![展示图片](../images/database_screen_14.png)
+![](../images/database_screen_14.png)
 - 查看商品参数  
-![展示图片](../images/database_screen_15.png)
+![](../images/database_screen_15.png)
 - 搜索商品时用于选择分类后的筛选  
-![展示图片](../images/database_screen_16.png)
+![](../images/database_screen_16.png)
 
 ## 公众号
 
