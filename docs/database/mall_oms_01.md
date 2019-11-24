@@ -118,26 +118,26 @@ create table oms_order_operate_history
 ### 管理端展现
 
 #### 订单列表
-![展示图片](../images/database_screen_33.png)
+![](../images/database_screen_33.png)
 
 #### 查看订单
-![展示图片](../images/database_screen_34.png)
-![展示图片](../images/database_screen_35.png)
-![展示图片](../images/database_screen_36.png)
+![](../images/database_screen_34.png)
+![](../images/database_screen_35.png)
+![](../images/database_screen_36.png)
 
 #### 订单发货
-![展示图片](../images/database_screen_38.png)
+![](../images/database_screen_38.png)
 
 ### 移动端展现
 
 #### 不同状态下的订单
-![展示图片](../images/database_screen_39.png)
-![展示图片](../images/database_screen_40.png)
-![展示图片](../images/database_screen_41.png)
+![](../images/database_screen_39.png)
+![](../images/database_screen_40.png)
+![](../images/database_screen_41.png)
 
 #### 订单详情
-![展示图片](../images/database_screen_42.png)
-![展示图片](../images/database_screen_43.png)
+![](../images/database_screen_42.png)
+![](../images/database_screen_43.png)
 
 
 ## 订单设置
@@ -163,7 +163,7 @@ create table oms_order_setting
 
 ### 管理端展现
 
-![展示图片](../images/database_screen_37.png)
+![](../images/database_screen_37.png)
 
 ## 公众号
 
