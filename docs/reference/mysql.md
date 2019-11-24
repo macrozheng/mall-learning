@@ -20,7 +20,7 @@ create database test
 ```sql
 show databases
 ```
-![展示图片](../images/refer_screen_41.png)
+![](../images/refer_screen_41.png)
 - 选择数据库并使用：
 ```sql
 use test
@@ -43,17 +43,17 @@ create table emp(ename varchar(10),hiredate date,sal decimal(10,2),deptno int(2)
 ```sql
 create table dept(deptno int(2),deptname varchar(10))
 ```
-![展示图片](../images/refer_screen_42.png)
+![](../images/refer_screen_42.png)
 - 查看表的定义：
 ```sql
 desc emp
 ```
-![展示图片](../images/refer_screen_43.png)
+![](../images/refer_screen_43.png)
 - 查看表定义（详细）：
 ```sql
 show create table emp \G
 ```
-![展示图片](../images/refer_screen_44.png)
+![](../images/refer_screen_44.png)
 - 删除表：
 ```sql
 drop table emp
@@ -156,12 +156,12 @@ grant select,insert on test.* to 'test'@'localhost' identified by '123'
 ```sql
 show grants for 'test'@'localhost'
 ```
-![展示图片](../images/refer_screen_45.png)
+![](../images/refer_screen_45.png)
 - 收回操作权限：
 ```sql
 revoke insert on test.* from 'test'@'localhost'
 ```
-![展示图片](../images/refer_screen_46.png)
+![](../images/refer_screen_46.png)
 - 授予所有数据库的所有权限：
 ```sql
 grant all privileges on *.* to 'test'@'localhost'
@@ -200,19 +200,19 @@ set password for 'test'@'localhost' = password('123')
 ```sql
 show variables like 'character%'
 ```
-![展示图片](../images/refer_screen_47.png)
+![](../images/refer_screen_47.png)
 - 创建数据库时指定字符集：
 ```sql
 create database test2 character set utf8
 ```
-![展示图片](../images/refer_screen_48.png)
+![](../images/refer_screen_48.png)
 
 ### 时区相关
 - 查看当前时区（UTC为世界统一时间，中国为UTC+8）：
 ```sql
 show variables like "%time_zone%"
 ```
-![展示图片](../images/refer_screen_49.png)
+![](../images/refer_screen_49.png)
 - 修改mysql全局时区为北京时间，即我们所在的东8区：
 ```sql
 set global time_zone = '+8:00';
@@ -221,7 +221,7 @@ set global time_zone = '+8:00';
 ```sql
 set time_zone = '+8:00'
 ```
-![展示图片](../images/refer_screen_50.png)
+![](../images/refer_screen_50.png)
 - 立即生效：
 ```sql
 flush privileges
