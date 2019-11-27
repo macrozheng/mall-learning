@@ -11,22 +11,22 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 ```shell
 systemctl list-units --type=service
 ```
-![展示图片](../images/refer_screen_01.png)
+![](../images/refer_screen_01.png)
 - 查看服务的运行状态：
 ```shell
 systemctl status firewalld
 ```
-![展示图片](../images/refer_screen_02.png)
+![](../images/refer_screen_02.png)
 - 关闭服务：
 ```shell
 systemctl stop firewalld
 ```
-![展示图片](../images/refer_screen_03.png)
+![](../images/refer_screen_03.png)
 - 启动服务：
 ```shell
 systemctl start firewalld
 ```
-![展示图片](../images/refer_screen_04.png)
+![](../images/refer_screen_04.png)
 - 重新启动服务（不管当前服务是启动还是关闭）：
 ```shell
 systemctl restart firewalld
@@ -39,12 +39,12 @@ systemctl reload firewalld
 ```shell
 systemctl disable firewalld
 ```
-![展示图片](../images/refer_screen_05.png)
+![](../images/refer_screen_05.png)
 - 设置服务开机自启动：
 ```shell
 systemctl enable firewalld
 ```
-![展示图片](../images/refer_screen_06.png)
+![](../images/refer_screen_06.png)
 
 ## 文件管理
 
@@ -53,12 +53,12 @@ systemctl enable firewalld
 ```shell
 ls -l /
 ```
-![展示图片](../images/refer_screen_07.png)
+![](../images/refer_screen_07.png)
 
 ### pwd
 获取目前所在工作目录的绝对路径
 
-![展示图片](../images/refer_screen_08.png)
+![](../images/refer_screen_08.png)
 
 ### cd
 改变当前工作目录：
@@ -66,14 +66,14 @@ ls -l /
 cd /usr/local
 ```
 
-![展示图片](../images/refer_screen_09.png)
+![](../images/refer_screen_09.png)
 
 ### date
 显示或修改系统时间与日期；
 ```shell
 date '+%Y-%m-%d %H:%M:%S'
 ```
-![展示图片](../images/refer_screen_10.png)
+![](../images/refer_screen_10.png)
 
 ### passwd
 用于设置用户密码：
@@ -81,7 +81,7 @@ date '+%Y-%m-%d %H:%M:%S'
 passwd root
 ```
 
-![展示图片](../images/refer_screen_11.png)
+![](../images/refer_screen_11.png)
 
 ### su
 改变用户身份（切换到超级用户）：
@@ -101,19 +101,19 @@ man ls
 ```shell
 who -r
 ```
-![展示图片](../images/refer_screen_12.png)
+![](../images/refer_screen_12.png)
 - 显示目前登录到系统的用户：
 ```shell
 who -buT
 ```
-![展示图片](../images/refer_screen_13.png)
+![](../images/refer_screen_13.png)
 
 ### free
 显示系统内存状态（单位MB）：
 ```shell
 free -m
 ```
-![展示图片](../images/refer_screen_14.png)
+![](../images/refer_screen_14.png)
 
 ### ps
 显示系统进程运行动态：
@@ -124,17 +124,17 @@ ps -ef
 ```shell
 ps -ef | grep sshd
 ```
-![展示图片](../images/refer_screen_15.png)
+![](../images/refer_screen_15.png)
 
 ### top
 查看即时活跃的进程，类似Windows的任务管理器
 
-![展示图片](../images/refer_screen_16.png)
+![](../images/refer_screen_16.png)
 
 ### mkdir
 创建目录
 
-![展示图片](../images/refer_screen_17.png)
+![](../images/refer_screen_17.png)
 
 ### more
 用于文件过长时分页查看文件内容
@@ -142,7 +142,7 @@ ps -ef | grep sshd
 ```shell
 more -c -10 /var/log/boot.log
 ```
-![展示图片](../images/refer_screen_18.png)
+![](../images/refer_screen_18.png)
 
 ### cat
 查看Linux启动日志文件文件，并标明行号：
@@ -150,7 +150,7 @@ more -c -10 /var/log/boot.log
 cat -Ab /var/log/boot.log
 ```
 
-![展示图片](../images/refer_screen_19.png)
+![](../images/refer_screen_19.png)
 
 ### touch
 创建text.txt文件：
@@ -158,7 +158,7 @@ cat -Ab /var/log/boot.log
 touch text.txt
 ```
 
-![展示图片](../images/refer_screen_20.png)
+![](../images/refer_screen_20.png)
 
 ### rm
 - 删除文件：
@@ -170,7 +170,7 @@ rm text.txt
 rm -rf testdir/
 ```
 
-![展示图片](../images/refer_screen_21.png)
+![](../images/refer_screen_21.png)
 
 ### cp
 将test1目录复制到test2目录
@@ -198,12 +198,12 @@ tar -zcvf /mydata/etc.tar.gz /etc
 ```shell
 tar -jcvf /mydata/etc.tar.bz2 /etc
 ```
-![展示图片](../images/refer_screen_22.png)
+![](../images/refer_screen_22.png)
 - 分页查看压缩包中内容（gzip）：
 ```shell
 tar -ztvf /mydata/etc.tar.gz |more -c -10
 ```
-![展示图片](../images/refer_screen_24.png)
+![](../images/refer_screen_24.png)
 - 解压文件到当前目录（gzip）：
 ```shell
 tar -zxvf /mydata/etc.tar.gz
@@ -216,19 +216,19 @@ tar -zxvf /mydata/etc.tar.gz
 ```shell
 df -hT
 ```
-![展示图片](../images/refer_screen_25.png)
+![](../images/refer_screen_25.png)
 
 ### dh
 查看当前目录下的文件及文件夹所占大小：
 ```shell
 du -h --max-depth=1 ./*
 ```
-![展示图片](../images/refer_screen_26.png)
+![](../images/refer_screen_26.png)
 
 ### ifconfig
 显示当前网络接口状态
 
-![展示图片](../images/refer_screen_27.png)
+![](../images/refer_screen_27.png)
 
 ### netstat
 
@@ -236,7 +236,7 @@ du -h --max-depth=1 ./*
 ```shell
 netstat -rn
 ```
-![展示图片](../images/refer_screen_28.png)
+![](../images/refer_screen_28.png)
 
 - 查看所有有效TCP连接：
 ```shell
@@ -246,7 +246,7 @@ netstat -an
 ```shell
 netstat -tulnp
 ```
-![展示图片](../images/refer_screen_29.png)
+![](../images/refer_screen_29.png)
 
 - 查看处于连接状态的系统资源信息：
 ```shell
@@ -256,7 +256,7 @@ netstat -atunp
 ### wget
 从网络上下载文件
 
-![展示图片](../images/refer_screen_30.png)
+![](../images/refer_screen_30.png)
 
 ## 文件上传下载
 

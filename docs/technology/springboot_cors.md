@@ -15,9 +15,9 @@ CORS全称Cross-Origin Resource Sharing，意为跨域资源共享。当一个�
 ### 点击前端登录按钮
 >此时发现调用登录接口时出现跨域问题。
 
-![展示图片](../images/tech_screen_35.png)
-![展示图片](../images/tech_screen_28.png)
-![展示图片](../images/tech_screen_29.png)
+![](../images/tech_screen_35.png)
+![](../images/tech_screen_28.png)
+![](../images/tech_screen_29.png)
 
 ### 覆盖默认的CorsFilter来解决该问题
 > 添加GlobalCorsConfig配置文件来允许跨域访问。
@@ -63,8 +63,8 @@ public class GlobalCorsConfig {
 ### 重新运行代码，点击登录按钮
 >发现需要登录认证的/admin/info接口的OPTIONS请求无法通过认证，那是因为复杂的跨越请求需要先进行一次OPTIONS请求进行预检，我们的应用整合了SpringSecurity，对OPTIONS请求并没有放开登录认证。
 
-![展示图片](../images/tech_screen_30.png)
-![展示图片](../images/tech_screen_31.png)
+![](../images/tech_screen_30.png)
+![](../images/tech_screen_31.png)
 
 ### 设置SpringSecurity允许OPTIONS请求访问
 > 在SecurityConfig类的configure(HttpSecurity httpSecurity)方法中添加如下代码。
@@ -73,13 +73,13 @@ public class GlobalCorsConfig {
 .antMatchers(HttpMethod.OPTIONS)//跨域请求会先进行一次options请求
 .permitAll()
 ```
-![展示图片](../images/tech_screen_32.png)
+![](../images/tech_screen_32.png)
 
 ### 重新运行代码，点击登录按钮
 > 发现已经可以正常访问。
 
-![展示图片](../images/tech_screen_33.png)
-![展示图片](../images/tech_screen_34.png)
+![](../images/tech_screen_33.png)
+![](../images/tech_screen_34.png)
 
 ## 一次完整的跨域请求
 

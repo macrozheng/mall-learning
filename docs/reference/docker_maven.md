@@ -106,11 +106,11 @@ spring:
 >注意：依赖的基础镜像需要先行下载，否则会出现构建镜像超时的情况，比如我本地并没有java8的镜像，就需要先把镜像pull下来，再用maven插件进行构建。
 
 - 执行maven的package命令:  
-![展示图片](../images/refer_screen_68.png)
+![](../images/refer_screen_68.png)
 - 构建成功:  
-![展示图片](../images/refer_screen_66.png)
+![](../images/refer_screen_66.png)
 - 镜像仓库已有该镜像：  
-![展示图片](../images/refer_screen_67.png)
+![](../images/refer_screen_67.png)
 
 ## 运行mall-tiny-docker项目
 
@@ -132,12 +132,12 @@ docker exec -it mysql /bin/bash
 ```shell
 mysql -uroot -proot --default-character-set=utf8
 ```
-![展示图片](../images/refer_screen_69.png)
+![](../images/refer_screen_69.png)
 - 修改root帐号的权限，使得任何ip都能访问：
 ```sql
 grant all privileges on *.* to 'root'@'%'
 ```
-![展示图片](../images/refer_screen_70.png)
+![](../images/refer_screen_70.png)
 - 创建mall数据库：
 ```sql
 create database mall character set utf8
@@ -151,7 +151,7 @@ docker cp /mydata/mall.sql mysql:/
 use mall;
 source /mall.sql;
 ```
-![展示图片](../images/refer_screen_71.png)
+![](../images/refer_screen_71.png)
 ### 启动mall-tiny-docker应用服务
 - 使用docker命令启动（--link表示应用可以用db这个域名访问mysql服务）：
 ```shell
@@ -161,14 +161,14 @@ source /mall.sql;
   -v /mydata/app/mall-tiny-docker/logs:/var/logs \
   -d mall-tiny/mall-tiny-docker:0.0.1-SNAPSHOT
 ```
-![展示图片](../images/refer_screen_72.png)
+![](../images/refer_screen_72.png)
 - 开启8080端口：
 ```shell
 firewall-cmd --zone=public --add-port=8080/tcp --permanent
 firewall-cmd --reload
 ```
 - 进行访问测试，地址：[http://192.168.3.101:8080/swagger-ui.html](http://192.168.3.101:8080/swagger-ui.html)
-![展示图片](../images/refer_screen_73.png)
+![](../images/refer_screen_73.png)
 
 ## 项目源码地址
 

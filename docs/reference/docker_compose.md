@@ -18,7 +18,7 @@ chmod +x /usr/local/bin/docker-compose
 ```shell
 docker-compose --version
 ```
-![展示图片](../images/refer_screen_96.png)
+![](../images/refer_screen_96.png)
 
 ## 使用Docker Compose的步骤
 
@@ -135,7 +135,7 @@ services:
 **注意：如果遇到mall-tiny-docker-compose服务无法连接到mysql，需要在mysql中建立mall数据库，同时导入mall.sql脚本。具体参考[使用Dockerfile为SpringBoot应用构建Docker镜像](https://mp.weixin.qq.com/s/U_OcNMpLAJJum_s9jbZLGg)中的运行mysql服务并设置部分。**
 
 ### 使用maven插件构建mall-tiny-docker-compose镜像
-![展示图片](../images/refer_screen_97.png)
+![](../images/refer_screen_97.png)
 
 **注意：构建有问题的可以参考[使用Maven插件为SpringBoot应用构建Docker镜像](https://mp.weixin.qq.com/s/q2KDzHbPkf3Q0EY8qYjYgw)**
 
@@ -144,11 +144,11 @@ services:
 ```shell
 docker-compose up -d
 ```
-![展示图片](../images/refer_screen_98.png)
+![](../images/refer_screen_98.png)
 
 访问接口文档地址http://192.168.3.101:8080/swagger-ui.html：
 
-![展示图片](../images/refer_screen_94.png)
+![](../images/refer_screen_94.png)
 
 ## 项目源码地址
 

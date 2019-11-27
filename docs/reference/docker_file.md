@@ -105,7 +105,7 @@ MAINTAINER macrozheng
 ### 使用maven打包应用
 
 在IDEA中双击package命令进行打包:  
-![展示图片](../images/refer_screen_91.png)  
+![](../images/refer_screen_91.png)  
 打包成功后展示：
 ```shell
 [INFO] --- spring-boot-maven-plugin:2.1.3.RELEASE:repackage (repackage) @ mall-tiny-docker-file ---
@@ -119,8 +119,8 @@ MAINTAINER macrozheng
 [INFO] ------------------------------------------------------------------------
 ```
 将应用jar包及Dockerfile文件上传到linux服务器：
-![展示图片](../images/refer_screen_92.png)
-![展示图片](../images/refer_screen_95.png)
+![](../images/refer_screen_92.png)
+![](../images/refer_screen_95.png)
 ### 在Linux上构建docker镜像
 在Dockerfile所在目录执行以下命令：
 ```shell
@@ -151,7 +151,7 @@ Successfully built c3614dad21b7
 Successfully tagged mall-tiny/mall-tiny-docker-file:0.0.1-SNAPSHOT
 ```
 查看docker镜像：
-![展示图片](../images/refer_screen_93.png)
+![](../images/refer_screen_93.png)
 ### 运行mysql服务并设置
 
 #### 1.使用docker命令启动：
@@ -199,7 +199,7 @@ docker run -p 8080:8080 --name mall-tiny-docker-file \
 -d mall-tiny/mall-tiny-docker-file:0.0.1-SNAPSHOT
 ```
 访问接口文档地址http://192.168.3.101:8080/swagger-ui.html：
-![展示图片](../images/refer_screen_94.png)
+![](../images/refer_screen_94.png)
 
 ## 项目源码地址
 

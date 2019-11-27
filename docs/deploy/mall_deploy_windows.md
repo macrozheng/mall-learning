@@ -10,12 +10,12 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 2.搜索插件仓库，安装插件lombok
 
-![展示图片](../images/arch_screen_101.png)
+![](../images/arch_screen_101.png)
 3.将项目下载到本地，然后直接打开
 
-![展示图片](../images/arch_screen_102.png)
+![](../images/arch_screen_102.png)
 
-![展示图片](../images/arch_screen_103.png)
+![](../images/arch_screen_103.png)
 
 ## Mysql
 
@@ -29,41 +29,41 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 1.下载Redis,下载地址：https://github.com/MicrosoftArchive/redis/releases
 
-![展示图片](../images/arch_screen_09.png)
+![](../images/arch_screen_09.png)
 
 2.下载完后解压到指定目录
 
-![展示图片](../images/arch_screen_10.png)
+![](../images/arch_screen_10.png)
 
 3.在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
 
-![展示图片](../images/arch_screen_11.png)
+![](../images/arch_screen_11.png)
 
 ## Elasticsearch
 
 1.下载Elasticsearch6.2.2的zip包，并解压到指定目录，下载地址：[https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-2-2](https://www.elastic.co/cn/downloads/past-releases/elasticsearch-6-2-2)
 
-![展示图片_25.png](../images/arch_screen_25.png)
+![](../images/arch_screen_25.png)
 
 2.安装中文分词插件，在elasticsearch-6.2.2\bin目录下执行以下命令：elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.2.2/elasticsearch-analysis-ik-6.2.2.zip
 
-![展示图片_26.png](../images/arch_screen_26.png)
+![](../images/arch_screen_26.png)
 
 3.运行bin目录下的elasticsearch.bat启动Elasticsearch
 
-![展示图片_27.png](../images/arch_screen_27.png)
+![](../images/arch_screen_27.png)
 
 4.下载Kibana,作为访问Elasticsearch的客户端，请下载6.2.2版本的zip包，并解压到指定目录，下载地址：[https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-windows-x86_64.zip](https://artifacts.elastic.co/downloads/kibana/kibana-6.2.2-windows-x86_64.zip)
 
-![展示图片_28.png](../images/arch_screen_28.png)
+![](../images/arch_screen_28.png)
 
 5.运行bin目录下的kibana.bat，启动Kibana的用户界面
 
-![展示图片_29.png](../images/arch_screen_29.png)
+![](../images/arch_screen_29.png)
 
 6.访问[http://localhost:5601](http://localhost:5601) 即可打开Kibana的用户界面
 
-![展示图片_30.png](../images/arch_screen_30.png)
+![](../images/arch_screen_30.png)
 
 ## Mongodb
 
@@ -71,13 +71,13 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 2.选择安装路径进行安装
 
-![展示图片_37.png](../images/arch_screen_37.png)
+![](../images/arch_screen_37.png)
 
-![展示图片_38.png](../images/arch_screen_38.png)
+![](../images/arch_screen_38.png)
 
 3.在安装路径下创建data\\db和data\\log两个文件夹
 
-![展示图片_39.png](../images/arch_screen_39.png)
+![](../images/arch_screen_39.png)
 
 4.在安装路径下创建mongod.cfg配置文件
 ```
@@ -92,7 +92,7 @@ storage:
 ```
 D:\developer\env\MongoDB\bin\mongod.exe --config "D:\developer\env\MongoDB\mongod.cfg" --install
 ```
-![展示图片_40.png](../images/arch_screen_40.png)
+![](../images/arch_screen_40.png)
 
 6.服务相关命令
 ```
@@ -105,49 +105,49 @@ D:\developer\env\MongoDB\bin\mongod.exe --config "D:\developer\env\MongoDB\mongo
 
 8.解压到指定目录，打开robo3t.exe并连接到localhost:27017
 
-![展示图片_41.png](../images/arch_screen_41.png)
+![](../images/arch_screen_41.png)
 
 ## RabbitMQ
 
 1.安装Erlang，下载地址：[http://erlang.org/download/otp_win64_21.3.exe](http://erlang.org/download/otp_win64_21.3.exe)
 
-![展示图片_53.png](../images/arch_screen_53.png)
+![](../images/arch_screen_53.png)
 
 2.安装RabbitMQ，下载地址：[https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.14/rabbitmq-server-3.7.14.exe](https://dl.bintray.com/rabbitmq/all/rabbitmq-server/3.7.14/rabbitmq-server-3.7.14.exe)
 
-![展示图片_54.png](../images/arch_screen_54.png)
+![](../images/arch_screen_54.png)
 
 3.安装完成后，进入RabbitMQ安装目录下的sbin目录
 
-![展示图片_55.png](../images/arch_screen_55.png)
+![](../images/arch_screen_55.png)
 
 4.在地址栏输入cmd并回车启动命令行，然后输入以下命令启动管理功能：
 ```
 rabbitmq-plugins enable rabbitmq_management
 ```
-![展示图片_56.png](../images/arch_screen_56.png)
+![](../images/arch_screen_56.png)
 
 5.访问地址查看是否安装成功：[http://localhost:15672/](http://localhost:15672/)
 
-![展示图片_57.png](../images/arch_screen_57.png)
+![](../images/arch_screen_57.png)
 
 6.输入账号密码并登录：guest guest
 
 7.创建帐号并设置其角色为管理员：mall mall
 
-![展示图片_58.png](../images/arch_screen_58.png)
+![](../images/arch_screen_58.png)
 
 8.创建一个新的虚拟host为：/mall
 
-![展示图片_59.png](../images/arch_screen_59.png)
+![](../images/arch_screen_59.png)
 
 9.点击mall用户进入用户配置页面
 
-![展示图片_60.png](../images/arch_screen_60.png)
+![](../images/arch_screen_60.png)
 
 10.给mall用户配置该虚拟host的权限
 
-![展示图片_61.png](../images/arch_screen_61.png)
+![](../images/arch_screen_61.png)
 
 11.至此，RabbitMQ的安装和配置完成。
 
@@ -163,38 +163,38 @@ rabbitmq-plugins enable rabbitmq_management
 
 - 点击网页右上角控制台按钮进入控制台
 
-![展示图片_77.png](../images/arch_screen_77.png)
+![](../images/arch_screen_77.png)
 
 - 选择我的云产品中的对象存储OSS
 
-![展示图片_78.png](../images/arch_screen_78.png)
+![](../images/arch_screen_78.png)
 
 - 点击左侧存储空间的加号新建存储空间
 
-![展示图片_79.png](../images/arch_screen_79.png)
+![](../images/arch_screen_79.png)
 
 - 新建存储空间并设置读写权限为公共读
 
-![展示图片_80.png](../images/arch_screen_80.png)
+![](../images/arch_screen_80.png)
 
 
 ### 跨域资源共享（CORS）的设置
 
 - 选择一个存储空间，打开其基础设置
 
-![展示图片_81.png](../images/arch_screen_81.png)
+![](../images/arch_screen_81.png)
 
 - 点击跨越设置的设置按钮
 
-![展示图片_82.png](../images/arch_screen_82.png)
+![](../images/arch_screen_82.png)
 
 - 点击创建规则
 
-![展示图片_83.png](../images/arch_screen_83.png)
+![](../images/arch_screen_83.png)
 
 - 进行跨域规则设置
 
-![展示图片_84.png](../images/arch_screen_84.png)
+![](../images/arch_screen_84.png)
 
 ## mall-admin
 

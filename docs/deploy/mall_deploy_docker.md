@@ -86,7 +86,7 @@ docker pull redis:3.2
 ```shell
 docker exec -it redis redis-cli
 ```
-![展示图片](../images/refer_screen_74.png)
+![](../images/refer_screen_74.png)
 
 ## Nginx安装
 
@@ -143,23 +143,23 @@ docker pull rabbitmq:3.7.15
 docker exec -it rabbitmq /bin/bash
 rabbitmq-plugins enable rabbitmq_management
 ```
-![展示图片](../images/refer_screen_75.png)
+![](../images/refer_screen_75.png)
 - 开启防火墙：
 ```shell
 firewall-cmd --zone=public --add-port=15672/tcp --permanent
 firewall-cmd --reload
 ```
 - 访问地址查看是否安装成功：[http://192.168.3.101:15672/](http://192.168.3.101:15672/)
-![展示图片](../images/refer_screen_76.png)
+![](../images/refer_screen_76.png)
 - 输入账号密码并登录：guest guest
 - 创建帐号并设置其角色为管理员：mall mall
-![展示图片](../images/refer_screen_77.png)
+![](../images/refer_screen_77.png)
 - 创建一个新的虚拟host为：/mall
-![展示图片](../images/refer_screen_78.png)
+![](../images/refer_screen_78.png)
 - 点击mall用户进入用户配置页面
-![展示图片](../images/refer_screen_79.png)
+![](../images/refer_screen_79.png)
 - 给mall用户配置该虚拟host的权限
-![展示图片](../images/refer_screen_80.png)
+![](../images/refer_screen_80.png)
 
 ## Elasticsearch安装
 - 下载elasticsearch6.4.0的docker镜像：
@@ -196,7 +196,7 @@ firewall-cmd --zone=public --add-port=9200/tcp --permanent
 firewall-cmd --reload
 ```
 - 访问会返回版本信息：[http://192.168.3.101:9200/](http://192.168.3.101:9200/)
-![展示图片](../images/refer_screen_81.png)
+![](../images/refer_screen_81.png)
 
 ## kibana安装
 - 下载kibana6.4.0的docker镜像：
@@ -216,7 +216,7 @@ firewall-cmd --zone=public --add-port=5601/tcp --permanent
 firewall-cmd --reload
 ```
 - 访问地址进行测试：[http://192.168.3.101:5601](http://192.168.3.101:5601)
-![展示图片](../images/refer_screen_90.png)
+![](../images/refer_screen_90.png)
 
 ## Mongodb安装
 - 下载mongo3.2的docker镜像：
@@ -232,19 +232,19 @@ docker pull mongo:3.2
 
 ## Docker全部环境安装完成
 - 所有下载镜像文件：
-![展示图片](../images/refer_screen_82.png)
+![](../images/refer_screen_82.png)
 - 所有运行在容器里面的应用：
-![展示图片](../images/refer_screen_83.png)
+![](../images/refer_screen_83.png)
 
 ## SpringBoot应用部署
 
 ### 构建所有Docker镜像并上传
 - 打开pom.xml中使用docker插件的注释：
-![展示图片](../images/refer_screen_84.png)
+![](../images/refer_screen_84.png)
 - 修改dockerHost为你自己的docker服务器地址：
 - 构建镜像并上传：  
-![展示图片](../images/refer_screen_85.png)
-![展示图片](../images/refer_screen_86.png)
+![](../images/refer_screen_85.png)
+![](../images/refer_screen_86.png)
 
 ### 部署mall-admin
 ```shell
@@ -289,11 +289,11 @@ firewall-cmd --reload
 ### 访问接口进行测试
 
 - mall-admin的api接口文档地址：http://192.168.3.101:8080/swagger-ui.html
-![展示图片](../images/refer_screen_87.png)
+![](../images/refer_screen_87.png)
 - mall-search的api接口文档地址：http://192.168.3.101:8081/swagger-ui.html
-![展示图片](../images/refer_screen_88.png)
+![](../images/refer_screen_88.png)
 - mall-portal的api接口文档地址：http://192.168.3.101:8085/swagger-ui.html
-![展示图片](../images/refer_screen_89.png)
+![](../images/refer_screen_89.png)
 
 ## 公众号
 

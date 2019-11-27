@@ -8,51 +8,51 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 ### 数据库表结构
 
-![展示图片](../images/mall_pms.jpg)
+![](../images/mall_pms.jpg)
 
 ### 功能结构
 
-![展示图片](../images/mall_func_pms.jpeg)
+![](../images/mall_func_pms.jpeg)
 
 ## 订单管理
 
 ### 数据库表结构
 
-![展示图片](../images/mall_oms.jpg)
+![](../images/mall_oms.jpg)
 
 ### 功能结构
 
-![展示图片](../images/mall_func_oms.jpeg)
+![](../images/mall_func_oms.jpeg)
 
 ## 营销管理
 
 ### 数据库表结构
 
-![展示图片](../images/mall_sms.jpg)
+![](../images/mall_sms.jpg)
 
 ### 功能结构
 
-![展示图片](../images/mall_func_sms.jpeg)
+![](../images/mall_func_sms.jpeg)
 
 ## 内容管理
 
 ### 数据库表结构
 
-![展示图片](../images/mall_cms.jpg)
+![](../images/mall_cms.jpg)
 
 ### 功能结构
 
-![展示图片](../images/mall_func_cms.jpeg)
+![](../images/mall_func_cms.jpeg)
 
 ## 用户管理
 
 ### 数据库表结构
 
-![展示图片](../images/mall_ums.jpg)
+![](../images/mall_ums.jpg)
 
 ### 功能结构
 
-![展示图片](../images/mall_func_ums.jpeg)
+![](../images/mall_func_ums.jpeg)
 
 `注意`：部分功能暂未实现，只是对表结构进行了设计，商品管理、订单管理、营销管理大部分功能均已实现。
 

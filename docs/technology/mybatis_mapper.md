@@ -11,7 +11,7 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 
 ### 直接运行MallTinyApplication的main函数
 发现正常运行，启动成功！
-![展示图片](../images/refer_screen_99.png)
+![](../images/refer_screen_99.png)
 
 ### 运行代码生成器
 运行com.macro.mall.tiny.mbg.Generator的main方法
@@ -27,7 +27,7 @@ Cause: java.lang.IllegalArgumentException: Result Maps collection already contai
 
 ### 查看PmsBrandMapper.xml文件
 从中可以发现MyBatis Generator生成的mapper.xml文件信息是直接追加在原来的文件上的，并不是直接覆盖，导致了这个错误。
-![展示图片](../images/refer_screen_100.png)
+![](../images/refer_screen_100.png)
 
 ## 问题解决
 > 以前一直以为是MyBatis Generator生成的问题，直接删除mapper.xml所在文件夹，重新生成就好了,现在提供一种MyBatis Generator官方提供的解决方法。
@@ -51,9 +51,9 @@ MyBatis Generator 在1.3.7版本提供了解决方案，我们目前使用的版
 
 ### 重新运行代码生成器
 发现PmsBrandMapper.xml生成已经正常，应用也可以正常运行了。
-![展示图片](../images/refer_screen_101.png)
+![](../images/refer_screen_101.png)
 
-![展示图片](../images/refer_screen_102.png)
+![](../images/refer_screen_102.png)
 
 ## 项目源码地址
 

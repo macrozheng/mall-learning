@@ -143,7 +143,7 @@ services:
 ```shell
 docker-compose -f docker-compose-env.yml up -d
 ```
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_103.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_103.png)
 
 ### 对依赖服务进行以下设置
 
@@ -189,16 +189,16 @@ docker restart elasticsearch
 > 需要创建一个mall用户并设置虚拟host为/mall。
 
 - 访问管理页面地址：[http://192.168.3.101:15672/](http://192.168.3.101:15672/)
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_76.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_76.png)
 - 输入账号密码并登录：guest guest
 - 创建帐号并设置其角色为管理员：mall mall
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_77.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_77.png)
 - 创建一个新的虚拟host为：/mall
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_78.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_78.png)
 - 点击mall用户进入用户配置页面
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_79.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_79.png)
 - 给mall用户配置该虚拟host的权限
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_80.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_80.png)
 
 ### 执行docker-compose-app.yml脚本
 
@@ -238,7 +238,7 @@ services:
 ```shell
 docker-compose -f docker-compose-app.yml up -d
 ```
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_104.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_104.png)
 
 ### 开启防火墙即可在其他主机上访问所有服务
 
@@ -248,9 +248,9 @@ systemctl stop firewalld
 
 ### 至此所有服务已经正常启动
 
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_105.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_105.png)
 
-![展示图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_106.png)
+![](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/blog/refer_screen_106.png)
 
 ## 公众号
 
