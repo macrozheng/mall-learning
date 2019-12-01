@@ -52,3 +52,4 @@
   * [10分钟搭建自己的Git仓库](reference/gitlab.md)
   * [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
   * [Hutool中那些常用的工具类和方法 ](reference/hutool.md)
+  * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
