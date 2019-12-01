@@ -106,6 +106,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [10分钟搭建自己的Git仓库](https://juejin.im/post/5d63d600e51d453c135c5af3)
 - [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
 - [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
+- [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
 
 
 ## 公众号
