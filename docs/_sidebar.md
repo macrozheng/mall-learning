@@ -37,6 +37,8 @@
   * [mall在Linux环境下的部署（基于Docker容器）](deploy/mall_deploy_docker.md)
   * [mall在Linux环境下的部署（基于Docker Compose）](deploy/mall_deploy_docker_compose.md)
   * [mall前端项目的安装与部署](deploy/mall_deploy_web.md)
+  * [mall-swarm在Windows环境下的部署](deploy/mall_swarm_deploy_windows.md)
+  * [mall-swarm在Linux环境下的部署（基于Docker容器）](deploy/mall_swarm_deploy_docker.md)  
   
 * 参考篇
   * [IDEA常用设置及推荐插件](reference/idea.md)
