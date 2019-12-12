@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by macro on 2019/4/8.
  */
 @Configuration
+//指定接口扫描配置
 @MapperScan("com.macro.mall.tiny.mbg.mapper")
 public class MyBatisConfig {
 }

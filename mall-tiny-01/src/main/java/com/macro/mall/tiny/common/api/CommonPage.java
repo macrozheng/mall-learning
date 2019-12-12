@@ -9,10 +9,10 @@ import java.util.List;
  * Created by macro on 2019/4/19.
  */
 public class CommonPage<T> {
-    private Integer pageNum;
-    private Integer pageSize;
-    private Integer totalPage;
-    private Long total;
+    private Integer pageNum; //当前页
+    private Integer pageSize; //每页的数量
+    private Integer totalPage;//总页数
+    private Long total; //总记录数
     private List<T> list;
 
     /**
