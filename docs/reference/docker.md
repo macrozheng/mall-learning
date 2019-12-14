@@ -151,6 +151,10 @@ docker logs $ContainerName(或者$ContainerId) -f
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' $ContainerName(或者$ContainerId)
 ```
 ![](../images/refer_screen_59.png)
+### 修改容器的启动方式
+```bash
+docker container update --restart=always $ContainerName
+```
 ### 同步宿主机时间到容器
 ```bash
 docker cp /etc/localtime $ContainerName(或者$ContainerId):/etc/
