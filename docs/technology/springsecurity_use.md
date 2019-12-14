@@ -1,6 +1,6 @@
 mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
 
-# 仅需四步，整合SpringSecurity+JWT实现登录认证 ！
+# 仅需四步，整合SpringSecurity+JWT实现登录认证！
 
 > 学习过我的mall项目的应该知道，`mall-admin`模块是使用SpringSecurity+JWT来实现登录认证的，而`mall-portal`模块是使用的SpringSecurity基于Session的默认机制来实现登陆认证的。很多小伙伴都找不到`mall-portal`的登录接口，最近我把这两个模块的登录认证给统一了，都使用SpringSecurity+JWT的形式实现。
 主要是通过把登录认证的通用逻辑抽取到了`mall-security`模块来实现的，下面我们讲讲如何使用`mall-security`模块来实现登录认证，仅需四步即可。

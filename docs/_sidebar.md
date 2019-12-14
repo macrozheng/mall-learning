@@ -31,6 +31,7 @@
   * [SpringBoot应用整合ELK实现日志收集](technology/mall_tiny_elk.md)
   * [前后端分离项目，如何解决跨域问题](technology/springboot_cors.md)
   * [Java 8都出那么久了，Stream API了解下？](technology/java_stream.md)
+  * [仅需四步，整合SpringSecurity+JWT实现登录认证！](technology/springsecurity_use.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
@@ -55,3 +56,4 @@
   * [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
   * [Hutool中那些常用的工具类和方法 ](reference/hutool.md)
   * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
+  * [Nginx的这些妙用，你肯定有不知道的！](reference/nginx.md)

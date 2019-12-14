@@ -56,6 +56,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [SpringBoot应用整合ELK实现日志收集](https://juejin.im/post/5d2738a2f265da1bac404299)
 - [前后端分离项目，如何解决跨域问题](https://juejin.im/post/5d4c162351882560b9545358)
 - [Java 8都出那么久了，Stream API了解下？](https://juejin.im/post/5d6d2016e51d453c135c5b25)
+- [仅需四步，整合SpringSecurity+JWT实现登录认证！](https://juejin.im/post/5df0e79bf265da33dd2f52af)
 
 ## 部署篇
 > mall开发及生产环境的搭建
@@ -109,6 +110,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
 - [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
 - [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
+- [Nginx的这些妙用，你肯定有不知道的！](https://juejin.im/post/5dee499151882512444014eb)
 
 
 ## 公众号
