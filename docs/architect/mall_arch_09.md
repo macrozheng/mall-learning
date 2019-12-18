@@ -103,7 +103,7 @@ type | 交换机类型 |type |direct表示直接根据路由键（orange/black�
 
 ### 修改SpringBoot配置文件
 
-> 修改application.yml文件，在spring节点下添加Mongodb相关配置。
+> 修改application.yml文件，在spring节点下添加RabbitMQ相关配置。
 
 ```yml
   rabbitmq:
