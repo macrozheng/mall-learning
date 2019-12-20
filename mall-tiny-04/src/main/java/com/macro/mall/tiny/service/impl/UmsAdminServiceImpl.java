@@ -2,7 +2,6 @@ package com.macro.mall.tiny.service.impl;
 
 import com.macro.mall.tiny.common.utils.JwtTokenUtil;
 import com.macro.mall.tiny.dao.UmsAdminRoleRelationDao;
-import com.macro.mall.tiny.dto.UmsAdminLoginParam;
 import com.macro.mall.tiny.mbg.mapper.UmsAdminMapper;
 import com.macro.mall.tiny.mbg.model.UmsAdmin;
 import com.macro.mall.tiny.mbg.model.UmsAdminExample;
@@ -13,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
@@ -81,13 +80,19 @@ public class UmsAdminServiceImpl implements UmsAdminService {
     public String login(String username, String password) {
         String token = null;
         try {
-            UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+            UserDetails userDetails = userDetailsService.loadUserByUsername(username); //根据controller中传递而来的参数进行用户名查询
             if (!passwordEncoder.matches(password, userDetails.getPassword())) {
                 throw new BadCredentialsException("密码不正确");
             }
+//            封装成 Authentication
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+            System.out.println("====================================>>"+ SecurityContextHolder.getContext().getAuthentication());
+            System.out.println(SecurityContextHolder.getContext().getAuthentication().getName());
             SecurityContextHolder.getContext().setAuthentication(authentication);
-            token = jwtTokenUtil.generateToken(userDetails);
+            System.out.println("====================================>>"+ SecurityContextHolder.getContext().getAuthentication());
+            System.out.println(SecurityContextHolder.getContext().getAuthentication().getName());
+
+            token = jwtTokenUtil.generateToken(userDetails);//服务端生成token
         } catch (AuthenticationException e) {
             LOGGER.warn("登录异常:{}", e.getMessage());
         }

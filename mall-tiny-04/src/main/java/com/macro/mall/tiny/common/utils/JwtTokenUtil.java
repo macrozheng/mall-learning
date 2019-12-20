@@ -14,6 +14,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 通俗来讲，JWT是一个含签名并携带用户相关信息的加密串，页面请求校验登录接口时，请求头中携带JWT串到后端服务，后端通过签名加密串匹配校验，
+ * 保证信息未被篡改。校验通过则认为是可靠的请求，将正常返回数据。
+ *
  * JwtToken生成的工具类
  * JWT token的格式：header.payload.signature
  * header的格式（算法、token的类型）：
@@ -30,9 +33,9 @@ public class JwtTokenUtil {
     private static final String CLAIM_KEY_USERNAME = "sub";
     private static final String CLAIM_KEY_CREATED = "created";
     @Value("${jwt.secret}")
-    private String secret;
+    private String secret;      //盐
     @Value("${jwt.expiration}")
-    private Long expiration;
+    private Long expiration;    //失效时间
 
     /**
      * 根据负责生成JWT的token
@@ -74,8 +77,8 @@ public class JwtTokenUtil {
     public String getUserNameFromToken(String token) {
         String username;
         try {
-            Claims claims = getClaimsFromToken(token);
-            username =  claims.getSubject();
+            Claims claims = getClaimsFromToken(token); //根据token进行解析
+            username = claims.getSubject();
         } catch (Exception e) {
             username = null;
         }
