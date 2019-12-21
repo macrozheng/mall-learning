@@ -67,6 +67,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [mall前端项目的安装与部署](https://juejin.im/post/5d2c7c6b518825076377d7b9)
 - [mall-swarm在Windows环境下的部署](https://juejin.im/post/5de3c1a35188256e855b6e54)
 - [mall-swarm在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5de65bffe51d4557f71a5ec1)
+- [微服务架构下的自动化部署，使用Jenkins来实现！](https://juejin.im/post/5dfa250e51882579dc6f7c90)
 
 
 ## 进阶篇
@@ -111,6 +112,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
 - [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
 - [Nginx的这些妙用，你肯定有不知道的！](https://juejin.im/post/5dee499151882512444014eb)
+- [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](https://juejin.im/post/5df780d3e51d4557ff140b30)
 
 
 ## 公众号

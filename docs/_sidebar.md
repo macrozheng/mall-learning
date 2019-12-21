@@ -40,6 +40,7 @@
   * [mall前端项目的安装与部署](deploy/mall_deploy_web.md)
   * [mall-swarm在Windows环境下的部署](deploy/mall_swarm_deploy_windows.md)
   * [mall-swarm在Linux环境下的部署（基于Docker容器）](deploy/mall_swarm_deploy_docker.md)  
+  * [微服务架构下的自动化部署，使用Jenkins来实现！](deploy/mall_swarm_deploy_jenkins.md)  
   
 * 参考篇
   * [IDEA常用设置及推荐插件](reference/idea.md)
@@ -57,3 +58,4 @@
   * [Hutool中那些常用的工具类和方法 ](reference/hutool.md)
   * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
   * [Nginx的这些妙用，你肯定有不知道的！](reference/nginx.md)
+  * [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](reference/jenkins.md)
