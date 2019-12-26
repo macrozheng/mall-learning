@@ -2,6 +2,7 @@ package com.macro.mall.tiny.service;
 
 import com.macro.mall.tiny.nosql.elasticsearch.document.EsProduct;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -35,4 +36,23 @@ public interface EsProductService {
      */
     Page<EsProduct> search(String keyword, Integer pageNum, Integer pageSize);
 
+    /**
+     * 查询所有记录
+     */
+    List<EsProduct> findAll();
+
+    /**
+     * 模板查询和标准查询语句
+     */
+    List<EsProduct> search2(String name, String subtitle);
+
+    /**
+     * 使用@Query注解可以用Elasticsearch的DSL语句进行查询
+     */
+    List<EsProduct> queryName(String name, String subtitle, Pageable page);
+
+    /**
+     * 标准查询
+     */
+    List<EsProduct> findByName(String name, Pageable page);
 }
