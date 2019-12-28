@@ -59,3 +59,4 @@
   * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
   * [Nginx的这些妙用，你肯定有不知道的！](reference/nginx.md)
   * [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](reference/jenkins.md)
+  * [使用Jenkins一键打包部署前端应用，就是这么6！](reference/jenkins_vue.md)
