@@ -364,7 +364,7 @@ Swagger api地址：http://localhost:8080/swagger-ui.html
 
 ### 访问需要权限的接口
 
-> 由于test帐号并没有设置任何权限，所以他无法访问具有pms:brand:read权限的获取品牌列表接口。
+> 由于test帐号并没有设置任何权限，所以他无法访问具有`pms:brand:read`权限的获取品牌列表接口。
 
 ![](../images/arch_screen_22.png)
 
