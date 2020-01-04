@@ -103,7 +103,7 @@ echo '----start nginx----'
 # linux
 SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
 # window
-set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ && npm install node-sass
+set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass&& npm install node-sass
 ```
 
 ### 有些依赖无法下载导致构建失败
