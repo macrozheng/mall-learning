@@ -32,6 +32,7 @@
   * [前后端分离项目，如何解决跨域问题](technology/springboot_cors.md)
   * [Java 8都出那么久了，Stream API了解下？](technology/java_stream.md)
   * [仅需四步，整合SpringSecurity+JWT实现登录认证！](technology/springsecurity_use.md)
+  * [前后端分离项目，如何优雅实现文件存储！](technology/minio_use.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
