@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # Github标星19K+Star，10分钟自建对象存储服务！
 
 > 对象存储服务可以用来存储各类文件，`mall`项目中的图片存储采用的是OSS，今天我们来讲下如何自己搭建一个对象存储服务来存储图片。
@@ -169,3 +171,7 @@ mc policy list minio/test/
 ## 参考资料
 
 详细了解MinIO可以参考官方文档：https://docs.min.io/cn/minio-quickstart-guide.html
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
