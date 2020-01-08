@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 取消订单消息的发出者
+ * 发送端的消息
  * Created by macro on 2018/9/14.
  */
 @Component
@@ -30,6 +31,6 @@ public class CancelOrderSender {
                 return message;
             }
         });
-        LOGGER.info("send delay message orderId:{}",orderId);
+        LOGGER.info("send delay  message orderId:{}",orderId);
     }
 }

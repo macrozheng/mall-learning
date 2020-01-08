@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 消息队列配置
- * Created by macro on 2018/9/14.
+ * 用于配置交换机、队列及队列与交换机的绑定关系。
+ * Created by macro on  2018/9/14.
  */
 @Configuration
 public class RabbitMqConfig {
@@ -19,7 +20,7 @@ public class RabbitMqConfig {
     DirectExchange orderDirect() {
         return (DirectExchange) ExchangeBuilder
                 .directExchange(QueueEnum.QUEUE_ORDER_CANCEL.getExchange())
-                .durable(true)
+                .durable(true) //消息队列持久化
                 .build();
     }
 
@@ -30,7 +31,7 @@ public class RabbitMqConfig {
     DirectExchange orderTtlDirect() {
         return (DirectExchange) ExchangeBuilder
                 .directExchange(QueueEnum.QUEUE_TTL_ORDER_CANCEL.getExchange())
-                .durable(true)
+                .durable(true) //消息队列持久化
                 .build();
     }
 
@@ -44,6 +45,10 @@ public class RabbitMqConfig {
 
     /**
      * 订单延迟队列（死信队列）
+     * x-dead-letter-exchange参数是指消息编程死信之后重新发送的DLX
+     * x-dead-letter-routing-key为DLX指定路由键DLK
+     *
+     * 此方式一般用于演出消息转发
      */
     @Bean
     public Queue orderTtlQueue() {
@@ -56,6 +61,11 @@ public class RabbitMqConfig {
 
     /**
      * 将订单队列绑定到交换机
+     * 将通道与交换机进行绑定，同时设置RouteKey
+     *
+     * * 方法参数默认注入方式为Autowired： <br>
+     * * 1：复杂类型可以通过@Qualifier(value="dataSource")限定; <br>
+     * * 2：对于普通类型使用@Value指定; <br>
      */
     @Bean
     Binding orderBinding(DirectExchange orderDirect,Queue orderQueue){

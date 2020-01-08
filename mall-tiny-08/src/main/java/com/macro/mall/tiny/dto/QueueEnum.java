@@ -4,7 +4,8 @@ import lombok.Getter;
 
 /**
  * 消息队列枚举配置
- * Created by macro on 2018/9/14.
+ * Created by macro on  2018/9/14.
+ * 用于延迟消息队列及处理取消订单消息队列的常量定义，包括交换机名称、队列名称、路由键名称。
  */
 @Getter
 public enum QueueEnum {
