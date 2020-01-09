@@ -1,6 +1,7 @@
 package com.macro.mall.tiny.nosql.mongodb.document;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.IndexDirection;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -14,7 +15,7 @@ import java.util.Date;
 public class MemberReadHistory {
     @Id
     private String id;
-    @Indexed
+    @Indexed (direction = IndexDirection.ASCENDING) //默认正序
     private Long memberId;
     private String memberNickname;
     private String memberIcon;

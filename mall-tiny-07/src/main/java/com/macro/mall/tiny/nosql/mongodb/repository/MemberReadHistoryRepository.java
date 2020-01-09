@@ -3,6 +3,7 @@ package com.macro.mall.tiny.nosql.mongodb.repository;
 
 import com.macro.mall.tiny.nosql.mongodb.document.MemberReadHistory;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
