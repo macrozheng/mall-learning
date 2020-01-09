@@ -4,6 +4,7 @@ import cn.hutool.captcha.CaptchaUtil;
 import cn.hutool.captcha.LineCaptcha;
 import cn.hutool.core.annotation.AnnotationUtil;
 import cn.hutool.core.bean.BeanUtil;
+import cn.hutool.core.bean.copier.CopyOptions;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateField;
@@ -50,6 +51,7 @@ public class HutoolController {
     public CommonResult covert() {
         //转换为字符串
         int a = 1;
+        System.out.println(Convert.convert(String.class,a));
         String aStr = Convert.toStr(a);
         //转换为指定类型数组
         String[] b = {"1", "2", "3", "4"};
@@ -162,7 +164,7 @@ public class HutoolController {
     public CommonResult beanUtil() {
         PmsBrand brand = new PmsBrand();
         brand.setId(1L);
-        brand.setName("小米");
+//        brand.setName("小米");
         brand.setShowStatus(0);
         //Bean转Map
         Map<String, Object> map = BeanUtil.beanToMap(brand);
@@ -172,7 +174,10 @@ public class HutoolController {
         LOGGER.info("beanUtil map to bean:{}", mapBrand);
         //Bean属性拷贝
         PmsBrand copyBrand = new PmsBrand();
-        BeanUtil.copyProperties(brand, copyBrand);
+        copyBrand.setId(2L);
+        copyBrand.setName("华为");
+        copyBrand.setShowStatus(1);
+        BeanUtil.copyProperties(brand, copyBrand,new CopyOptions().ignoreNullValue());//new CopyOptions().ignoreNullValue() 设置忽略空值，当源对象的值为null时，忽略而不注入此值
         LOGGER.info("beanUtil copy properties:{}", copyBrand);
         return CommonResult.success(null, "操作成功");
     }
@@ -237,6 +242,7 @@ public class HutoolController {
         brand.setName("小米");
         brand.setShowStatus(1);
         //对象转化为JSON字符串
+        System.out.println(JSONUtil.toJsonStr(brand));
         String jsonStr = JSONUtil.parse(brand).toString();
         LOGGER.info("jsonUtil parse:{}", jsonStr);
         //JSON字符串转化为对象
