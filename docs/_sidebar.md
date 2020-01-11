@@ -33,11 +33,13 @@
   * [Java 8都出那么久了，Stream API了解下？](technology/java_stream.md)
   * [仅需四步，整合SpringSecurity+JWT实现登录认证！](technology/springsecurity_use.md)
   * [前后端分离项目，如何优雅实现文件存储！](technology/minio_use.md)
+  * [前后端分离项目，引入Spring Cloud Gateway遇到的一个问题！](technology/gateway_cors.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
   * [mall在Linux环境下的部署（基于Docker容器）](deploy/mall_deploy_docker.md)
   * [mall在Linux环境下的部署（基于Docker Compose）](deploy/mall_deploy_docker_compose.md)
+  * [mall在Linux环境下的自动化部署（基于Jenkins）](deploy/mall_deploy_jenkins.md)
   * [mall前端项目的安装与部署](deploy/mall_deploy_web.md)
   * [mall-swarm在Windows环境下的部署](deploy/mall_swarm_deploy_windows.md)
   * [mall-swarm在Linux环境下的部署（基于Docker容器）](deploy/mall_swarm_deploy_docker.md)  
