@@ -64,3 +64,4 @@
   * [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](reference/jenkins.md)
   * [使用Jenkins一键打包部署前端应用，就是这么6！](reference/jenkins_vue.md)
   * [Github标星19K+Star，10分钟自建对象存储服务！](reference/minio.md)
+  * [MySql主从复制，从原理到实践！](reference/mysql_master_slave.md)
