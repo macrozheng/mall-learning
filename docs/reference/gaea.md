@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # 你还在代码里做读写分离么，试试这个中间件吧！
 
 > 传统的MySql读写分离方案是通过在代码中根据SQL语句的类型动态切换数据源来实现的，那么有没有什么中间件可以自动实现读写分离呢？小米开源的数据库中间件Gaea就可以实现，接下来我们将详细讲解如何使用Gaea来实现MySql的读写分离。
@@ -272,3 +274,7 @@ docker run -p 13306:13306 --name gaea \
 ## 参考资料
 
 更多资料请参考官方文档：https://github.com/XiaoMi/Gaea
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
