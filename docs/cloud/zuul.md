@@ -1,3 +1,5 @@
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+
 # Spring Cloud Zuul：API网关服务
 
 > Spring Cloud Zuul 是Spring Cloud Netflix 子项目的核心组件之一，可以作为微服务架构中的API网关使用，支持动态路由与过滤功能，本文将对其用法进行详细介绍。
@@ -341,3 +343,7 @@ springcloud-learning
 ## 项目源码地址
 
 [https://github.com/macrozheng/springcloud-learning](https://github.com/macrozheng/springcloud-learning)
+
+## 公众号
+
+![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
