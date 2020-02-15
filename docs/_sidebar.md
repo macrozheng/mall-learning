@@ -66,3 +66,4 @@
   * [Github标星19K+Star，10分钟自建对象存储服务！](reference/minio.md)
   * [MySql主从复制，从原理到实践！](reference/mysql_master_slave.md)
   * [你还在代码里做读写分离么，试试这个中间件吧！](reference/gaea.md)
+  * [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](reference/zentao.md)
