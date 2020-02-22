@@ -120,7 +120,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Github标星19K+Star，10分钟自建对象存储服务！](https://juejin.im/post/5e09f8fbe51d4575a46f05e5)
 - [MySql主从复制，从原理到实践！](https://juejin.im/post/5e1daba46fb9a02fb75d5e92)
 - [你还在代码里做读写分离么，试试这个中间件吧！](https://juejin.im/post/5e22b37ee51d454d523be24d)
-- [你还在代码里做读写分离么，试试这个中间件吧！](https://juejin.im/post/5e4200885188254944669a79)
+- [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](https://juejin.im/post/5e4200885188254944669a79)
 
 
 ## 公众号
