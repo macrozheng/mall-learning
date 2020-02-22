@@ -145,6 +145,7 @@ public CommonResult testException(@PathVariable Long id) {
 }
 ```
 - 在UserService中添加实现方法，这里忽略了NullPointerException，当id为1时抛出IndexOutOfBoundsException，id为2时抛出NullPointerException：
+
 ```java
 @HystrixCommand(fallbackMethod = "getDefaultUser2", ignoreExceptions = {NullPointerException.class})
 public CommonResult getUserException(Long id) {
@@ -162,6 +163,7 @@ public CommonResult getDefaultUser2(@PathVariable Long id, Throwable e) {
     return new CommonResult<>(defaultUser);
 }
 ```
+
 - 调用接口进行测试：[http://localhost:8401/user/tesException/1](http://localhost:8401/user/tesException/1)
 
 ![](../images/springcloud_hystrix_04.png)
