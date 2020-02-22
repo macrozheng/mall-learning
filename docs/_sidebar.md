@@ -44,6 +44,21 @@
   * [mall-swarm在Windows环境下的部署](deploy/mall_swarm_deploy_windows.md)
   * [mall-swarm在Linux环境下的部署（基于Docker容器）](deploy/mall_swarm_deploy_docker.md)  
   * [微服务架构下的自动化部署，使用Jenkins来实现！](deploy/mall_swarm_deploy_jenkins.md)  
+
+* 进阶篇
+  * [Spring Cloud 整体架构概览](cloud/springcloud.md)
+  * [Spring Cloud Eureka：服务注册与发现](cloud/eureka.md)
+  * [Spring Cloud Ribbon：负载均衡的服务调用](cloud/ribbon.md)
+  * [Spring Cloud Hystrix：服务容错保护](cloud/hystrix.md)
+  * [Hystrix Dashboard：断路器执行监控](cloud/hystrix_dashboard.md)
+  * [Spring Cloud OpenFeign：基于Ribbon和Hystrix的声明式服务调用](cloud/feign.md)
+  * [Spring Cloud Zuul：API网关服务](cloud/zuul.md) 
+  * [Spring Cloud Config：外部集中化配置管理](cloud/config.md)
+  * [Spring Cloud Bus：消息总线](cloud/bus.md)
+  * [Spring Cloud Sleuth：分布式请求链路跟踪](cloud/sleuth.md)
+  * [Spring Cloud Consul：服务治理与配置中心](cloud/consul.md)
+  * [Spring Cloud Gateway：新一代API网关服务](cloud/gateway.md)
+  * [Spring Boot Admin：微服务应用监控](cloud/admin.md)
   
 * 参考篇
   * [IDEA常用设置及推荐插件](reference/idea.md)
