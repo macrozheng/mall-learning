@@ -67,8 +67,6 @@
   * [使用Seata彻底解决Spring Cloud中的分布式事务问题](cloud/seata.md)
   
 * 参考篇
-  * [IDEA常用设置及推荐插件](reference/idea.md)
-  * [Navicat实用功能：数据备份与结构同步](reference/navicat.md)
   * [开发者必备Mysql命令](reference/mysql.md)
   * [开发者必备Linux命令](reference/linux.md)
   * [Linux防火墙Firewall和Iptables的使用](reference/linux_firewall.md)
@@ -76,15 +74,19 @@
   * [使用Maven插件为SpringBoot应用构建Docker镜像](reference/docker_maven.md)
   * [使用DockerFile为SpringBoot应用构建Docker镜像](reference/docker_file.md)
   * [使用Docker Compose部署SpringBoot应用](reference/docker_compose.md)
-  * [Postman：API接口调试利器](reference/postman.md)
-  * [10分钟搭建自己的Git仓库](reference/gitlab.md)
-  * [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
   * [Hutool中那些常用的工具类和方法 ](reference/hutool.md)
-  * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
   * [Nginx的这些妙用，你肯定有不知道的！](reference/nginx.md)
   * [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](reference/jenkins.md)
   * [使用Jenkins一键打包部署前端应用，就是这么6！](reference/jenkins_vue.md)
   * [Github标星19K+Star，10分钟自建对象存储服务！](reference/minio.md)
   * [MySql主从复制，从原理到实践！](reference/mysql_master_slave.md)
   * [你还在代码里做读写分离么，试试这个中间件吧！](reference/gaea.md)
+
+* 工具篇
+  * [IDEA常用设置及推荐插件](reference/idea.md)
+  * [Navicat实用功能：数据备份与结构同步](reference/navicat.md)
+  * [Postman：API接口调试利器](reference/postman.md)
+  * [10分钟搭建自己的Git仓库](reference/gitlab.md)
+  * [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
+  * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
   * [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](reference/zentao.md)
