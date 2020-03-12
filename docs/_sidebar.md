@@ -59,6 +59,12 @@
   * [Spring Cloud Consul：服务治理与配置中心](cloud/consul.md)
   * [Spring Cloud Gateway：新一代API网关服务](cloud/gateway.md)
   * [Spring Boot Admin：微服务应用监控](cloud/admin.md)
+  * [Spring Cloud Security：Oauth2使用入门](cloud/oauth2.md)
+  * [Spring Cloud Security：Oauth2结合JWT使用](cloud/oauth2_jwt.md)
+  * [Spring Cloud Security：Oauth2实现单点登录](cloud/oauth2_sso.md)
+  * [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](cloud/nacos.md)
+  * [Spring Cloud Alibaba：Sentinel实现熔断与限流](cloud/sleuth.md)
+  * [使用Seata彻底解决Spring Cloud中的分布式事务问题](cloud/seata.md)
   
 * 参考篇
   * [IDEA常用设置及推荐插件](reference/idea.md)
