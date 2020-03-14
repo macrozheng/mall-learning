@@ -3,6 +3,7 @@
 <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
 <a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
 <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
+<a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
 </p>
 
 ## 简介
@@ -100,18 +101,13 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 ## 参考篇
 > mall相关技术的使用教程
 
-- [IDEA常用设置及推荐插件](https://juejin.im/post/5d0458085188256aa76bc678)
 - [开发者必备Mysql命令](https://juejin.im/post/5d00fd40f265da1bb67a11b3)
 - [开发者必备Linux命令](https://juejin.im/post/5d0253845188255e1305c741)
 - [Linux防火墙Firewall和Iptables的使用](https://juejin.im/post/5d0253fe6fb9a07edb39420d)
-- [Navicat实用功能：数据备份与结构同步](https://juejin.im/post/5d00fc865188255fc6384126)
 - [开发者必备Docker命令](https://juejin.im/post/5d0781f56fb9a07f014ef6be)
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
 - [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
-- [Postman：API接口调试利器](https://juejin.im/post/5d5a9032e51d4561db5e3a4a)
-- [10分钟搭建自己的Git仓库](https://juejin.im/post/5d63d600e51d453c135c5af3)
-- [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
 - [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
 - [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
 - [Nginx的这些妙用，你肯定有不知道的！](https://juejin.im/post/5dee499151882512444014eb)
@@ -120,6 +116,16 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Github标星19K+Star，10分钟自建对象存储服务！](https://juejin.im/post/5e09f8fbe51d4575a46f05e5)
 - [MySql主从复制，从原理到实践！](https://juejin.im/post/5e1daba46fb9a02fb75d5e92)
 - [你还在代码里做读写分离么，试试这个中间件吧！](https://juejin.im/post/5e22b37ee51d454d523be24d)
+
+## 工具篇
+> 一些常用开发工具的使用
+
+- [IDEA常用设置及推荐插件](https://juejin.im/post/5d0458085188256aa76bc678)
+- [Navicat实用功能：数据备份与结构同步](https://juejin.im/post/5d00fc865188255fc6384126)
+- [Postman：API接口调试利器](https://juejin.im/post/5d5a9032e51d4561db5e3a4a)
+- [10分钟搭建自己的Git仓库](https://juejin.im/post/5d63d600e51d453c135c5af3)
+- [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
+- [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
 - [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](https://juejin.im/post/5e4200885188254944669a79)
 
 
