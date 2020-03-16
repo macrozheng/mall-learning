@@ -89,7 +89,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目是
 - [Spring Cloud Security：Oauth2结合JWT使用](cloud/oauth2_jwt.md)
 - [Spring Cloud Security：Oauth2实现单点登录](cloud/oauth2_sso.md)
 - [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](cloud/nacos.md)
-- [Spring Cloud Alibaba：Sentinel实现熔断与限流](cloud/sleuth.md)
+- [Spring Cloud Alibaba：Sentinel实现熔断与限流](cloud/sentinel.md)
 - [使用Seata彻底解决Spring Cloud中的分布式事务问题](cloud/seata.md)
 
 ## 参考篇
