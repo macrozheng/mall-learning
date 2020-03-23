@@ -65,7 +65,6 @@
   * [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](cloud/nacos.md)
   * [Spring Cloud Alibaba：Sentinel实现熔断与限流](cloud/sentinel.md)
   * [使用Seata彻底解决Spring Cloud中的分布式事务问题](cloud/seata.md)
-  * [IDEA中创建和启动SpringBoot应用的正确姿势](cloud/idea_springboot.md)
   
 * 参考篇
   * [开发者必备Mysql命令](reference/mysql.md)
@@ -91,3 +90,4 @@
   * [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
   * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
   * [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](reference/zentao.md)
+  * [IDEA中创建和启动SpringBoot应用的正确姿势](reference/idea_springboot.md)

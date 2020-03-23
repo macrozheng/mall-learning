@@ -120,6 +120,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目是
 - [IDEA中的Git操作，看这一篇就够了！](reference/idea_git.md)
 - [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
 - [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](reference/zentao.md)
+- [IDEA中创建和启动SpringBoot应用的正确姿势](reference/idea_springboot.md)
 
 ## 公众号
 
