@@ -250,6 +250,7 @@ docker pull mongo:3.2
 ```shell
 docker run -p 8080:8080 --name mall-admin \
 --link mysql:db \
+--link redis:redis \
 -v /etc/localtime:/etc/localtime \
 -v /mydata/app/admin/logs:/var/logs \
 -d mall/mall-admin:1.0-SNAPSHOT
