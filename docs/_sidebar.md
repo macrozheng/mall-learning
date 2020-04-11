@@ -24,6 +24,8 @@
   * [营销模块数据库表解析（一）](database/mall_sms_01.md)
   * [营销模块数据库表解析（二）](database/mall_sms_02.md)
   * [营销模块数据库表解析（三）](database/mall_sms_03.md)
+  * [权限管理功能设计与优化](database/mall_permission.md)
+  * [商品SKU功能设计与优化](technology/product_sku.md)
 
 * 技术要点篇
   * [MyBatis Generator使用过程中踩过的一个坑](technology/mybatis_mapper.md)
@@ -34,6 +36,9 @@
   * [仅需四步，整合SpringSecurity+JWT实现登录认证！](technology/springsecurity_use.md)
   * [前后端分离项目，如何优雅实现文件存储！](technology/minio_use.md)
   * [前后端分离项目，引入Spring Cloud Gateway遇到的一个问题！](technology/gateway_cors.md)
+  * [手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！](technology/permission_back.md)
+  * [手把手教你搞定权限管理，结合Vue实现菜单的动态权限控制！](technology/permission_front.md)
+  * [SpringBoot中处理校验逻辑的两种方式，真的很机智！](technology/springboot_validator.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
@@ -91,3 +96,4 @@
   * [虚拟机安装及使用Linux，看这一篇就够了！](reference/linux_install.md)
   * [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](reference/zentao.md)
   * [IDEA中创建和启动SpringBoot应用的正确姿势](reference/idea_springboot.md)
+  * [盘点下我用的顺手的那些工具！](reference/my_tools.md)
