@@ -61,6 +61,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！](technology/permission_back.md)
 - [手把手教你搞定权限管理，结合Vue实现菜单的动态权限控制！](technology/permission_front.md)
 - [SpringBoot中处理校验逻辑的两种方式，真的很机智！](technology/springboot_validator.md)
+- [使用Redis+AOP优化权限管理功能，这波操作贼爽！](technology/redis_permission.md)
 
 ## 部署篇
 > mall开发及生产环境的搭建
@@ -115,6 +116,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Github标星19K+Star，10分钟自建对象存储服务！](reference/minio.md)
 - [MySql主从复制，从原理到实践！](reference/mysql_master_slave.md)
 - [你还在代码里做读写分离么，试试这个中间件吧！](reference/gaea.md)
+- [Spring Data Redis 最佳实践！](reference/spring_data_redis.md)
 
 ## 工具篇
 > 一些常用开发工具的使用
