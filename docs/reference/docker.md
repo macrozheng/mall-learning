@@ -159,6 +159,12 @@ docker container update --restart=always $ContainerName
 ```bash
 docker cp /etc/localtime $ContainerName(或者$ContainerId):/etc/
 ```
+### 指定容器时区
+```bash
+docker run -p 80:80 --name nginx \
+-e TZ="Asia/Shanghai" \
+-d nginx:1.17.0
+```
 ### 在宿主机查看docker使用cpu、内存、网络、io情况
 - 查看指定容器情况：
 ```bash
@@ -180,6 +186,10 @@ docker system df
 docker exec -it $ContainerName /bin/bash
 ```
 ![](../images/refer_screen_62.png)
+### Docker创建外部网络
+```bash
+docker network create -d bridge my-bridge-network
+```
 
 ## 修改Docker镜像的存放位置
 - 查看Docker镜像的存放位置：
