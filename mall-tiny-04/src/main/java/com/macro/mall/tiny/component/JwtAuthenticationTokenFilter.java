@@ -44,6 +44,8 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain chain) throws ServletException, IOException {
         String authHeader = request.getHeader(this.tokenHeader);
+        System.out.println("---authHeder----:"+authHeader);
+        System.out.println("---SecurityContextHolder.getContext().getAuthentication()----:"+SecurityContextHolder.getContext().getAuthentication());
         if (authHeader != null && authHeader.startsWith(this.tokenHead)) {
             String authToken = authHeader.substring(this.tokenHead.length());// The part after "Bearer " token值
             String username = jwtTokenUtil.getUserNameFromToken(authToken);
@@ -53,8 +55,9 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
                 if (jwtTokenUtil.validateToken(authToken, userDetails)) {
                     UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
                     authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
-                    LOGGER.info("authenticated user:{}", username);
-                    SecurityContextHolder.getContext().setAuthentication(authentication);
+                    LOGGER.info("-----------》authenticated user:{}", username);
+                    //SecurityContextPersistenceFilter中执行了SecurityContextHolder.clearContext();方法，导致上下文存储信息失效，故在jwt验证成功后，再模拟一次登陆。将所返回来的UserDetails封装为authentication,保存到SecurityContextHolder中
+                    SecurityContextHolder.getContext().setAuthentication(authentication); //todo：这一步是重点！！！！！将登陆成功的信息放在上下文存储器里,过滤器会自动识别，发现登陆有相关权限后，则完成登陆实现验证
                 }
             }
         }

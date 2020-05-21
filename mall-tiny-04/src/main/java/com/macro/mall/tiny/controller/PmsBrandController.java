@@ -10,6 +10,7 @@ import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -34,15 +35,16 @@ public class PmsBrandController {
     @ApiOperation("获取所有品牌列表")
     @RequestMapping(value = "listAll", method = RequestMethod.GET)
     @ResponseBody
-    @PreAuthorize("hasAuthority('pms:brand:read')")
+    @PostAuthorize("hasAuthority('pms:brand:read')") //todo:调用方法后再判断
     public CommonResult<List<PmsBrand>> getBrandList() {
+        System.out.println("执行................");
         return CommonResult.success(brandService.listAllBrand());
     }
 
     @ApiOperation("添加品牌")
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
-    @PreAuthorize("hasAuthority('pms:brand:create')")
+    @PreAuthorize("hasAuthority('pms:brand:create')") //todo:调用方法前进行判断
     public CommonResult createBrand(@RequestBody PmsBrand pmsBrand) {
         CommonResult commonResult;
         int count = brandService.createBrand(pmsBrand);

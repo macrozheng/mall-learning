@@ -88,9 +88,12 @@ public class UmsAdminServiceImpl implements UmsAdminService {
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
             System.out.println("====================================>>"+ SecurityContextHolder.getContext().getAuthentication());
             System.out.println(SecurityContextHolder.getContext().getAuthentication().getName());
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+            SecurityContextHolder.getContext().setAuthentication(authentication);//todo：登陆后进行存储，实际上没上用，因为过滤器完成过滤后会自动清除的，除非接下来进行下一步的操作
             System.out.println("====================================>>"+ SecurityContextHolder.getContext().getAuthentication());
             System.out.println(SecurityContextHolder.getContext().getAuthentication().getName());
+            System.out.println(((UserDetails)(SecurityContextHolder.getContext().getAuthentication().getPrincipal())).getUsername());
+            System.out.println(SecurityContextHolder.getContext().getAuthentication().getCredentials());
+            System.out.println(SecurityContextHolder.getContext().getAuthentication().getDetails());
 
             token = jwtTokenUtil.generateToken(userDetails);//服务端生成token
         } catch (AuthenticationException e) {

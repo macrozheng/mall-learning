@@ -34,7 +34,7 @@ import java.util.List;
  */
 @Configuration
 @EnableWebSecurity //todo:注解使得SpringMVC集成了Spring Security的web安全支持
-@EnableGlobalMethodSecurity(prePostEnabled=true)//前置注解[@PreAuthorize,@PostAuthorize,..] 是否启用
+@EnableGlobalMethodSecurity(prePostEnabled=true)//前置注解[@PreAuthorize,@PostAuthorize,..] 是否启用 todo：Spring Security默认是禁用注解的，要想开启注解， 需要在继承WebSecurityConfigurerAdapter的类上加@EnableGlobalMethodSecurity注解， 来判断用户对某个控制层的方法是否具有访问权限 
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     //todo：@Lazy可防止循环注入问题
     @Lazy //Requested bean is currently in creation: Is there an unresolvable circular reference?
