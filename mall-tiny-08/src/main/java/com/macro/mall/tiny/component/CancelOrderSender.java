@@ -23,13 +23,11 @@ public class CancelOrderSender {
 
     public void sendMessage(Long orderId,final long delayTimes){
         //给延迟队列发送消息
-        amqpTemplate.convertAndSend(QueueEnum.QUEUE_TTL_ORDER_CANCEL.getExchange(), QueueEnum.QUEUE_TTL_ORDER_CANCEL.getRouteKey(), orderId, new MessagePostProcessor() {
-            @Override
-            public Message postProcessMessage(Message message) throws AmqpException {
-                //给消息设置延迟毫秒值
-                message.getMessageProperties().setExpiration(String.valueOf(delayTimes));
-                return message;
-            }
+        //等到了一定的时间后，死信队列将消息转发到另外一个队列中，注意，死信队列也是正常的队列
+        amqpTemplate.convertAndSend(QueueEnum.QUEUE_TTL_ORDER_CANCEL.getExchange(), QueueEnum.QUEUE_TTL_ORDER_CANCEL.getRouteKey(), orderId, message -> {
+            //给消息设置延迟毫秒值
+            message.getMessageProperties().setExpiration(String.valueOf(delayTimes));
+            return message;
         });
         LOGGER.info("send delay  message orderId:{}",orderId);
     }

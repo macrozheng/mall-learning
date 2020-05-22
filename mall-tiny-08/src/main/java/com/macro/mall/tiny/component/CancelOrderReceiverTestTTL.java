@@ -14,14 +14,14 @@ import org.springframework.stereotype.Component;
  * Created by macro on  2018/9/14.
  */
 @Component
-@RabbitListener(queues = "mall.order.cancel")
-public class CancelOrderReceiver {
-    private static Logger LOGGER =LoggerFactory.getLogger(CancelOrderReceiver.class);
+//@RabbitListener(queues = "mall.order.cancel.ttl")
+public class CancelOrderReceiverTestTTL {
+    private static Logger LOGGER = LoggerFactory.getLogger(CancelOrderReceiverTestTTL.class);
     @Autowired
     private OmsPortalOrderService portalOrderService;
+
     @RabbitHandler
-    public void handle(Long orderId){
-        LOGGER.info("收到消息--取消订单-->receive delay message orderId:{}",orderId);
-        portalOrderService.cancelOrder(orderId);
+    public void handle(Long orderId) {
+        LOGGER.info("收到mall.order.cancel.ttl消息--->receive delay message orderId:{}", orderId);
     }
 }

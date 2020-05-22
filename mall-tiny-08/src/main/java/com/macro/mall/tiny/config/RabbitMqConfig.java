@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class RabbitMqConfig {
-
+///////////////////////////////////////////////产生交换机//////////////////////////////////////////////
     /**
      * 订单消息实际消费队列所绑定的交换机
      */
@@ -34,7 +34,7 @@ public class RabbitMqConfig {
                 .durable(true) //消息队列持久化
                 .build();
     }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * 订单实际消费队列
      */
@@ -49,6 +49,8 @@ public class RabbitMqConfig {
      * x-dead-letter-routing-key为DLX指定路由键DLK
      *
      * 此方式一般用于演出消息转发
+     *
+     * 当这个队列中有死信时，RabbitMQ就会自动的将这个消息重新发布到设置的Exchange上去，进而被路由到另一个队列。
      */
     @Bean
     public Queue orderTtlQueue() {
@@ -58,7 +60,7 @@ public class RabbitMqConfig {
                 .withArgument("x-dead-letter-routing-key", QueueEnum.QUEUE_ORDER_CANCEL.getRouteKey())//到期后转发的路由键
                 .build();
     }
-
+////////////////////////////////////////////////////////////////////////////////////////////////
     /**
      * 将订单队列绑定到交换机
      * 将通道与交换机进行绑定，同时设置RouteKey
