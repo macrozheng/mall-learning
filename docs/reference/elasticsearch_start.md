@@ -61,6 +61,7 @@ sysctl -w vm.max_map_count=262144
 ```
 
 - 使用docker命令启动；
+
 ```bash
 docker run -p 9200:9200 -p 9300:9300 --name elasticsearch \
 -e "discovery.type=single-node" \
@@ -69,6 +70,7 @@ docker run -p 9200:9200 -p 9300:9300 --name elasticsearch \
 -v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \
 -d elasticsearch:6.4.0
 ```
+
 - 启动时会发现`/usr/share/elasticsearch/data`目录没有访问权限，只需要修改该目录的权限，再重新启动即可；
 
 ```bash
