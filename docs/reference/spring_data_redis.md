@@ -42,6 +42,19 @@ docker run -p 6379:6379 --name redis \
 
 ![](../images/spring_boot_redis_03.png)
 
+- 将Redis注册为服务的命令：
+
+```bash
+# 注册服务
+redis-server --service-install redis.windows.conf
+# 启动服务
+redis-server --service-start
+# 停止服务
+redis-server --service-stop
+# 删除服务
+redis-server --service-uninstall
+```
+
 ## Spring Cache 操作Redis
 
 ### Spring Cache 简介
