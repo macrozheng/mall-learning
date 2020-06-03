@@ -32,25 +32,38 @@
       ga: 'UA-144208445-1',
       plugins: [
         function(hook) {
+          var header = [
+            '<p>',
+            '<a href="https://www.aliyun.com/sale-season/2020/procurement-new-members?userCode=44mjc0yx">',
+            '<img src="/images/aliyun_sale.jpg" alt="阿里云" width="640px" height="60px">',
+            '</a>',
+            '</p>'
+          ].join('');
           var footer = [
             '<hr/>',
             '<footer style="text-align: center">',
             '<span><a href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备19059396号-1</a></span>',
             '</footer>'
           ].join('');
-          hook.afterEach(function(html) {
-            return html + footer;
+          hook.afterEach(function (html) {
+            // var isReadme = window.location.href.indexOf("README");
+            var isReadme = 1;
+            if(isReadme===-1){
+              return header + html + footer;
+            }else{
+              return html + footer;
+            }
           });
         }
       ]
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-  <script src="//unpkg.com/docsify-copy-code"></script>
-  <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
-  <script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+  <script src="//unpkg.com/docsify@4.10.0/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify@4.10.0/lib/plugins/ga.js"></script>
+  <script src="//unpkg.com/docsify@4.10.0/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify-copy-code@2.1.0/dist/docsify-copy-code.min.js"></script>
+  <script src="//unpkg.com/prismjs@1.19.0/components/prism-bash.js"></script>
+  <script src="//unpkg.com/prismjs@1.19.0/components/prism-java.js"></script>
+  <script src="//unpkg.com/prismjs@1.19.0/components/prism-sql.js"></script>
 </body>
 </html>

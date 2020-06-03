@@ -3,6 +3,7 @@
 <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
 <a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
 <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
+<a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
 </p>
 
 ## 简介
@@ -12,6 +13,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 ## 项目地址
 - 后台项目：[https://github.com/macrozheng/mall](https://github.com/macrozheng/mall)
 - 前端项目：[https://github.com/macrozheng/mall-admin-web](https://github.com/macrozheng/mall-admin-web)
+- 微服务项目：[https://github.com/macrozheng/mall-swarm](https://github.com/macrozheng/mall-swarm)
 
 ## 更好的阅读体验
 - 文档地址：[http://www.macrozheng.com](http://www.macrozheng.com)
@@ -56,6 +58,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [SpringBoot应用整合ELK实现日志收集](https://juejin.im/post/5d2738a2f265da1bac404299)
 - [前后端分离项目，如何解决跨域问题](https://juejin.im/post/5d4c162351882560b9545358)
 - [Java 8都出那么久了，Stream API了解下？](https://juejin.im/post/5d6d2016e51d453c135c5b25)
+- [仅需四步，整合SpringSecurity+JWT实现登录认证！](https://juejin.im/post/5df0e79bf265da33dd2f52af)
+- [前后端分离项目，如何优雅实现文件存储！](https://juejin.im/post/5e0ca2266fb9a0484a45969c)
+- [前后端分离项目，引入Spring Cloud Gateway遇到的一个问题！](https://juejin.im/post/5e13248e5188253ab849d125)
 
 ## 部署篇
 > mall开发及生产环境的搭建
@@ -63,9 +68,11 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [mall在Windows环境下的部署](https://juejin.im/post/5d1362de51882551fe065b61)
 - [mall在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5d1802ab6fb9a07f0a2df5ae)
 - [mall在Linux环境下的部署（基于Docker Compose）](https://juejin.im/post/5d1c98d66fb9a07ebf4b8ad5)
+- [mall在Linux环境下的自动化部署（基于Jenkins）](https://juejin.im/post/5e15d7b16fb9a0484f5c3931)
 - [mall前端项目的安装与部署](https://juejin.im/post/5d2c7c6b518825076377d7b9)
 - [mall-swarm在Windows环境下的部署](https://juejin.im/post/5de3c1a35188256e855b6e54)
 - [mall-swarm在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5de65bffe51d4557f71a5ec1)
+- [微服务架构下的自动化部署，使用Jenkins来实现！](https://juejin.im/post/5dfa250e51882579dc6f7c90)
 
 
 ## 进阶篇
@@ -95,24 +102,36 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 ## 参考篇
 > mall相关技术的使用教程
 
-- [IDEA常用设置及推荐插件](https://juejin.im/post/5d0458085188256aa76bc678)
 - [开发者必备Mysql命令](https://juejin.im/post/5d00fd40f265da1bb67a11b3)
 - [开发者必备Linux命令](https://juejin.im/post/5d0253845188255e1305c741)
 - [Linux防火墙Firewall和Iptables的使用](https://juejin.im/post/5d0253fe6fb9a07edb39420d)
-- [Navicat实用功能：数据备份与结构同步](https://juejin.im/post/5d00fc865188255fc6384126)
 - [开发者必备Docker命令](https://juejin.im/post/5d0781f56fb9a07f014ef6be)
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
 - [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
+- [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
+- [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
+- [Nginx的这些妙用，你肯定有不知道的！](https://juejin.im/post/5dee499151882512444014eb)
+- [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](https://juejin.im/post/5df780d3e51d4557ff140b30)
+- [使用Jenkins一键打包部署前端应用，就是这么6！](https://juejin.im/post/5e0360e951882512400ae872)
+- [Github标星19K+Star，10分钟自建对象存储服务！](https://juejin.im/post/5e09f8fbe51d4575a46f05e5)
+- [MySql主从复制，从原理到实践！](https://juejin.im/post/5e1daba46fb9a02fb75d5e92)
+- [你还在代码里做读写分离么，试试这个中间件吧！](https://juejin.im/post/5e22b37ee51d454d523be24d)
+
+## 工具篇
+> 一些常用开发工具的使用
+
+- [IDEA常用设置及推荐插件](https://juejin.im/post/5d0458085188256aa76bc678)
+- [Navicat实用功能：数据备份与结构同步](https://juejin.im/post/5d00fc865188255fc6384126)
 - [Postman：API接口调试利器](https://juejin.im/post/5d5a9032e51d4561db5e3a4a)
 - [10分钟搭建自己的Git仓库](https://juejin.im/post/5d63d600e51d453c135c5af3)
 - [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
-- [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
 - [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
+- [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](https://juejin.im/post/5e4200885188254944669a79)
 
 
 ## 公众号
 
-mall项目全套学习教程连载中，**关注公众号**第一时间获取。
+mall项目全套学习教程连载中，关注公众号「**macrozheng**」第一时间获取。
 
 ![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)

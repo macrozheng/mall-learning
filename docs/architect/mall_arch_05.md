@@ -316,10 +316,10 @@ public class Swagger2Config {
 ```
 
 ### 给PmsBrandController接口中的方法添加访问权限
-- 给查询接口添加pms:brand:read权限
-- 给修改接口添加pms:brand:update权限
-- 给删除接口添加pms:brand:delete权限
-- 给添加接口添加pms:brand:create权限
+- 给查询接口添加`pms:brand:read`权限
+- 给修改接口添加`pms:brand:update`权限
+- 给删除接口添加`pms:brand:delete`权限
+- 给添加接口添加`pms:brand:create`权限
 
 例子：
 ```java
@@ -364,7 +364,7 @@ Swagger api地址：http://localhost:8080/swagger-ui.html
 
 ### 访问需要权限的接口
 
-> 由于test帐号并没有设置任何权限，所以他无法访问具有pms:brand:read权限的获取品牌列表接口。
+> 由于test帐号并没有设置任何权限，所以他无法访问具有`pms:brand:read`权限的获取品牌列表接口。
 
 ![](../images/arch_screen_22.png)
 
@@ -373,6 +373,8 @@ Swagger api地址：http://localhost:8080/swagger-ui.html
 ### 改用其他有权限的帐号登录
 
 > 改用admin 123456登录后访问，点击Authorize按钮打开弹框,点击logout登出后再重新输入新token。
+
+`注意`：如果admin帐号密码不对的话，公众号后台回复`体验`来获取。
 
 ![](../images/arch_screen_22.png)
 

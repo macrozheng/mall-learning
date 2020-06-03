@@ -208,6 +208,10 @@ tar -ztvf /mydata/etc.tar.gz |more -c -10
 ```shell
 tar -zxvf /mydata/etc.tar.gz
 ```
+- 解压文件到指定目录（gzip）：
+```shell
+tar -zxvf /mydata/etc.tar.gz -C /mydata/etc
+```
 
 ## 磁盘和网络管理
 
