@@ -49,6 +49,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [营销模块数据库表解析（一）](https://juejin.im/post/5d5012856fb9a06ad45135a6)
 - [营销模块数据库表解析（二）](https://juejin.im/post/5d555c7ae51d453b386a6302)
 - [营销模块数据库表解析（三）](https://juejin.im/post/5d5bf6676fb9a06b0703c0c5)
+- [权限管理功能设计与优化](https://juejin.im/post/5e4bd8416fb9a07c9f3fd5dd)
+- [商品SKU功能设计与优化](https://juejin.im/post/5e5cfaa9f265da574b7918f6)
 
 ## 技术要点篇
 > mall中一些功能的技术要点解析
@@ -61,6 +63,11 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [仅需四步，整合SpringSecurity+JWT实现登录认证！](https://juejin.im/post/5df0e79bf265da33dd2f52af)
 - [前后端分离项目，如何优雅实现文件存储！](https://juejin.im/post/5e0ca2266fb9a0484a45969c)
 - [前后端分离项目，引入Spring Cloud Gateway遇到的一个问题！](https://juejin.im/post/5e13248e5188253ab849d125)
+- [手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！](https://juejin.im/post/5e5519fd6fb9a07cc7473fcf)
+- [手把手教你搞定权限管理，结合Vue实现菜单的动态权限控制！](https://juejin.im/post/5e57c8236fb9a07caf445ddc)
+- [SpringBoot中处理校验逻辑的两种方式，真的很机智！](https://juejin.im/post/5e6636da6fb9a07cb24aaf00)
+- [使用Redis+AOP优化权限管理功能，这波操作贼爽！](https://juejin.im/post/5e78b96b6fb9a07cb83e4a10)
+- [Elasticsearch项目实战，商品搜索功能设计与实现！](https://juejin.im/post/5e94587f51882573be11cb83)
 
 ## 部署篇
 > mall开发及生产环境的搭建
@@ -97,7 +104,6 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
 - [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
 - [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
-- [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
 
 ## 参考篇
 > mall相关技术的使用教程
@@ -117,6 +123,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Github标星19K+Star，10分钟自建对象存储服务！](https://juejin.im/post/5e09f8fbe51d4575a46f05e5)
 - [MySql主从复制，从原理到实践！](https://juejin.im/post/5e1daba46fb9a02fb75d5e92)
 - [你还在代码里做读写分离么，试试这个中间件吧！](https://juejin.im/post/5e22b37ee51d454d523be24d)
+- [Spring Data Redis 最佳实践！](https://juejin.im/post/5e6f703fe51d45270531a214)
+- [Docker环境下秒建Redis集群，连SpringBoot也整上了！](https://juejin.im/post/5e81fd1ff265da47e84e5e2c)
+- [Elasticsearch快速入门，掌握这些刚刚好！](https://juejin.im/post/5e8c7d65518825736512d097)
 
 ## 工具篇
 > 一些常用开发工具的使用
@@ -128,6 +137,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
 - [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
 - [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](https://juejin.im/post/5e4200885188254944669a79)
+- [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
+- [盘点下我用的顺手的那些工具！](https://juejin.im/post/5e5f99c251882549281bfb09)
+- [我用起来顺手的数据库设计工具，这次推荐给大家！](https://juejin.im/post/5ea6d2725188256da20e60ee)
 
 
 ## 公众号
