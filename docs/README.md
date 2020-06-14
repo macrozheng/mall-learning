@@ -120,6 +120,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Data Redis 最佳实践！](reference/spring_data_redis.md)
 - [Docker环境下秒建Redis集群，连SpringBoot也整上了！](reference/redis_cluster.md)
 - [Elasticsearch快速入门，掌握这些刚刚好！](reference/elasticsearch_start.md)
+- [MongoDB快速入门，掌握这些刚刚好！](reference/mongodb_start.md)
 
 ## 工具篇
 > 一些常用开发工具的使用

@@ -126,6 +126,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Data Redis 最佳实践！](https://juejin.im/post/5e6f703fe51d45270531a214)
 - [Docker环境下秒建Redis集群，连SpringBoot也整上了！](https://juejin.im/post/5e81fd1ff265da47e84e5e2c)
 - [Elasticsearch快速入门，掌握这些刚刚好！](https://juejin.im/post/5e8c7d65518825736512d097)
+- [MongoDB快速入门，掌握这些刚刚好！](https://juejin.im/post/5eb4043cf265da7bf5368276)
 
 ## 工具篇
 > 一些常用开发工具的使用
