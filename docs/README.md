@@ -63,6 +63,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [SpringBoot中处理校验逻辑的两种方式，真的很机智！](technology/springboot_validator.md)
 - [使用Redis+AOP优化权限管理功能，这波操作贼爽！](technology/redis_permission.md)
 - [Elasticsearch项目实战，商品搜索功能设计与实现！](technology/product_search.md)
+- [我常用的自动化部署技巧，贼好用，推荐给大家！](technology/springboot_auto_deploy.md)
 
 ## 部署篇
 > mall开发及生产环境的搭建
