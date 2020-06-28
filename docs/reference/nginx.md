@@ -253,6 +253,47 @@ server {
 
 - 此时访问旧域名`docs.macrozheng.com`会直接跳转到`www.macrozheng.com`去。
 
+## 按目录划分项目
+
+> 有时候我们需要使用同一个域名来访问不同的前端项目，这时候就需要通过子目录来区分前端项目了。
+
+- 比如说我们需要按以下路径来访问各个前端项目；
+
+```
+www.macrozheng.com #访问文档项目
+www.macrozheng.com/admin #访问后台项目
+www.macrozheng.com/app #访问移动端项目
+```
+
+- 修改www.conf配置文件，添加不同的location规则，要注意`alias`和`root`指令的区别，root不会将location配置的路径去掉，而alias会将location配置的路径去掉。
+
+```
+server {
+    listen       80;
+    server_name  www.macrozheng.com;
+
+    location / {
+        root   /usr/share/nginx/html/www;
+        index  index.html index.htm;
+    }
+
+    location /admin {
+        alias   /usr/share/nginx/html/admin;
+        index  index.html index.htm;
+    }
+
+    location /app {
+        alias   /usr/share/nginx/html/app;
+        index  index.html index.htm;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
+
 ## 公众号
 
 ![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
