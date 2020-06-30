@@ -81,7 +81,7 @@ docker pull redis:3.2
 ```
 - 使用docker命令启动：
 ```shell
-  docker run -p 6379:6379 --name redis -v D:/DEV/shops/java/Github/mydata/redis/data:/data -d redis:3.2 redis-server --appendonly yes
+docker run -p 6379:6379 --name redis -v D:/DEV/shops/java/Github/mydata/redis/data:/data -d redis:3.2 redis-server --appendonly yes
 ```
 - 进入redis容器使用redis-cli命令进行连接：
 ```shell
@@ -99,7 +99,7 @@ docker pull nginx:1.10
 ### 从容器中拷贝nginx配置
 - 先运行一次容器（为了拷贝配置文件）：
 ```shell
-  docker run -p 80:80 --name nginx -v D:/DEV/shops/java/Github/mydata/nginx/html:/usr/share/nginx/html -v D:/DEV/shops/java/Github/mydata/nginx/logs:/var/log/nginx  -d nginx:1.10
+docker run -p 80:80 --name nginx -v D:/DEV/shops/java/Github/mydata/nginx/html:/usr/share/nginx/html -v D:/DEV/shops/java/Github/mydata/nginx/logs:/var/log/nginx  -d nginx:1.10
 ```
 - 将容器内的配置文件拷贝到指定目录：
 ```shell
@@ -125,7 +125,7 @@ docker pull rabbitmq:3.7.15
 ```
 - 使用docker命令启动：
 ```shell
-  docker run -d --name rabbitmq --publish 5671:5671 --publish 5672:5672 --publish 4369:4369 --publish 25672:25672 --publish 15671:15671 --publish 15672:15672 rabbitmq:3.7.15
+docker run -d --name rabbitmq --publish 5671:5671 --publish 5672:5672 --publish 4369:4369 --publish 25672:25672 --publish 15671:15671 --publish 15672:15672 rabbitmq:3.7.15
 ```
 - 进入容器并开启管理功能：
 ```shell
@@ -155,7 +155,7 @@ docker pull elasticsearch:6.4.0
 
 - 使用docker命令启动：
 ```shell
-  docker run -p 9200:9200 -p 9300:9300 --name elasticsearch -e "discovery.type=single-node" -e "cluster.name=elasticsearch" -v D:/DEV/shops/java/Github/mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins -v D:/DEV/shops/java/Github/mydata/elasticsearch/data:/usr/share/elasticsearch/data -d elasticsearch:6.4.0
+docker run -p 9200:9200 -p 9300:9300 --name elasticsearch -e "discovery.type=single-node" -e "cluster.name=elasticsearch" -v D:/DEV/shops/java/Github/mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins -v D:/DEV/shops/java/Github/mydata/elasticsearch/data:/usr/share/elasticsearch/data -d elasticsearch:6.4.0
 ```
 - 安装中文分词器IKAnalyzer，并重新启动：
 ```shell
@@ -175,7 +175,7 @@ docker pull kibana:6.4.0
 ```
 - 使用docker命令启动：
 ```shell
-  docker run --name kibana -p 5601:5601 --link elasticsearch:es -e "elasticsearch.hosts=http://es:9200" -d kibana:6.4.0
+docker run --name kibana -p 5601:5601 --link elasticsearch:es -e "elasticsearch.hosts=http://es:9200" -d kibana:6.4.0
 ```
 
 - 访问地址进行测试：[http://localhost:5601](http://localhost:5601)
