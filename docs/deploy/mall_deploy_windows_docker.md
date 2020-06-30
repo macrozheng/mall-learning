@@ -10,8 +10,7 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 - 下载并安装Docker Desktop for Windows，下载地址：[https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe](https://download.docker.com/win/stable/Docker%20Desktop%20Installer.exe)
 <br>也可以访问手动下载:<br>
 [https://hub.docker.com/editions/community/docker-ce-desktop-windows/](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
-<br>
-![](../images/mall_deploy_windows_docker_01.png)
+<br>![](../images/mall_deploy_windows_docker_01.png)
 
 - 设置Docker Desktop for Windows
 <br>1. 启用2375端口
