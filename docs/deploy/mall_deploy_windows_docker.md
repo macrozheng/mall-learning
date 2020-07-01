@@ -128,6 +128,7 @@ rabbitmq-plugins enable rabbitmq_management
 ![](../images/refer_screen_75.png)
 
 - 访问地址查看是否安装成功：[http://localhost:15672/](http://localhost:15672/)
+<br>
 ![](../images/refer_screen_76.png)
 - 输入账号密码并登录：guest guest
 - 创建帐号并设置其角色为管理员：mall mall
