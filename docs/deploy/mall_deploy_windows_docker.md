@@ -126,7 +126,6 @@ docker exec -it rabbitmq /bin/bash
 rabbitmq-plugins enable rabbitmq_management
 ```
 ![](../images/refer_screen_75.png)
-![](../images/mall_deploy_windows_docker_10.png)
 
 - 访问地址查看是否安装成功：[http://localhost:15672/](http://localhost:15672/)
 ![](../images/refer_screen_76.png)
