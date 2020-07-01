@@ -12,13 +12,6 @@ mall项目全套学习教程连载中，[关注公众号](#公众号)第一时�
 [https://hub.docker.com/editions/community/docker-ce-desktop-windows/](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 <br>![](../images/mall_deploy_windows_docker_01.png)
 
-- 设置Docker Desktop for Windows
-<br>1. 启用2375端口
-![](../images/mall_deploy_windows_docker_02.png)
-<br>2. 修改Docker配置文件
-![](../images/mall_deploy_windows_docker_03.png)
-
-
 ## 运行Windows PowerShell（以管理员身份运行）
 ![](../images/mall_deploy_windows_docker_04.png)
 - 检查Docker版本是否正确
