@@ -199,13 +199,34 @@ docker run -p 27017:27017 --name mongo -v D:/DEV/shops/java/Github/mydata/mongo/
 
 ## SpringBoot应用部署
 
+### 部署Docker Registry 2.0
+```shell
+docker run -d -p 5000:5000 --restart=always --name registry2 registry:2
+```
+如果遇到镜像下载不下来的情况，需要修改docker配置并添加上 registry-mirrors 键值，insecure-registries键值是让Docker支持http上传镜像， 然后重启docker服务：
+```json
+{
+  "registry-mirrors": ["https://registry.docker-cn.com"],
+  "insecure-registries":["localhost:5000"]
+}
+```
+![](../images/mall_deploy_windows_docker_03.png)
+
+### Docker开启远程API 启用 tcp://localhost:2375
+![](../images/mall_deploy_windows_docker_02.png)
+
+
+#### 重新启动Docker服务
+
 ### 构建所有Docker镜像并上传
 - 打开pom.xml中使用docker插件的注释：
-![](../images/refer_screen_84.png)
 - 修改dockerHost为你自己的docker服务器地址：
+![](../images/mall_deploy_windows_docker_10.png)
+
+
 - 构建镜像并上传：  
-![](../images/refer_screen_85.png)
-![](../images/refer_screen_86.png)
+![](../images/mall_deploy_windows_docker_11.png)
+![](../images/mall_deploy_windows_docker_12.png)
 
 ### 部署mall-admin
 ```shell
