@@ -141,6 +141,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
 - [盘点下我用的顺手的那些工具！](https://juejin.im/post/5e5f99c251882549281bfb09)
 - [我用起来顺手的数据库设计工具，这次推荐给大家！](https://juejin.im/post/5ea6d2725188256da20e60ee)
+- [我常用的IDEA插件大公开，个个是精品！](https://juejin.im/post/5eba9a5bf265da7bca50010c)
 
 
 ## 公众号

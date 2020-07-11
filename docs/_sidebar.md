@@ -105,3 +105,4 @@
   * [IDEA中创建和启动SpringBoot应用的正确姿势](reference/idea_springboot.md)
   * [盘点下我用的顺手的那些工具！](reference/my_tools.md)
   * [我用起来顺手的数据库设计工具，这次推荐给大家！](reference/navicat_designer.md)
+  * [我常用的IDEA插件大公开，个个是精品！](reference/idea_plugins.md)
