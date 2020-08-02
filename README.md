@@ -128,6 +128,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Elasticsearch快速入门，掌握这些刚刚好！](https://juejin.im/post/5e8c7d65518825736512d097)
 - [MongoDB快速入门，掌握这些刚刚好！](https://juejin.im/post/5eb4043cf265da7bf5368276)
 - [Github标星34K+Star，这款开源项目助你秒建Git服务！](https://juejin.im/post/5ecd12076fb9a0479958376b)
+- [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](https://juejin.im/post/6844904184920162317)
 
 ## 工具篇
 > 一些常用开发工具的使用

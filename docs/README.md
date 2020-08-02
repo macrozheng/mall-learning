@@ -123,6 +123,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Elasticsearch快速入门，掌握这些刚刚好！](reference/elasticsearch_start.md)
 - [MongoDB快速入门，掌握这些刚刚好！](reference/mongodb_start.md)
 - [Github标星34K+Star，这款开源项目助你秒建Git服务！](reference/gogs_start.md)
+- [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](reference/rabbitmq_start.md)
 
 ## 工具篇
 > 一些常用开发工具的使用
