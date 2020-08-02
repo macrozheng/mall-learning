@@ -41,7 +41,7 @@
   * [SpringBoot中处理校验逻辑的两种方式，真的很机智！](technology/springboot_validator.md)
   * [使用Redis+AOP优化权限管理功能，这波操作贼爽！](technology/redis_permission.md)
   * [Elasticsearch项目实战，商品搜索功能设计与实现！](technology/product_search.md)
-  * [我常用的自动化部署技巧，贼好用，推荐给大家！](technology/springboot_auto_deploy.md)
+  * [RabbitMQ实现延迟消息居然如此简单，整个插件就完事了！](technology/rabbitmq_delay.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
@@ -52,6 +52,7 @@
   * [mall-swarm在Windows环境下的部署](deploy/mall_swarm_deploy_windows.md)
   * [mall-swarm在Linux环境下的部署（基于Docker容器）](deploy/mall_swarm_deploy_docker.md)  
   * [微服务架构下的自动化部署，使用Jenkins来实现！](deploy/mall_swarm_deploy_jenkins.md)  
+  * [我常用的自动化部署技巧，贼好用，推荐给大家！](technology/springboot_auto_deploy.md)
 
 * 进阶篇
   * [Spring Cloud 整体架构概览](cloud/springcloud.md)

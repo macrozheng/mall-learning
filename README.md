@@ -68,6 +68,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [SpringBoot中处理校验逻辑的两种方式，真的很机智！](https://juejin.im/post/5e6636da6fb9a07cb24aaf00)
 - [使用Redis+AOP优化权限管理功能，这波操作贼爽！](https://juejin.im/post/5e78b96b6fb9a07cb83e4a10)
 - [Elasticsearch项目实战，商品搜索功能设计与实现！](https://juejin.im/post/5e94587f51882573be11cb83)
+- [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](https://juejin.im/post/6844904184920162317)
 
 ## 部署篇
 > mall开发及生产环境的搭建
