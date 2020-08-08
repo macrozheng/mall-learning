@@ -19,16 +19,16 @@ mall项目是一套电商系统，包括前台商城系统及后台管理系统�
 
 技术 | 版本 | 说明
 ----|----|----
-Spring Boot | 2.1.3 | 容器+MVC框架
+Spring Boot | 2.3.0 | 容器+MVC框架
 Spring Security | 5.1.4 | 认证和授权框架
 MyBatis | 3.4.6 | ORM框架  
 MyBatisGenerator | 1.3.3 | 数据层代码生成
 PageHelper | 5.1.8 | MyBatis物理分页插件
-Swagger-UI | 2.7.0 | 文档生产工具
-Elasticsearch | 6.2.2 | 搜索引擎
+Swagger-UI | 2.9.2 | 文档生产工具
+Elasticsearch | 7.6.2 | 搜索引擎
 RabbitMq |3.7.14 | 消息队列
-Redis | 3.2 | 分布式缓存
-MongoDb | 3.2 | NoSql数据库
+Redis | 5.0 | 分布式缓存
+MongoDb | 4.2.5 | NoSql数据库
 Docker | 18.09.0 | 应用容器引擎
 Druid | 1.1.10 | 数据库连接池
 OSS | 2.5.0 | 对象存储
