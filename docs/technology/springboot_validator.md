@@ -132,6 +132,46 @@ public class BindingResultAspect {
 
 ![](../images/springboot_validator_01.png)
 
+- 使用切面的话，由于每个校验方法中都需要注入`BindingResult`对象，这样会导致很多重复工作，其实当校验失败时，SpringBoot默认会抛出`MethodArgumentNotValidException`或`BindException`异常，我们只要全局处理该异常依然可以得到校验失败信息。
+
+```java
+/**
+ * 全局异常处理
+ * Created by macro on 2020/2/27.
+ */
+@ControllerAdvice
+public class GlobalExceptionHandler {
+    
+   @ResponseBody
+   @ExceptionHandler(value = MethodArgumentNotValidException.class)
+   public R handleValidException(MethodArgumentNotValidException e) {
+       BindingResult bindingResult = e.getBindingResult();
+       String message = null;
+       if (bindingResult.hasErrors()) {
+           FieldError fieldError = bindingResult.getFieldError();
+           if (fieldError != null) {
+               message = fieldError.getField()+fieldError.getDefaultMessage();
+           }
+       }
+       return CommonResult.failed(message);
+   }
+   
+    @ResponseBody
+    @ExceptionHandler(value = BindException.class)
+    public R handleValidException(BindException e) {
+        BindingResult bindingResult = e.getBindingResult();
+        String message = null;
+        if (bindingResult.hasErrors()) {
+            FieldError fieldError = bindingResult.getFieldError();
+            if (fieldError != null) {
+                message = fieldError.getField()+fieldError.getDefaultMessage();
+            }
+        }
+        return Response.failed(message);
+    }   
+}
+```
+
 ### 自定义注解
 
 > 有时候框架提供的校验注解并不能满足我们的需要，此时我们就需要自定义校验注解。比如还是上面的添加品牌，此时有个参数`showStatus`，我们希望它只能是0或者1，不能是其他数字，此时可以使用自定义注解来实现该功能。
