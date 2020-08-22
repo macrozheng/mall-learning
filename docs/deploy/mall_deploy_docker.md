@@ -389,7 +389,7 @@ java                  8                   d23bdf5b1b1b        3 years ago       
 </properties>
 ```
 
-- 如果其他模块中的`docker-maven-plugin`被注释掉了就打开注释；
+- 如果项目根目录的`pom.mxl`中`docker-maven-plugin`的`<executions>`节点被注释掉了就打开注释，使项目在打包时直接构建Docker镜像；
 
 ![](../images/mall_linux_deploy_11.png)
 
