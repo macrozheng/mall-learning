@@ -172,6 +172,15 @@ public class GlobalExceptionHandler {
 }
 ```
 
+- 由于SpringBoot 2.3版本默认移除了校验功能，如果想要开启的话需要添加如下依赖。
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+
 ### 自定义注解
 
 > 有时候框架提供的校验注解并不能满足我们的需要，此时我们就需要自定义校验注解。比如还是上面的添加品牌，此时有个参数`showStatus`，我们希望它只能是0或者1，不能是其他数字，此时可以使用自定义注解来实现该功能。
