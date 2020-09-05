@@ -7,7 +7,7 @@
 </p>
 
 ## 简介
-mall学习教程，架构、业务、技术要点全方位解析。mall项目（39k+star）是一套电商系统，使用现阶段主流技术实现。涵盖了SpringBoot 2.3.0、MyBatis 3.4.6、Elasticsearch 7.6.2、RabbitMQ 3.7.15、Redis 5.0、MongoDB 4.2.5、Mysql5.7等技术，采用Docker容器化部署。
+mall学习教程，架构、业务、技术要点全方位解析。mall项目（40k+star）是一套电商系统，使用现阶段主流技术实现。涵盖了SpringBoot 2.3.0、MyBatis 3.4.6、Elasticsearch 7.6.2、RabbitMQ 3.7.15、Redis 5.0、MongoDB 4.2.5、Mysql5.7等技术，采用Docker容器化部署。
 
 ## 项目地址
 - 后台项目：[https://github.com/macrozheng/mall](https://github.com/macrozheng/mall)
@@ -68,6 +68,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [使用Redis+AOP优化权限管理功能，这波操作贼爽！](https://juejin.im/post/5e78b96b6fb9a07cb83e4a10)
 - [Elasticsearch项目实战，商品搜索功能设计与实现！](https://juejin.im/post/5e94587f51882573be11cb83)
 - [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](https://juejin.im/post/6844904184920162317)
+- [给Swagger升级了新版本，没想到居然有这么多坑！](https://juejin.im/post/6850037281392099341)
+- [Elasticsearch 升级 7.x 版本后，我感觉掉坑里了！](https://juejin.im/post/6856555431570735117)
 
 ## 部署篇
 > mall开发及生产环境的搭建
@@ -80,6 +82,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [mall-swarm在Windows环境下的部署](https://juejin.im/post/5de3c1a35188256e855b6e54)
 - [mall-swarm在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5de65bffe51d4557f71a5ec1)
 - [微服务架构下的自动化部署，使用Jenkins来实现！](https://juejin.im/post/5dfa250e51882579dc6f7c90)
+- [我常用的自动化部署技巧，贼好用，推荐给大家！](https://juejin.im/post/6844904163424337928)
 
 
 ## 进阶篇
@@ -104,6 +107,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
 - [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
 - [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
+- [微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！](https://juejin.im/post/6850037263707930631)
+- [微服务聚合Swagger文档，这波操作是真的香！](https://juejin.im/post/6854573219916201997)
+- [我扒了半天源码，终于找到了Oauth2自定义处理结果的最佳方案！](https://juejin.im/post/6857296054392471559)
 
 ## 参考篇
 > mall相关技术的使用教程
@@ -129,6 +135,14 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [MongoDB快速入门，掌握这些刚刚好！](https://juejin.im/post/5eb4043cf265da7bf5368276)
 - [Github标星34K+Star，这款开源项目助你秒建Git服务！](https://juejin.im/post/5ecd12076fb9a0479958376b)
 - [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](https://juejin.im/post/6844904184920162317)
+- [你居然还去服务器上捞日志，搭个日志收集系统难道不香么！](https://juejin.im/post/6844904196672585741)
+- [性能优越的轻量级日志收集工具，微软、亚马逊都在用！](https://juejin.im/post/6844904205363183630)
+- [听说你的JWT库用起来特别扭，推荐一款贼好用的！](https://juejin.im/post/6847902224325345288)
+- [给Swagger换了个新皮肤，瞬间高大上了！](https://juejin.im/post/6854573214358732814)
+- [Docker服务开放了这个端口，服务器分分钟变肉机！](https://juejin.im/post/6861749836249563143)
+- [居然有人想白嫖我的日志，赶紧开启安全保护压压惊！](https://juejin.im/post/6865462161486184456)
+- [面对成百上千台服务器产生的日志，试试这款轻量级日志搬运神器！](https://juejin.im/post/6866946088134410248)
+- [还在手动部署SpringBoot应用？试试这个自动化插件！](https://juejin.im/post/6868060821927723021)
 
 ## 工具篇
 > 一些常用开发工具的使用
@@ -145,6 +159,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [我用起来顺手的数据库设计工具，这次推荐给大家！](https://juejin.im/post/5ea6d2725188256da20e60ee)
 - [我常用的IDEA插件大公开，个个是精品！](https://juejin.im/post/5eba9a5bf265da7bca50010c)
 - [IDEA同款数据库管理工具，提示太全了，用起来贼香！](https://juejin.im/post/5ed4f2446fb9a047d5645a2b)
+- [写了100多篇原创文章，我常用的在线工具网站推荐给大家！](https://juejin.im/post/6844904200640397325)
+- [线上项目出BUG没法调试？推荐这款阿里开源的诊断神器！](https://juejin.im/post/6846687603471679496)
+- [被我用烂的DEBUG调试技巧，专治各种搜索不到的问题！](https://juejin.im/post/6859166000932519944)
 
 
 ## 公众号
