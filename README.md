@@ -121,7 +121,6 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
 - [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
-- [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
 - [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
 - [Nginx的这些妙用，你肯定有不知道的！](https://juejin.im/post/5dee499151882512444014eb)
 - [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](https://juejin.im/post/5df780d3e51d4557ff140b30)
@@ -143,6 +142,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [居然有人想白嫖我的日志，赶紧开启安全保护压压惊！](https://juejin.im/post/6865462161486184456)
 - [面对成百上千台服务器产生的日志，试试这款轻量级日志搬运神器！](https://juejin.im/post/6866946088134410248)
 - [还在手动部署SpringBoot应用？试试这个自动化插件！](https://juejin.im/post/6868060821927723021)
+- [不要再重复造轮子了，这款开源工具类库贼好使！](https://juejin.im/post/6869914176941359118)
+- [还在手写CRUD代码？这款开源框架助你解放双手！](https://juejin.im/post/6870659845029101576)
 
 ## 工具篇
 > 一些常用开发工具的使用
