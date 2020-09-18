@@ -19,7 +19,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <dependencies>
-        <!--SpringBoot通用依赖模块-->
+        <!test--SpringBoot通用依赖模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
