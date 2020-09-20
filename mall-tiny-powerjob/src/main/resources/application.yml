@@ -1,0 +1,22 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  application:
+    name: mall-tiny-powerjob
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+powerjob:
+  worker:
+    akka-port: 27777 # akka 工作端口
+    app-name: mall-tiny-powerjob # 接入应用名称，用于分组隔离
+    server-address: 192.168.3.101:7700 # 调度服务器地址
+    store-strategy: disk # 持久化方式
