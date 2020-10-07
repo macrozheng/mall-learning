@@ -102,6 +102,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](cloud/nacos.md)
 - [Spring Cloud Alibaba：Sentinel实现熔断与限流](cloud/sentinel.md)
 - [使用Seata彻底解决Spring Cloud中的分布式事务问题](cloud/seata.md)
+- [微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！](cloud/gateway_oauth2.md)
 
 ## 参考篇
 > mall相关技术的使用教程
