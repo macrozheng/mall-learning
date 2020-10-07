@@ -128,6 +128,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](reference/rabbitmq_start.md)
 - [你居然还去服务器上捞日志，搭个日志收集系统难道不香么！](reference/mall_elk_advance.md)
 - [性能优越的轻量级日志收集工具，微软、亚马逊都在用！](reference/efk_fluent.md)
+- [听说你的JWT库用起来特别扭，推荐一款贼好用的！](reference/jose_jwt_start.md)
 
 ## 工具篇
 > 一些常用开发工具的使用
