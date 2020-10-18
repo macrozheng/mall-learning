@@ -1,0 +1,33 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  quartz:
+    job-store-type: jdbc # quartz任务存储类型：jdbc或memory
+    wait-for-jobs-to-complete-on-shutdown: true # 关闭是等待任务完成
+    overwrite-existing-jobs: true # 可以覆盖已有的任务
+    properties: # quartz原生配置
+      org:
+        quartz:
+          scheduler:
+            instanceName: scheduler # 调度器实例名称
+            instanceId: AUTO # 调度器实例ID自动生成
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX # 调度信息存储处理类
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate # 使用完全兼容JDBC的驱动
+            tablePrefix: QRTZ_ # quartz相关表前缀
+            useProperties: false # 是否将JobDataMap中的属性转为字符串存储
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool # 指定线程池实现类，对调度器提供固定大小的线程池
+            threadCount: 10 # 设置并发线程数量
+            threadPriority: 5 # 指定线程优先级
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
