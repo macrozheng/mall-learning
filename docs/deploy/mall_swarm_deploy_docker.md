@@ -76,7 +76,7 @@ logstash-plugin install logstash-codec-json_lines
 docker-compose -f docker-compose-app.yml up -d
 ```
 
-- 启动成功后，可以查看API文档信息，访问地址：http://192.168.3.101:8201
+- 启动成功后，可以查看API文档信息，访问地址：http://192.168.3.101:8201/doc.html
 
 ![](../images/mall_swarm_run_05.png)
 
