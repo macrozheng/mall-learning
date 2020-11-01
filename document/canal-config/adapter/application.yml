@@ -1,0 +1,65 @@
+server:
+  port: 8081
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+
+canal.conf:
+  mode: tcp # 客户端的模式，可选tcp kafka rocketMQ
+  flatMessage: true # 扁平message开关, 是否以json字符串形式投递数据, 仅在kafka/rocketMQ模式下有效
+  zookeeperHosts:    # 对应集群模式下的zk地址
+  syncBatchSize: 1000 # 每次同步的批数量
+  retries: 0 # 重试次数, -1为无限重试
+  timeout: # 同步超时时间, 单位毫秒
+  accessKey:
+  secretKey:
+  consumerProperties:
+    # canal tcp consumer
+    canal.tcp.server.host: 127.0.0.1:11111 #设置canal-server的地址
+    canal.tcp.zookeeper.hosts:
+    canal.tcp.batch.size: 500
+    canal.tcp.username:
+    canal.tcp.password:
+    # kafka consumer
+    kafka.bootstrap.servers: 127.0.0.1:9092
+    kafka.enable.auto.commit: false
+    kafka.auto.commit.interval.ms: 1000
+    kafka.auto.offset.reset: latest
+    kafka.request.timeout.ms: 40000
+    kafka.session.timeout.ms: 30000
+    kafka.isolation.level: read_committed
+    kafka.max.poll.records: 1000
+    # rocketMQ consumer
+    rocketmq.namespace:
+    rocketmq.namesrv.addr: 127.0.0.1:9876
+    rocketmq.batch.size: 1000
+    rocketmq.enable.message.trace: false
+    rocketmq.customized.trace.topic:
+    rocketmq.access.channel:
+    rocketmq.subscribe.filter:
+    # rabbitMQ consumer
+    rabbitmq.host:
+    rabbitmq.virtual.host:
+    rabbitmq.username:
+    rabbitmq.password:
+    rabbitmq.resource.ownerId:
+
+  srcDataSources: # 源数据库配置
+    defaultDS:
+      url: jdbc:mysql://127.0.0.1:3306/canal_test?useUnicode=true
+      username: canal
+      password: canal
+  canalAdapters: # 适配器列表
+  - instance: example # canal实例名或者MQ topic名
+    groups: # 分组列表
+    - groupId: g1 # 分组id, 如果是MQ模式将用到该值
+      outerAdapters:
+      - name: logger # 日志打印适配器
+      - name: es7 # ES同步适配器
+        hosts: 127.0.0.1:9200 # ES连接地址
+        properties:
+          mode: rest # 模式可选transport(9300) 或者 rest(9200)
+          # security.auth: test:123456 #  only used for rest mode
+          cluster.name: elasticsearch # ES集群名称
