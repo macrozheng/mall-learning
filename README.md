@@ -148,6 +148,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [微服务应用性能如何？APM监控工具来告诉你！](https://juejin.im/post/6882530961406296077)
 - [RabbitMQ实现即时通讯居然如此简单！连后端代码都省得写了？](https://juejin.im/post/6883273274248134663)
 - [SpringBoot官方支持任务调度框架，轻量级用起来也挺香！](https://juejin.im/post/6885869364180942862)
+- [如何让网站和API都支持HTTPS？在Nginx上做文章是个好选择！](https://juejin.im/post/6888467506588024845)
+- [还在手动整合Swagger？Swagger官方Starter是真的香！](https://juejin.im/post/6890692970018766856)
+- [MySQL如何实时同步数据到ES？试试这款阿里开源的神器！](https://juejin.im/post/6891435372824395784)
 
 ## 工具篇
 > 一些常用开发工具的使用
