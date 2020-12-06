@@ -81,7 +81,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [mall前端项目的安装与部署](https://juejin.im/post/5d2c7c6b518825076377d7b9)
 - [mall-swarm在Windows环境下的部署](https://juejin.im/post/5de3c1a35188256e855b6e54)
 - [mall-swarm在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5de65bffe51d4557f71a5ec1)
-- [微服务架构下的自动化部署，使用Jenkins来实现！](https://juejin.im/post/5dfa250e51882579dc6f7c90)
+- [mall-swarm微服务电商系统如何部署？用Jenkins自动化部署是真的香！](https://juejin.cn/post/6893668816677502989)
 - [我常用的自动化部署技巧，贼好用，推荐给大家！](https://juejin.im/post/6844904163424337928)
 
 
@@ -115,9 +115,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 > mall相关技术的使用教程
 
 - [开发者必备Mysql命令](https://juejin.im/post/5d00fd40f265da1bb67a11b3)
-- [开发者必备Linux命令](https://juejin.im/post/5d0253845188255e1305c741)
+- [还在百度Linux命令？推荐一套我用起来特顺手的命令！](https://juejin.cn/post/6877337031605911566)
 - [Linux防火墙Firewall和Iptables的使用](https://juejin.im/post/5d0253fe6fb9a07edb39420d)
-- [开发者必备Docker命令](https://juejin.im/post/5d0781f56fb9a07f014ef6be)
+- [还在百度Docker命令？推荐一套我用起来特顺手的命令！](https://juejin.cn/post/6895888125886332941)
 - [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
 - [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
@@ -151,6 +151,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [如何让网站和API都支持HTTPS？在Nginx上做文章是个好选择！](https://juejin.im/post/6888467506588024845)
 - [还在手动整合Swagger？Swagger官方Starter是真的香！](https://juejin.im/post/6890692970018766856)
 - [MySQL如何实时同步数据到ES？试试这款阿里开源的神器！](https://juejin.im/post/6891435372824395784)
+- [肝了一周总结的SpringBoot实战教程，太实用了！](https://juejin.cn/post/6898858833847222279)
+- [Elasticsearch官方已支持SQL查询，用起来贼方便！](https://juejin.cn/post/6901827227013349383)
 
 ## 工具篇
 > 一些常用开发工具的使用
@@ -171,6 +173,8 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [线上项目出BUG没法调试？推荐这款阿里开源的诊断神器！](https://juejin.im/post/6846687603471679496)
 - [被我用烂的DEBUG调试技巧，专治各种搜索不到的问题！](https://juejin.im/post/6859166000932519944)
 - [Github标星 8K+，免费又好用的Redis客户端工具！](https://juejin.im/post/6875109882006077448)
+- [Swagger界面丑、功能弱怎么破？用Postman增强下就给力了！](https://juejin.cn/post/6896633644769607694)]
+- [干掉Navicat！MySQL官方客户端到底行不行？](https://juejin.cn/post/6901085744618536973)
 
 
 ## 公众号
