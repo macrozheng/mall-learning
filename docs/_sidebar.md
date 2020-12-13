@@ -42,6 +42,9 @@
   * [使用Redis+AOP优化权限管理功能，这波操作贼爽！](technology/redis_permission.md)
   * [Elasticsearch项目实战，商品搜索功能设计与实现！](technology/product_search.md)
   * [RabbitMQ实现延迟消息居然如此简单，整个插件就完事了！](technology/rabbitmq_delay.md)
+  * [给Swagger升级了新版本，没想到居然有这么多坑！](technology/swagger_upgrade.md)
+  * [Elasticsearch 升级 7.x 版本后，我感觉掉坑里了！](technology/elasticsearch_upgrade.md)
+  * [搞定Mall项目中的权限管理功能，弄懂这些问题就妥了！](technology/mall_permission_question.md)
 
 * 部署篇
   * [mall在Windows环境下的部署](deploy/mall_deploy_windows.md)
