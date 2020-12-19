@@ -111,9 +111,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 > mall相关技术的使用教程
 
 - [开发者必备Mysql命令](reference/mysql.md)
-- [开发者必备Linux命令](reference/linux.md)
+- [还在百度Linux命令？推荐一套我用起来特顺手的命令！](reference/linux_command.md)
 - [Linux防火墙Firewall和Iptables的使用](reference/linux_firewall.md)
-- [开发者必备Docker命令](reference/docker.md)
+- [还在百度Docker命令？推荐一套我用起来特顺手的命令！](reference/docker_command.md)
 - [使用Maven插件为SpringBoot应用构建Docker镜像](reference/docker_maven.md)
 - [使用DockerFile为SpringBoot应用构建Docker镜像](reference/docker_file.md)
 - [使用Docker Compose部署SpringBoot应用](reference/docker_compose.md)
@@ -133,6 +133,9 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [你居然还去服务器上捞日志，搭个日志收集系统难道不香么！](reference/mall_elk_advance.md)
 - [性能优越的轻量级日志收集工具，微软、亚马逊都在用！](reference/efk_fluent.md)
 - [听说你的JWT库用起来特别扭，推荐一款贼好用的！](reference/jose_jwt_start.md)
+- [给Swagger换了个新皮肤，瞬间高大上了！](reference/knife4j_start.md)
+- [Docker服务开放了这个端口，服务器分分钟变肉机！](reference/docker_protect_socket.md)
+- [居然有人想白嫖我的日志，赶紧开启安全保护压压惊！](reference/elk_security.md)
 
 ## 工具篇
 > 一些常用开发工具的使用
