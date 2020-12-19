@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.dao.UmsAdminDao">
+
+    <resultMap id="AdminRoleResult" type="com.macro.mall.tiny.domain.AdminRoleDto"
+               extends="com.macro.mall.tiny.mbg.mapper.UmsAdminMapper.BaseResultMap">
+        <collection property="roleList" resultMap="com.macro.mall.tiny.mbg.mapper.UmsRoleMapper.BaseResultMap"
+                    columnPrefix="role_">
+        </collection>
+    </resultMap>
+
+    <resultMap id="ResourceWithCateResult" type="com.macro.mall.tiny.domain.ResourceWithCateDto"
+               extends="com.macro.mall.tiny.mbg.mapper.UmsResourceMapper.BaseResultMap">
+        <association property="resourceCategory"
+                     resultMap="com.macro.mall.tiny.mbg.mapper.UmsResourceCategoryMapper.BaseResultMap"
+                     columnPrefix="cate_">
+        </association>
+    </resultMap>
+
+    <select id="subList" resultMap="com.macro.mall.tiny.mbg.mapper.UmsAdminMapper.BaseResultMap">
+        SELECT *
+        FROM ums_admin
+        WHERE id IN (SELECT admin_id FROM ums_admin_role_relation WHERE role_id = #{roleId})
+    </select>
+
+    <select id="groupList" resultType="com.macro.mall.tiny.domain.RoleStatDto">
+        SELECT ur.id        AS roleId,
+               ur.NAME      AS roleName,
+               count(ua.id) AS count
+        FROM ums_role ur
+                 LEFT JOIN ums_admin_role_relation uarr ON ur.id = uarr.role_id
+                 LEFT JOIN ums_admin ua ON uarr.admin_id = ua.id
+        GROUP BY ur.id;
+    </select>
+
+    <select id="selectWithRoleList" resultMap="AdminRoleResult">
+        SELECT ua.*,
+               ur.id          AS role_id,
+               ur.NAME        AS role_name,
+               ur.description AS role_description,
+               ur.create_time AS role_create_time,
+               ur.STATUS      AS role_status,
+               ur.sort        AS role_sort
+        FROM ums_admin ua
+                 LEFT JOIN ums_admin_role_relation uarr ON ua.id = uarr.admin_id
+                 LEFT JOIN ums_role ur ON uarr.role_id = ur.id
+        WHERE ua.id = #{id}
+    </select>
+
+    <select id="selectResourceWithCate" resultMap="ResourceWithCateResult">
+        SELECT ur.*,
+               urc.id          AS cate_id,
+               urc.`name`      AS cate_name,
+               urc.create_time AS cate_create_time,
+               urc.sort        AS cate_sort
+        FROM ums_resource ur
+                 LEFT JOIN ums_resource_category urc ON ur.category_id = urc.id
+        WHERE ur.id = #{id}
+    </select>
+
+</mapper>
