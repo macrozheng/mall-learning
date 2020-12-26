@@ -106,6 +106,11 @@
   * [给Swagger换了个新皮肤，瞬间高大上了！](reference/knife4j_start.md)
   * [Docker服务开放了这个端口，服务器分分钟变肉机！](reference/docker_protect_socket.md)
   * [居然有人想白嫖我的日志，赶紧开启安全保护压压惊！](reference/elk_security.md)
+  * [面对成百上千台服务器产生的日志，试试这款轻量级日志搬运神器！](reference/filebeat_start.md)
+  * [还在手动部署SpringBoot应用？试试这个自动化插件！](reference/maven_docker_fabric8.md)
+  * [不要再重复造轮子了，这款开源工具类库贼好使！](reference/hutool_start.md)
+  * [还在手写CRUD代码？这款开源框架助你解放双手！](reference/mybatis_plus_start.md)
+  * [还在手写任务调度代码？试试这款可视化分布式调度框架！](reference/power_job_start.md)
 
 * 工具篇
   * [IDEA常用设置及推荐插件](reference/idea.md)
