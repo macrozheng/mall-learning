@@ -141,6 +141,11 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [不要再重复造轮子了，这款开源工具类库贼好使！](reference/hutool_start.md)
 - [还在手写CRUD代码？这款开源框架助你解放双手！](reference/mybatis_plus_start.md)
 - [还在手写任务调度代码？试试这款可视化分布式调度框架！](reference/power_job_start.md)
+- [微服务应用性能如何？APM监控工具来告诉你！](reference/elastic_apm_start.md)
+- [RabbitMQ实现即时通讯居然如此简单！连后端代码都省得写了？](reference/rabbitmq_mqtt_start.md)
+- [SpringBoot官方支持任务调度框架，轻量级用起来也挺香！](reference/quartz_start.md)
+- [Nginx如何支持HTTPS？手把手教贼简单！](reference/nginx_https_start.md)
+- [还在手动整合Swagger？Swagger官方Starter是真的香！](reference/swagger_starter.md)
 
 ## 工具篇
 > 一些常用开发工具的使用
