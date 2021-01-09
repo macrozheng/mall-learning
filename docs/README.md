@@ -146,6 +146,11 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [SpringBoot官方支持任务调度框架，轻量级用起来也挺香！](reference/quartz_start.md)
 - [Nginx如何支持HTTPS？手把手教贼简单！](reference/nginx_https_start.md)
 - [还在手动整合Swagger？Swagger官方Starter是真的香！](reference/swagger_starter.md)
+- [MySQL如何实时同步数据到ES？试试这款阿里开源的神器！](reference/canal_start.md)
+- [肝了一周总结的SpringBoot实战教程，太实用了！](reference/springboot_start.md)
+- [Elasticsearch官方已支持SQL查询，用起来贼方便！](reference/elasticsearch_sql_start.md)
+- [还在使用第三方Docker插件？SpringBoot官方插件真香！](reference/springboot_docker_plugin.md)
+- [当Swagger遇上YApi，瞬间高大上了！](reference/yapi_start.md)
 
 ## 工具篇
 > 一些常用开发工具的使用
