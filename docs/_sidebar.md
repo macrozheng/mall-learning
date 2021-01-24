@@ -121,6 +121,11 @@
   * [Elasticsearch官方已支持SQL查询，用起来贼方便！](reference/elasticsearch_sql_start.md)
   * [还在使用第三方Docker插件？SpringBoot官方插件真香！](reference/springboot_docker_plugin.md)
   * [当Swagger遇上YApi，瞬间高大上了！](reference/yapi_start.md)
+  * [DockerHub访问慢怎么破？自建个企业级镜像仓库试试！](reference/harbor_start.md)
+  * [解放双手！MyBatis官方代码生成工具给力！](reference/mybatis_generator_start.md)
+  * [Lombok有啥牛皮的？SpringBoot和IDEA官方都要支持它！](reference/lombok_start.md)
+  * [干掉mapper.xml！MyBatis新特性动态SQL真香！](reference/mybatis_dynamic_sql.md)
+  * [数据库迁移搞炸了！没用这款开源神器的锅？](reference/flyway_start.md)
 
 * 工具篇
   * [IDEA常用设置及推荐插件](reference/idea.md)
