@@ -478,6 +478,99 @@ yum list nginx*
 yum search nginx
 ```
 
+## 用户管理
+
+### 用户信息查看
+
+- 查看用户信息：
+
+```bash
+cat /etc/passwd
+```
+
+- 用户信息格式如下（密码已过滤）：
+
+```bash
+# 用户名:密码:用户标识号:组标识号:组注释性描述:主目录:默认shell
+root:x:0:0:root:/root:/bin/bash
+macro:x:1000:982:macro:/home/macro:/bin/bash
+```
+
+- 查看用户组信息：
+
+```bash
+cat /etc/group
+```
+
+- 用户组信息格式如下：
+
+```bash
+# 组名:密码:组标识号:组内用户列表
+root:x:0:
+docker:x:982:macro,andy
+```
+
+### passwd
+
+用于设置用户密码：
+
+```bash
+passwd root
+```
+
+![](images/linux_command_11.png)
+
+### su
+
+改变用户身份（切换到超级用户）：
+
+```bash
+# 切换到root用户
+su -
+# 切换到macro用户
+su macro
+```
+
+### groupadd
+
+添加用户组，使用`-g`可以设置用户组的标志号：
+
+```bash
+groupadd -g 1024 macrozheng
+```
+
+### groupdel
+
+删除用户组：
+
+```bash
+groupdel macrozheng
+```
+
+### useradd
+
+添加用户，`-u`设置标志号，`-g`设置主用户组：
+
+```bash
+useradd -u 1024 -g macrozheng macro
+```
+
+### usermod
+
+修改用户所属用户组：
+
+```bash
+usermod -g docker macro
+```
+
+### userdel
+
+删除用户，使用`-r`可以删除用户主目录：
+
+```bash
+userdel macro -r
+```
+
 ## 公众号
 
 ![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
