@@ -357,6 +357,32 @@ ln -s /mydata/docker /var/lib/docker
 
 ![](../images/docker_command_15.png)
 
+## Docker容器清理
+
+- 查看Docker占用的磁盘空间情况：
+
+```bash
+docker system df
+```
+
+- 删除所有关闭的容器：
+
+```bash
+docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
+```
+
+- 删除所有`dangling`镜像(没有Tag的镜像)：
+
+```bash
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+```
+
+- 删除所有`dangling`数据卷(即无用的 volume)：
+
+```bash
+docker volume rm $(docker volume ls -qf dangling=true)
+```
+
 ## 公众号
 
 ![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
