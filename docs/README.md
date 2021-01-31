@@ -174,6 +174,10 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - [IDEA同款数据库管理工具，提示太全了，用起来贼香！](reference/datagrip_start.md)
 - [写了100多篇原创文章，我常用的在线工具网站推荐给大家！](reference/my_web_tools.md)
 - [线上项目出BUG没法调试？推荐这款阿里开源的诊断神器！](reference/arthas_start.md)
+- [被我用烂的DEBUG调试技巧，专治各种搜索不到的问题！](reference/my_debug_skill.md)
+- [Github标星 8K+，免费又好用的Redis客户端工具！](reference/redis_desktop_start.md)
+- [Swagger界面丑、功能弱怎么破？用Postman增强下就给力了！](reference/swagger_postman.md)
+- [干掉Navicat！MySQL官方客户端到底行不行？](reference/mysql_workbench.md)
 
 ## 公众号
 
