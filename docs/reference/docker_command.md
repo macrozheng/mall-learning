@@ -111,6 +111,17 @@ docker rmi -f $(docker images)
 docker build -t mall/mall-admin:1.0-SNAPSHOT .
 ```
 
+### 推送镜像
+
+```bash
+# 登录Docker Hub
+docker login
+# 给本地镜像打标签为远程仓库名称
+docker tag mall/mall-admin:1.0-SNAPSHOT macrodocker/mall-admin:1.0-SNAPSHOT
+# 推送到远程仓库
+docker push macrodocker/mall-admin:1.0-SNAPSHOT
+```
+
 ## Docker容器常用命令
 
 ### 新建并启动容器
