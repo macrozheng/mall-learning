@@ -78,6 +78,7 @@
   * [Spring Cloud Alibaba：Sentinel实现熔断与限流](cloud/sentinel.md)
   * [使用Seata彻底解决Spring Cloud中的分布式事务问题](cloud/seata.md)
   * [微服务权限终极解决方案，Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！](cloud/gateway_oauth2.md)
+  * [我扒了半天源码，终于找到了Oauth2自定义处理结果的最佳方案！](cloud/oauth2_custom.md)
   * [微服务聚合Swagger文档，这波操作是真的香！](cloud/knife4j_cloud.md)
   
 * 参考篇
