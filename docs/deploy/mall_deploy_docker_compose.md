@@ -234,7 +234,7 @@ source /mall.sql;
 ```bash
 docker exec -it elasticsearch /bin/bash
 #此命令需要在容器中运行
-elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.4.0/elasticsearch-analysis-ik-6.4.0.zip
+elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.6.2/elasticsearch-analysis-ik-7.6.2.zip
 docker restart elasticsearch
 ```
 
