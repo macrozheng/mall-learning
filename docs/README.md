@@ -6,6 +6,14 @@
 <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
 </p>
 
+## 友情提示
+
+> 1. **快速体验项目**：[在线访问地址](http://www.macrozheng.com/admin/index.html)。
+> 2. **全套学习教程**：[《mall学习教程》](http://www.macrozheng.com/#/README)。
+> 3. **微服务版本**：基于Spring Cloud Hoxton & Alibaba的项目：[mall-swarm](https://github.com/macrozheng/mall-swarm)。
+> 4. **专属学习路线**：学习不走弯路，整理了套非常不错的[《mall专属学习路线》](#公众号)。
+> 5. **项目交流**：想要加群交流项目的朋友，可以加入[mall项目交流群](#公众号)。
+
 ## 简介
 mall学习教程，架构、业务、技术要点全方位解析。mall项目（39k+star）是一套电商系统，使用现阶段主流技术实现。  
 涵盖了SpringBoot 2.3.0、MyBatis 3.4.6、Elasticsearch 7.6.2、RabbitMQ 3.7.15、Redis 5.0、MongoDB 4.2.5、Mysql5.7等技术，采用Docker容器化部署。
@@ -184,5 +192,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 ## 公众号
 
 学习不走弯路，关注公众号「**macrozheng**」，回复「**学习路线**」，获取mall项目专属学习路线！
+
+加微信群交流，公众号后台回复「**加群**」即可。
 
 ![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)
