@@ -55,6 +55,7 @@
   * [mall-swarm在Windows环境下的部署](deploy/mall_swarm_deploy_windows.md)
   * [mall-swarm在Linux环境下的部署（基于Docker容器）](deploy/mall_swarm_deploy_docker.md)  
   * [微服务架构下的自动化部署，使用Jenkins来实现！](deploy/mall_swarm_deploy_jenkins.md)  
+  * [mall-swarm微服务项目在K8S下的实践！](deploy/mall_swarm_deploy_k8s.md)
   * [我常用的自动化部署技巧，贼好用，推荐给大家！](technology/springboot_auto_deploy.md)
 
 * 进阶篇
