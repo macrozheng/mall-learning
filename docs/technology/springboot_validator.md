@@ -1,4 +1,4 @@
-学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
 
 # SpringBoot中处理校验逻辑的两种方式，真的很机智！
 
@@ -131,55 +131,6 @@ public class BindingResultAspect {
 - 此时我们访问添加品牌的接口，不传入`name`字段，就会返回`名称不能为空`的错误信息；
 
 ![](../images/springboot_validator_01.png)
-
-- 使用切面的话，由于每个校验方法中都需要注入`BindingResult`对象，这样会导致很多重复工作，其实当校验失败时，SpringBoot默认会抛出`MethodArgumentNotValidException`或`BindException`异常，我们只要全局处理该异常依然可以得到校验失败信息。
-
-```java
-/**
- * 全局异常处理
- * Created by macro on 2020/2/27.
- */
-@ControllerAdvice
-public class GlobalExceptionHandler {
-    
-   @ResponseBody
-   @ExceptionHandler(value = MethodArgumentNotValidException.class)
-   public R handleValidException(MethodArgumentNotValidException e) {
-       BindingResult bindingResult = e.getBindingResult();
-       String message = null;
-       if (bindingResult.hasErrors()) {
-           FieldError fieldError = bindingResult.getFieldError();
-           if (fieldError != null) {
-               message = fieldError.getField()+fieldError.getDefaultMessage();
-           }
-       }
-       return CommonResult.failed(message);
-   }
-   
-    @ResponseBody
-    @ExceptionHandler(value = BindException.class)
-    public R handleValidException(BindException e) {
-        BindingResult bindingResult = e.getBindingResult();
-        String message = null;
-        if (bindingResult.hasErrors()) {
-            FieldError fieldError = bindingResult.getFieldError();
-            if (fieldError != null) {
-                message = fieldError.getField()+fieldError.getDefaultMessage();
-            }
-        }
-        return Response.failed(message);
-    }   
-}
-```
-
-- 由于SpringBoot 2.3版本默认移除了校验功能，如果想要开启的话需要添加如下依赖。
-
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-validation</artifactId>
-</dependency>
-```
 
 ### 自定义注解
 

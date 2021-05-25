@@ -1,102 +1,192 @@
-学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
 
 # mall-swarm在Linux环境下的部署（基于Docker容器）
 
-> 本文以`mall-swarm`项目为例，主要介绍一个微服务架构的电商项目如何在Docker容器下部署，涉及到大量系统组件的部署及多个Spring Cloud微服务应用的部署，基于CentOS7.6。
+> 本文以`mall-swarm`项目为例，主要介绍一个微服务架构的电商项目如何在Docker容器下部署，涉及到大量系统组件的部署及多个Spring Cloud 微服务应用的部署，基于CentOS7.6。
 
 ## 环境搭建
 
 ### 基础环境部署
 
-> `mall-swarm`运行需要的系统组件如下，使用Docker Compose 批量安装更方便，Docker Compose使用请参考：[使用Docker Compose部署SpringBoot应用](http://www.macrozheng.com/#/reference/docker_compose) 。
+> `mall-swarm`运行需要的系统组件如下，Docker容器中安装这些组件的方法直接参考该文章即可：[mall在Linux环境下的部署（基于Docker容器）](/deploy/mall_deploy_docker.md) 。
 
 | 组件          | 版本号 |
 | ------------- | ------ |
+| JDK           | 1.8    |
 | Mysql         | 5.7    |
-| Redis         | 5.0    |
-| MongoDb       | 4.3.5  |
+| Redis         | 3.2    |
+| Elasticsearch | 6.4.0  |
+| MongoDb       | 3.2    |
 | RabbitMq      | 3.7.15 |
 | Nginx         | 1.10   |
-| Elasticsearch | 7.6.2  |
-| Logstash      | 7.6.2  |
-| Kibana        | 7.6.2  |
-| Nacos         | 1.3.0  |
-
-- 本项目已经提供好了Docker Compose脚本，直接执行即可，脚本地址：https://github.com/macrozheng/mall-swarm/blob/master/document/docker/docker-compose-env.yml
-
-```bash
-docker-compose -f docker-compose-env.yml up -d
-```
-
-- 某些系统组件无法启动问题，具体参考：[mall在Linux环境下的部署（基于Docker Compose）](http://www.macrozheng.com/#/deploy/mall_deploy_docker_compose)
-
-- 由于新增了`Logstash`组件，需要预先创建好Logstash的配置文件，再安装Logstash的JSON插件，配置文件地址：https://github.com/macrozheng/mall-swarm/tree/master/document/elk/logstash.conf
-
-```bash
-# 创建好配置文件目录
-mkdir /mydata/logstash
-# 进入容器使用如下命令安装插件
-logstash-plugin install logstash-codec-json_lines
-```
 
 ### 镜像打包上传
 
-> 一共6个应用服务需要打包成Docker镜像，具体如何打包可以参考[使用Maven插件为SpringBoot应用构建Docker镜像](http://www.macrozheng.com/#/reference/docker_maven) 。需要注意的是如果打包过程中遇到找不到`mall-common`或`mall-mbg`模块，需要先按顺序将这些模块install到本地maven仓库再进行打包。
+> 一共8个应用服务需要打包成Docker镜像，具体如何打包可以参考[使用Maven插件构建Docker镜像](/reference/docker_maven.md) 。
+需要注意的是如果打包过程中遇到找不到`mall-common`、`mall-mbg`或`mall-security`的情况，需要先按顺序将这些模块install到本地maven仓库再进行打包。
 
-| 应用         | 说明         |
-| ------------ | ------------ |
-| mall-monitor | 监控中心     |
-| mall-gateway | 微服务网关   |
-| mall-auth    | 认证中心     |
-| mall-admin   | 商城后台服务 |
-| mall-portal  | 商城前台服务 |
-| mall-search  | 商城搜索服务 |
+| 应用          | 版本号 |
+| ------------- | ------ |
+| mall-registry | 1.8    |
+| mall-config   | 5.7    |
+| mall-monitor  | 3.2    |
+| mall-gateway  | 6.4.0  |
+| mall-admin    | 3.2    |
+| mall-portal   | 3.7.15 |
+| mall-search   | 1.10   |
+| mall-demo     | 1.10   |
 
 镜像打包上传完成后，完整docker仓库镜像示意图：
 
-![](../images/mall_swarm_run_09.png)
+![](../images/mall_swarm_linux_10.png)
 
 ## 应用部署
 
-### 在Nacos中添加配置文件
+### 部署mall-registry
 
-- 由于我们使用Nacos作为配置中心，统一管理配置，所以我们需要将项目`config`目录下的所有配置都添加到Nacos中，Nacos访问地址：http://192.168.3.101:8848/nacos/
-
-![](../images/mall_swarm_run_10.png)
-
-- 注意，配置文件的文件名称需要和Nacos中的`Data Id`一一对应；
-
-![](../images/mall_swarm_run_11.png)
-
-### 使用Docker Compose批量部署所有应用
-
-- 直接使用提供好的Docker Compose脚本，启动所有应用即可，脚本地址：https://github.com/macrozheng/mall-swarm/blob/master/document/docker/docker-compose-app.yml
+- 通过以下命令运行注册中心`mall-registry`：
 
 ```bash
-docker-compose -f docker-compose-app.yml up -d
+docker run -p 8001:8001 --name mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-registry/logs:/var/logs \
+-d mall/mall-registry:1.0-SNAPSHOT
 ```
 
-- 启动成功后，可以查看API文档信息，访问地址：http://192.168.3.101:8201/doc.html
+- 运行成功后，通过访问该地址可以查看注册中心控制台：http://192.168.6.132:8001/
 
-![](../images/mall_swarm_run_05.png)
+### 部署mall-config
+
+- 通过以下命令运行配置中心`mall-config`：
+
+```bash 
+docker run -p 8301:8301 --name mall-config \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-config/logs:/var/logs \
+-d mall/mall-config:1.0-SNAPSHOT
+```
+
+- 运行成功后，通过访问该地址可以查看`mall-admin`在prod环境下的配置信息：http://192.168.6.132:8301/master/admin-prod.yml
+
+- 需要`注意`的是prod环境下从配置中心获取的是存储在git仓库中的配置，如需更改需要将mall-config模块的配置文件application.yml中的git仓库配置改为你自己的。
+
+```yaml
+spring:
+  cloud:
+    config:
+      server:
+        git: #Git仓库存储
+          uri: https://gitee.com/macrozheng/mall-config.git #改为你自己的配置
+          username: macro
+          password: 123456
+          clone-on-start: true
+          search-paths: '{application}'
+```
+
+### 部署mall-monitor
+
+- 通过以下命令运行监控中心`mall-monitor`：
+
+```bash 
+docker run -p 8101:8101 --name mall-monitor \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-monitor/logs:/var/logs \
+-d mall/mall-monitor:1.0-SNAPSHOT
+```
+
+- 运行完成后可以通过该地址查看监控中心信息，账号密码为`macro:123456`：http://192.168.6.132:8101
+
+### 部署mall-gateway
+
+- 通过以下命令运行网关服务`mall-gateway`：
+
+```bash 
+docker run -p 8201:8201 --name mall-gateway \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-gateway/logs:/var/logs \
+-d mall/mall-gateway:1.0-SNAPSHOT
+```
+
+- 运行完成后可以通过该地址查看动态路由规则：http://192.168.6.132:8201/actuator/gateway/routes
+
+### 部署mall-admin
+
+- 通过以下命令运行后台服务`mall-admin`：
+
+```bash 
+docker run -p 8180:8180 --name mall-admin \
+--link mysql:db \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-admin/logs:/var/logs \
+-d mall/mall-admin:1.0-SNAPSHOT
+```
+
+- 通过`mall-gateway`网关服务访问接口文档：http://192.168.6.132:8201/mall-admin/swagger-ui.html
+
+### 部署mall-portal
+
+- 通过以下命令运行前台服务`mall-portal`：
+
+```bash 
+docker run -p 8085:8085 --name mall-portal \
+--link mysql:db \
+--link redis:redis \
+--link mongo:mongo \
+--link rabbitmq:rabbit \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-portal/logs:/var/logs \
+-d mall/mall-portal:1.0-SNAPSHOT
+```
+
+- 通过`mall-gateway`网关服务访问接口文档：http://192.168.6.132:8201/mall-portal/swagger-ui.html
+
+### 部署mall-search
+
+- 通过以下命令运行搜索服务`mall-search`：
+
+```bash 
+docker run -p 8081:8081 --name mall-search \
+--link mysql:db \
+--link elasticsearch:es \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-search/logs:/var/logs \
+-d mall/mall-search:1.0-SNAPSHOT
+```
+
+- 通过`mall-gateway`网关服务访问接口文档：http://192.168.6.132:8201/mall-search/swagger-ui.html
+
+### 部署mall-demo
+
+- 通过以下命令运行测试服务`mall-demo`：
+
+```bash 
+docker run -p 8082:8082 --name mall-demo \
+--link mysql:db \
+--link mall-registry:mall-registry \
+-v /etc/localtime:/etc/localtime \
+-v /mydata/app/mall-demo/logs:/var/logs \
+-d mall/mall-demo:1.0-SNAPSHOT
+```
+
+- 通过`mall-gateway`网关服务访问接口文档：http://192.168.6.132:8201/mall-demo/swagger-ui.html
 
 ## 运行完成效果展示
 
-- 查看注册中心注册服务信息，访问地址：http://192.168.3.101:8848/nacos/
+- 注册中心控制台信息：
 
-![](../images/mall_swarm_run_01.png)
+![](../images/mall_swarm_linux_07.png)
 
-- 监控中心应用信息，访问地址：http://192.168.3.101:8101
+- 监控中心应用信息：
 
-![](../images/mall_swarm_run_02.png)
+![](../images/mall_swarm_linux_08.png)
 
-![](../images/mall_swarm_run_03.png)
-
-![](../images/mall_swarm_run_04.png)
-
-- 日志收集系统信息，访问地址：http://192.168.3.101:5601
-
-![](../images/mall_swarm_run_06.png)
+![](../images/mall_swarm_linux_09.png)
 
 ## 可视化管理工具
 
@@ -120,7 +210,7 @@ docker run -p 9000:9000 -p 8000:8000 --name portainer \
 -d portainer/portainer
 ```
 
-- 查看Portainer的DashBoard信息，访问地址：http://192.168.3.101:9000
+- 查看Portainer的DashBoard信息：
 
 ![](../images/mall_swarm_linux_01.png)
 

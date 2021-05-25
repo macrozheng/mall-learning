@@ -1,80 +1,97 @@
-学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
 
 # mall-swarm在Windows环境下的部署
 
 ## 开发环境搭建
 
-> `mall-swarm`中使用到的环境和`mall`项目中大致相同，具体可以查看[mall在Windows环境下的部署](http://www.macrozheng.com/#/deploy/mall_deploy_windows)。
+> `mall-swarm`中使用到的环境和`mall`项目中大致相同，具体可以查看[mall在Windows环境下的部署](/deploy/mall_deploy_windows.md)。
 
-### 简易环境搭建流程
+简易环境搭建流程：
 
 - 安装IDEA并导入项目源码；
-
-- 安装MySQL，创建一个`mall`数据库，并导入`/document/sql/mall.sql`文件；
-
+- 安装MySql，创建一个`mall`数据库，并导入`/document/sql/mall.sql`文件；
 - 安装Redis、Elasticsearch、MongoDB、RabbitMQ等环境。
-
-### Nacos注册中心搭建
-
-- 由于使用了Nacos注册中心，我们需要先搭建Nacos注册中心，下载地址：https://github.com/alibaba/nacos/releases/download/1.3.1/nacos-server-1.3.1.zip
-
-- 下载完成后解压到指定文件夹，使用bin目录下的`startup.cmd`启动Nacos服务，访问地址：http://localhost:8848/nacos/
-
-![](../images/swarm_deploy_windows_01.png)
-
-- 将项目`config`目录下的配置文件添加到`Nacos`中，只要添加包含`dev`的配置即可，配置文件的文件名称需要和Nacos中的`Data Id`一一对应；
-
-![](../images/swarm_deploy_windows_02.png)
-
-![](../images/swarm_deploy_windows_03.png)
 
 ## 项目部署
 
-> `mall-swarm`项目启动有先后顺序，大家可以按照以下顺序启动。
+> `mall-swarm`项目启动有先后顺序，大家要按照以下顺序启动。
 
-- 启动网关服务`mall-gateway`，直接运行`MallGatewayApplication`的main函数即可；
+### 启动注册中心`mall-registory`
 
-- 启动认证中心`mall-auth`，直接运行`MallAuthApplication`的main函数即可；
+- 直接运行com.macro.mall.MallRegistryApplication的main函数即可；
+- 运行完成后可以通过注册中心控制台查看：http://localhost:8001
 
-- 启动后台管理服务`mall-admin`，直接运行`MallAdminApplication`的main函数即可；
+### 启动配置中心`mall-config`
 
-- 启动前台服务`mall-portal`，直接运行`MallPortalApplication`的main函数即可；
+- 直接运行com.macro.mall.MallConfigApplication的main函数即可；
+- 访问以下接口获取mall-admin在dev环境下的配置信息：http://localhost:8301/master/admin-dev.yml
 
-- 启动搜索服务`mall-search`，直接运行`MallSearchApplication`的main函数即可；
+### 启动监控中心`mall-monitor`
 
-- 启动监控中心`mall-monitor`，直接运行`MallMonitorApplication`的main函数即可；
+- 直接运行com.macro.mall.MallMonitorApplication的main函数即可；
+- 运行完成后可以通过监控中心控制台查看：http://localhost:8101
+- 输入账号密码`macro:123456`可以登录查看。
 
-- 运行完成后可以通过监控中心查看监控信息，账号密码为`macro:123456`：http://localhost:8101
+### 启动网关服务`mall-gateway`
 
-- 运行完成后可以直接通过如下地址访问API文档：http://localhost:8201/doc.html
+- 直接运行com.macro.mall.MallGatewayApplication的main函数即可；
+- 访问以下接口获取动态路由规则：http://localhost:8201/actuator/gateway/routes
 
-![](../images/swarm_deploy_windows_04.png)
+### 启动后台管理服务`mall-admin`
 
-- 如何访问需要登录的接口，先调用认证中心接口获取token，后台管理`client_id`和`client_secret`为`admin-app:123456`，前台系统为`portal-app:123456`；
+- 直接运行com.macro.mall.MallAdminApplication的main函数即可；
+- 通过`mall-gateway`网关服务访问接口文档：http://localhost:8201/mall-admin/swagger-ui.html
 
-![](../images/swarm_deploy_windows_05.png)
+![](../images/mall_swarm_windows_06.png)
 
-- 然后将token添加到请求头中，即可访问需要权限的接口了。
+- 登录接口地址：http://localhost:8201/mall-admin/admin/login
+- 访问登录接口获取到token后放入认证的头信息即可正常访问其他需要登录的接口：
 
-![](../images/swarm_deploy_windows_06.png)
+![](../images/mall_swarm_windows_09.png)
+
+### 启动前台服务`mall-portal`
+
+- 直接运行com.macro.mall.portal.MallPortalApplication的main函数即可；
+- 通过`mall-gateway`网关服务访问接口文档：http://localhost:8201/mall-portal/swagger-ui.html
+
+![](../images/mall_swarm_windows_07.png)
+
+- 登录接口地址：http://localhost:8201/mall-portal/sso/login
+- 调用需要登录的接口方式同`mall-admin`。
+
+### 启动搜索服务`mall-search`
+
+- 直接运行com.macro.mall.search.MallSearchApplication的main函数即可；
+- 通过`mall-gateway`网关服务访问接口文档：http://localhost:8201/mall-search/swagger-ui.html
+
+![](../images/mall_swarm_windows_10.png)
+
+### 启动测试服务`mall-demo`
+
+- 直接运行com.macro.mall.MallAdminApplication的main函数即可；
+- 通过`mall-gateway`网关服务访问接口文档：http://localhost:8201/mall-demo/swagger-ui.html
+
+![](../images/mall_swarm_windows_08.png)
+
+- 可以通过调用FeignAdminController、FeignPortalController、FeignSearchController来测试使用Feign的远程调用功能。
 
 ## 效果展示
 
-- 注册中心服务信息，访问地址：http://localhost:8848/nacos/
+- 注册中心服务信息：
 
-![](../images/swarm_deploy_windows_07.png)
+![](../images/mall_swarm_windows_01.png)
 
-- 监控中心服务概览信息，访问地址：http://localhost:8101
+- 监控中心服务概览信息：
 
-![](../images/swarm_deploy_windows_08.png)
+![](../images/mall_swarm_windows_02.png)
 
-![](../images/swarm_deploy_windows_09.png)
+![](../images/mall_swarm_windows_03.png)
 
-![](../images/swarm_deploy_windows_10.png)
+- 监控中心单应用详情信息：
 
-- 日志收集系统信息，访问地址：http://localhost:5601
+![](../images/mall_swarm_windows_04.png)
 
-![](../images/swarm_deploy_windows_11.png)
+![](../images/mall_swarm_windows_05.png)
 
 ## 公众号
 

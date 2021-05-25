@@ -1,4 +1,4 @@
-学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
+mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
 
 # Spring Data Redis 最佳实践！
 
@@ -41,19 +41,6 @@ docker run -p 6379:6379 --name redis \
 - 在当前地址栏输入cmd后，执行redis的启动命令：redis-server.exe redis.windows.conf
 
 ![](../images/spring_boot_redis_03.png)
-
-- 将Redis注册为服务的命令：
-
-```bash
-# 注册服务
-redis-server --service-install redis.windows.conf
-# 启动服务
-redis-server --service-start
-# 停止服务
-redis-server --service-stop
-# 删除服务
-redis-server --service-uninstall
-```
 
 ## Spring Cache 操作Redis
 
