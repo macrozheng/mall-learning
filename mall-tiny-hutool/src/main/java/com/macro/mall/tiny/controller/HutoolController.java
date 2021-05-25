@@ -10,11 +10,14 @@ import cn.hutool.core.date.DateField;
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.io.resource.ClassPathResource;
+import cn.hutool.core.lang.Validator;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
+import cn.hutool.crypto.digest.DigestUtil;
+import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONUtil;
 import com.macro.mall.tiny.common.api.CommonResult;
@@ -111,7 +114,7 @@ public class HutoolController {
         return CommonResult.success(null, "操作成功");
     }
 
-    @ApiOperation("ClassPathResource使用：在classPath下查找文件，在Tomcat等容器下，classPath一般是WEB-INF/classes")
+    @ApiOperation("ClassPath单一资源访问类：在classPath下查找文件")
     @GetMapping("/classPath")
     public CommonResult classPath() throws IOException {
         //获取定义在src/main/resources文件夹中的配置文件
@@ -276,5 +279,57 @@ public class HutoolController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @ApiOperation("Validator使用：字段验证器")
+    @GetMapping("/validator")
+    public CommonResult validator() {
+        //判断是否为邮箱地址
+        boolean result = Validator.isEmail("macro@qq.com");
+        LOGGER.info("Validator isEmail:{}", result);
+        //判断是否为手机号码
+        result = Validator.isMobile("18911111111");
+        LOGGER.info("Validator isMobile:{}", result);
+        //判断是否为IPV4地址
+        result = Validator.isIpv4("192.168.3.101");
+        LOGGER.info("Validator isIpv4:{}", result);
+        //判断是否为汉字
+        result = Validator.isChinese("你好");
+        LOGGER.info("Validator isChinese:{}", result);
+        //判断是否为身份证号码（18位中国）
+        result = Validator.isCitizenId("123456");
+        LOGGER.info("Validator isCitizenId:{}", result);
+        //判断是否为URL
+        result = Validator.isUrl("http://www.baidu.com");
+        LOGGER.info("Validator isUrl:{}", result);
+        //判断是否为生日
+        result = Validator.isBirthday("2020-02-01");
+        LOGGER.info("Validator isBirthday:{}", result);
+        return CommonResult.success(null, "操作成功");
+    }
+
+    @ApiOperation("DigestUtil使用：摘要算法工具类")
+    @GetMapping("/digestUtil")
+    public CommonResult digestUtil() {
+        String password = "123456";
+        //计算MD5摘要值，并转为16进制字符串
+        String result = DigestUtil.md5Hex(password);
+        LOGGER.info("DigestUtil md5Hex:{}", result);
+        //计算SHA-256摘要值，并转为16进制字符串
+        result = DigestUtil.sha256Hex(password);
+        LOGGER.info("DigestUtil sha256Hex:{}", result);
+        //生成Bcrypt加密后的密文，并校验
+        String hashPwd = DigestUtil.bcrypt(password);
+        boolean check = DigestUtil.bcryptCheck(password,hashPwd);
+        LOGGER.info("DigestUtil bcryptCheck:{}", check);
+        return CommonResult.success(null, "操作成功");
+    }
+
+    @ApiOperation("HttpUtil使用：Http请求工具类")
+    @GetMapping("/httpUtil")
+    public CommonResult httpUtil() {
+        String response = HttpUtil.get("http://localhost:8080/hutool/covert");
+        LOGGER.info("HttpUtil get:{}", response);
+        return CommonResult.success(null, "操作成功");
     }
 }

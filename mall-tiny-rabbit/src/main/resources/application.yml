@@ -1,0 +1,12 @@
+server:
+  port: 8008
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    virtual-host: /mall
+    username: mall
+    password: mall
+    publisher-confirms: true #消息发送到交换器确认
+    publisher-returns: true #消息发送到队列确认
