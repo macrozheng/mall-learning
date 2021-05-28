@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.mbg.mapper.DeviceInfoMapper">
+  <resultMap id="BaseResultMap" type="com.macro.mall.tiny.mbg.model.DeviceInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="application" jdbcType="VARCHAR" property="application" />
+    <result column="rack_id" jdbcType="INTEGER" property="rackId" />
+    <result column="rack_name" jdbcType="VARCHAR" property="rackName" />
+    <result column="rack_room_info_building_name" jdbcType="VARCHAR" property="rackRoomInfoBuildingName" />
+    <result column="rack_room_info_room_name" jdbcType="VARCHAR" property="rackRoomInfoRoomName" />
+    <result column="install_location" jdbcType="VARCHAR" property="installLocation" />
+    <result column="device_pid_device_height" jdbcType="VARCHAR" property="devicePidDeviceHeight" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+  </resultMap>
+  <update id="updateDevices" parameterType="java.util.List">
+    update device_info
+    <trim prefix="set">
+      <trim prefix="rack_id = (case" suffix="end),">
+        <foreach collection="list" item="item">
+          when id = #{item.id} then #{item.rackId}
+        </foreach>
+      </trim>
+      <trim prefix="rack_name = (case" suffix="end),">
+        <foreach collection="list" item="item">
+          when id = #{item.id} then #{item.rackName}
+        </foreach>
+      </trim>
+      <trim prefix="install_location = (case" suffix="end)">
+        <foreach collection="list" item="item">
+          when id = #{item.id} then #{item.installLocation}
+        </foreach>
+      </trim>
+    </trim>
+    <where>
+      <foreach collection="list" item="item" separator="or">
+        id = #{item.id}
+      </foreach>
+    </where>
+  </update>
+
+  <insert id="insertDevices" parameterType="java.util.List">
+    insert into device_info(id,application,rack_id,rack_name,rack_room_info_building_name,rack_room_info_room_name,install_location,device_pid_device_height,image)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (null,#{item.application},#{item.rackId},#{item.rackName},#{item.rackRoomInfoBuildingName},#{item.rackRoomInfoRoomName},#{item.installLocation},#{item.devicePidDeviceHeight},#{item.image})
+    </foreach>
+  </insert>
+
+  <select id="listDevices" resultMap="BaseResultMap">
+    select
+    id,application,rack_id,rack_name,rack_room_info_building_name,rack_room_info_room_name,install_location,device_pid_device_height,image
+    from device_info
+  </select>
+
+
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.mbg.mapper.RackInfoMapper">
+  <resultMap id="BaseResultMap" type="com.macro.mall.tiny.mbg.model.RackInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="height" jdbcType="INTEGER" property="height" />
+    <result column="room_info_room_name" jdbcType="VARCHAR" property="roomInfoRoomName" />
+    <result column="room_info_building_name" jdbcType="VARCHAR" property="roomInfoBuildingName" />
+    <result column="x" jdbcType="INTEGER" property="x" />
+    <result column="y" jdbcType="INTEGER" property="y" />
+  </resultMap>
+
+  <update id="updateRacks" parameterType="java.util.List">
+    update rack_info
+    <trim prefix="set">
+      <trim prefix="x = (case" suffix="end),">
+        <foreach collection="list" item="item">
+            when id = #{item.id} then #{item.x}
+        </foreach>
+      </trim>
+      <trim prefix="y = (case" suffix="end)">
+        <foreach collection="list" item="item">
+          when id = #{item.id} then #{item.y}
+        </foreach>
+      </trim>
+    </trim>
+    <where>
+      <foreach collection="list" item="item" separator="or">
+          id = #{item.id}
+      </foreach>
+    </where>
+  </update>
+
+  <insert id="insertRacks" parameterType="java.util.List">
+    insert into rack_info(id,name,height,room_info_room_name,room_info_building_name,x,y)
+    values
+    <foreach collection="list" item="item" index="index" separator=",">
+      (null,#{item.name},#{item.height},#{item.roomInfoRoomName},#{item.roomInfoBuildingName},#{item.x},#{item.y})
+    </foreach>
+  </insert>
+
+  <select id="listRacks" resultMap="BaseResultMap">
+    select
+    id,name,height,room_info_room_name,room_info_building_name,x,y
+    from rack_info
+  </select>
+
+
+</mapper>
