@@ -1,0 +1,4 @@
+server:
+  port: 8088
+pulsar:
+  service-url: pulsar://192.168.5.78:6650
