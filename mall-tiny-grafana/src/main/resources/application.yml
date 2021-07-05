@@ -1,0 +1,30 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.5.78:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  application:
+    name: mall-tiny-grafana
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露端点`/actuator/prometheus`
+        include: 'prometheus'
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+logging:
+  level:
+    com.macro.mall.tiny: debug
+
