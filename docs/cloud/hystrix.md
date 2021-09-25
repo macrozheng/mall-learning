@@ -164,11 +164,11 @@ public CommonResult getDefaultUser2(@PathVariable Long id, Throwable e) {
 }
 ```
 
-- 调用接口进行测试：[http://localhost:8401/user/tesException/1](http://localhost:8401/user/tesException/1)
+- 调用接口进行测试：[http://localhost:8401/user/testException/1](http://localhost:8401/user/testException/1)
 
 ![](../images/springcloud_hystrix_04.png)
 
-- 调用接口进行测试：[http://localhost:8401/user/tesException/1](http://localhost:8401/user/tesException/2)
+- 调用接口进行测试：[http://localhost:8401/user/testException/2](http://localhost:8401/user/testException/2)
 
 ![](../images/springcloud_hystrix_05.png)
 
