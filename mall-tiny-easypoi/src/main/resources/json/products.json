@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "productSn": "7437788",
+    "name": "小米8",
+    "subTitle": "全面屏游戏智能手机 6GB+64GB 黑色 全网通4G 双卡双待",
+    "brandName": "小米",
+    "price": 2699,
+    "count": 1
+  },
+  {
+    "id": 2,
+    "productSn": "7437789",
+    "name": "红米5A",
+    "subTitle": "全网通版 3GB+32GB 香槟金 移动联通电信4G手机 双卡双待",
+    "brandName": "小米",
+    "price": 649,
+    "count": 1
+  },
+  {
+    "id": 3,
+    "productSn": "7437799",
+    "name": "Apple iPhone 8 Plus",
+    "subTitle": "64GB 红色特别版 移动联通电信4G手机",
+    "brandName": "苹果",
+    "price": 5499,
+    "count": 1
+  }
+]
