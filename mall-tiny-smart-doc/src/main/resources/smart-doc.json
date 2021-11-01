@@ -1,0 +1,44 @@
+{
+  "serverUrl": "http://localhost:8088",
+  "outPath": "src/main/resources/static/doc",
+  "isStrict": false,
+  "allInOne": true,
+  "createDebugPage": false,
+  "packageFilters": "com.macro.mall.tiny.controller.*",
+  "style": "xt256",
+  "projectName": "mall-tiny-smart-doc",
+  "showAuthor": false,
+  "allInOneDocFileName": "index.html",
+  "requestHeaders": [
+    {
+      "name": "Authorization",
+      "type": "string",
+      "desc": "token请求头的值",
+      "value": "token请求头的值",
+      "required": false,
+      "since": "-",
+      "pathPatterns": "/brand/**",
+      "excludePathPatterns": "/admin/login"
+    }
+  ],
+  "responseBodyAdvice": {
+    "className": "com.macro.mall.tiny.common.api.CommonResult"
+  },
+  "errorCodeDictionaries": [
+    {
+      "title": "title",
+      "enumClassName": "com.macro.mall.tiny.common.api.ResultCode",
+      "codeField": "code",
+      "descField": "message"
+    }
+  ],
+  "revisionLogs": [
+    {
+      "version": "1.0",
+      "revisionTime": "2021-11-01 10:30",
+      "status": "update",
+      "author": "macro",
+      "remarks": "created by macro"
+    }
+  ]
+}
