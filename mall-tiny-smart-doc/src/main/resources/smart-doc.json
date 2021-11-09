@@ -40,5 +40,11 @@
       "author": "macro",
       "remarks": "created by macro"
     }
-  ]
+  ],
+  "appKey": "20211103905498418195988480",
+  "appToken": "b6c50f442eb348f48867d85f4ef2eaea",
+  "secret": "~#ZS~!*2B3I01vbW0f9iKH,rzj-%Xv^Q",
+  "openUrl": "http://localhost:7700/api",
+  "debugEnvName":"测试环境",
+  "debugEnvUrl":"http://localhost:8088"
 }
