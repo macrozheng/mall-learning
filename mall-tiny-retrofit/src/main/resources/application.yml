@@ -1,0 +1,44 @@
+server:
+  port: 8086
+
+springfox:
+  documentation:
+    enabled: true
+
+remote:
+  baseUrl: http://localhost:8088/
+
+retrofit:
+  # 全局连接超时时间
+  global-connect-timeout-ms: 3000
+  # 全局读取超时时间
+  global-read-timeout-ms: 3000
+  # 全局写入超时时间
+  global-write-timeout-ms: 35000
+  # 全局完整调用超时时间
+  global-call-timeout-ms: 0
+  # 日志打印配置
+  log:
+    # 启用日志打印
+    enable: true
+    # 日志打印拦截器
+    logging-interceptor: com.github.lianjiatech.retrofit.spring.boot.interceptor.DefaultLoggingInterceptor
+    # 全局日志打印级别
+    global-log-level: info
+    # 全局日志打印策略
+    global-log-strategy: body
+  # 重试配置
+  retry:
+    # 是否启用全局重试
+    enable-global-retry: true
+    # 全局重试间隔时间
+    global-interval-ms: 100
+    # 全局最大重试次数
+    global-max-retries: 2
+    # 全局重试规则
+    global-retry-rules:
+      - response_status_not_2xx
+      - occur_exception
+    # 重试拦截器
+    retry-interceptor: com.github.lianjiatech.retrofit.spring.boot.retry.DefaultRetryInterceptor
+
