@@ -67,7 +67,7 @@ npm -v
 # 解决存放在Github上的sass无法下载的问题
 SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
 # 将镜像源替换为淘宝的加速访问
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 # 安装项目依赖
 npm install
 # 项目打包
@@ -114,7 +114,7 @@ set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass&& npm install node
 
 ```bash
 # 设置为淘宝的镜像源
-npm config set registry https://registry.npm.taobao.org
+npm config set registry https://registry.npmmirror.com
 # 设置为官方镜像源
 npm config set registry https://registry.npmjs.org
 ```
