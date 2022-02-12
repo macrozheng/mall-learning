@@ -65,7 +65,7 @@
 # 查看版本信息
 npm -v
 # 解决存放在Github上的sass无法下载的问题
-SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
+SASS_BINARY_SITE=https://npmmirror.com/mirrors/node-sass/ npm install node-sass
 # 将镜像源替换为淘宝的加速访问
 npm config set registry https://registry.npmmirror.com
 # 安装项目依赖
@@ -103,9 +103,9 @@ echo '----start nginx----'
 
 ```bash
 # linux
-SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass
+SASS_BINARY_SITE=https://npmmirror.com/mirrors/node-sass/ npm install node-sass
 # window
-set SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass&& npm install node-sass
+set SASS_BINARY_SITE=https://npmmirror.com/mirrors/node-sass&& npm install node-sass
 ```
 
 ### 有些依赖无法下载导致构建失败
