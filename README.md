@@ -43,7 +43,7 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 
 ## 业务篇
 
-> 全面解析mall中使用的数据库表结构，带你属性mall项目中的电商业务。
+> 全面解析mall中使用的数据库表结构，带你熟悉mall项目中的电商业务。
 
 - [mall数据库表结构概览](https://www.macrozheng.com/mall/database/mall_database_overview.html)
 - [商品模块数据库表解析（一）](https://www.macrozheng.com/mall/database/mall_pms_01.html)
