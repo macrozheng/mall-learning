@@ -1,0 +1,24 @@
+# 打包任务
+build-job:
+  stage: build
+  # 指定标签，只要具有该标签的runner才会执行
+  tags:
+    - docker
+  script:
+    # 使用Maven打包
+    - mvn clean package
+    # 将jar包、Dockerfile、运行脚本复制到指定目录
+    - cp target/mall-tiny-gitlab-1.0-SNAPSHOT.jar /mydata/build/mall-tiny-gitlab-1.0-SNAPSHOT.jar
+    - cp Dockerfile /mydata/build/Dockerfile
+    - cp run.sh /mydata/build/run.sh
+
+# 部署任务
+deploy-job:
+  stage: deploy
+  tags:
+    - docker
+  script:
+    # 进入指定目录并执行运行脚本
+    - cd /mydata/build
+    - chmod +x run.sh
+    - ./run.sh

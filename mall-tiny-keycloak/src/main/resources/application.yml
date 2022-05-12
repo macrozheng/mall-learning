@@ -1,0 +1,37 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+springfox:
+  documentation:
+    enabled: true
+
+# Keycloak相关配置
+keycloak:
+  # 设置客户端所在领域
+  realm: macrozheng
+  # 设置Keycloak认证服务访问路径
+  auth-server-url: http://192.168.7.142:8080/auth
+  # 设置客户端ID
+  resource: mall-tiny-keycloak
+  # 设置为公开客户端，不需要秘钥即可访问
+  public-client: true
+  # 配置角色与可访问路径的对应关系
+  security-constraints:
+    - auth-roles:
+        - mall-tiny
+      security-collections:
+        - patterns:
+            - '/brand/*'
+            - '/swagger-ui/*'
+

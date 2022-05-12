@@ -1,0 +1,36 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+# 自定义jwt key
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mySecret #JWT加解密使用的密钥
+  expiration: 604800 #JWT的超期限时间(60*60*24)
+  tokenHead: Bearer  #JWT负载中拿到开头
+
+#springdoc:
+#  swagger-ui:
+#    # 修改Swagger UI路径
+#    path: /swagger-ui.html
+#    # 开启Swagger UI界面
+#    enabled: true
+#  api-docs:
+#    # 修改api-docs路径
+#    path: /v3/api-docs
+#    # 开启api-docs
+#    enabled: true
+#  # 配置需要生成接口文档的扫描包
+#  packages-to-scan: com.macro.mall.tiny.controller
+#  # 配置需要生成接口文档的接口路径
+#  paths-to-match: /brand/**,/admin/**

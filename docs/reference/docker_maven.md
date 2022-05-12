@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 
 # 使用Maven插件为SpringBoot应用构建Docker镜像
 >本文主要介绍如何使用Maven插件将SpringBoot应用打包为Docker镜像，并上传到私有镜像仓库Docker Registry的过程。

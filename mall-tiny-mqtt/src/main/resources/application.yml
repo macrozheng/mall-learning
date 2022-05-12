@@ -1,0 +1,12 @@
+server:
+  port: 8088
+rabbitmq:
+  mqtt:
+    url: tcp://localhost:1883
+    username: guest
+    password: guest
+    defaultTopic: testTopic
+
+spring:
+  thymeleaf:
+    cache: false

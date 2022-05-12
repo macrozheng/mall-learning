@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: node
+    static_configs:
+      - targets: ['192.168.5.78:9100']
+  # 采集任务名称
+  - job_name: 'mall-tiny-grafana'
+    # 采集时间间隔
+    scrape_interval: 5s
+    # 采集超时时间
+    scrape_timeout: 10s
+    # 采集数据路径
+    metrics_path: '/actuator/prometheus'
+    # 采集服务的地址
+    static_configs:
+      - targets: ['192.168.5.78:8088']

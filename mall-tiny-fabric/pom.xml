@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.macro.mall</groupId>
+    <artifactId>mall-tiny-fabric</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>mall-tiny-fabric</name>
+    <description>Demo project for Spring Boot</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <skipTests>true</skipTests>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <dependencies>
+        <!--SpringBoot通用依赖模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--MyBatis分页插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.10</version>
+        </dependency>
+        <!--集成druid连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
+        </dependency>
+        <!-- MyBatis 生成器 -->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+        <!--Mysql数据库驱动-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
+        </dependency>
+        <!--Swagger-UI API文档生产工具-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.33.0</version>
+                <executions>
+                    <!--如果想在项目打包时构建镜像添加-->
+                    <execution>
+                        <id>build-image</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- Docker 远程管理地址-->
+                    <dockerHost>http://192.168.3.101:2375</dockerHost>
+                    <!-- Docker 推送镜像仓库地址-->
+                    <pushRegistry>http://192.168.3.101:5000</pushRegistry>
+                    <images>
+                        <image>
+                            <!--由于推送到私有镜像仓库，镜像名需要添加仓库地址-->
+                            <name>192.168.3.101:5000/mall-tiny/${project.name}:${project.version}</name>
+                            <!--定义镜像构建行为-->
+                            <build>
+                                <!--定义基础镜像-->
+                                <from>java:8</from>
+                                <args>
+                                    <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                                </args>
+                                <!--定义哪些文件拷贝到容器中-->
+                                <assembly>
+                                    <!--定义拷贝到容器的目录-->
+                                    <targetDir>/</targetDir>
+                                    <!--只拷贝生成的jar包-->
+                                    <descriptorRef>artifact</descriptorRef>
+                                </assembly>
+                                <!--定义容器启动命令-->
+                                <entryPoint>["java", "-jar","/${project.build.finalName}.jar"]</entryPoint>
+                                <!--定义维护者-->
+                                <maintainer>macrozheng</maintainer>
+                                <!--使用Dockerfile构建时打开-->
+                                <!--<dockerFileDir>${project.basedir}</dockerFileDir>-->
+                            </build>
+                            <!--定义容器启动行为-->
+                            <run>
+                                <!--设置容器名，可采用通配符-->
+                                <containerNamePattern>${project.artifactId}</containerNamePattern>
+                                <!--设置端口映射-->
+                                <ports>
+                                    <port>8080:8080</port>
+                                </ports>
+                                <!--设置容器间连接-->
+                                <links>
+                                    <link>mysql:db</link>
+                                </links>
+                                <!--设置容器和宿主机目录挂载-->
+                                <volumes>
+                                    <bind>
+                                        <volume>/etc/localtime:/etc/localtime</volume>
+                                        <volume>/mydata/app/${project.artifactId}/logs:/var/logs</volume>
+                                    </bind>
+                                </volumes>
+                            </run>
+                        </image>
+                    </images>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

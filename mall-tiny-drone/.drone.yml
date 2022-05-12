@@ -1,0 +1,39 @@
+kind: pipeline # 定义对象类型，还有secret和signature两种类型
+type: docker # 定义流水线类型，还有kubernetes、exec、ssh等类型
+name: mall-tiny-drone # 定义流水线名称
+
+steps: # 定义流水线执行步骤，这些步骤将顺序执行
+  - name: package # 流水线名称
+    image: maven:3-jdk-8 # 定义创建容器的Docker镜像
+    volumes: # 将容器内目录挂载到宿主机，仓库需要开启Trusted设置
+      - name: maven-cache
+        path: /root/.m2 # 将maven下载依赖的目录挂载出来，防止重复下载
+      - name: maven-build
+        path: /app/build # 将应用打包好的Jar和执行脚本挂载出来
+    commands: # 定义在Docker容器中执行的shell命令
+      - mvn clean package # 应用打包命令
+      - cp target/mall-tiny-drone-1.0-SNAPSHOT.jar /app/build/mall-tiny-drone-1.0-SNAPSHOT.jar
+      - cp Dockerfile /app/build/Dockerfile
+      - cp run.sh /app/build/run.sh
+
+  - name: build-start
+    image: appleboy/drone-ssh # SSH工具镜像
+    settings:
+      host: 192.168.5.78 # 远程连接地址
+      username: root # 远程连接账号
+      password:
+        from_secret: ssh_password # 从Secret中读取SSH密码
+      port: 22 # 远程连接端口
+      command_timeout: 5m # 远程执行命令超时时间
+      script:
+        - cd /mydata/maven/build # 进入宿主机构建目录
+        - chmod +x run.sh # 更改为可执行脚本
+        - ./run.sh # 运行脚本打包应用镜像并运行
+
+volumes: # 定义流水线挂载目录，用于共享数据
+  - name: maven-build
+    host:
+      path: /mydata/maven/build # 从宿主机中挂载的目录
+  - name: maven-cache
+    host:
+      path: /mydata/maven/cache

@@ -1,14 +1,14 @@
 # mall学习教程
 <p>
-<a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
-<a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
-<a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
-<a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
+    <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
+    <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E4%BA%A4%E6%B5%81-%E5%BE%AE%E4%BF%A1%E7%BE%A4-2BA245.svg" alt="交流"></a>
+    <a href="https://github.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E9%A1%B9%E7%9B%AE-mall-blue.svg" alt="后台项目"></a>
+    <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
+    <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
 </p>
 
 ## 简介
-mall学习教程，架构、业务、技术要点全方位解析。mall项目（25k+star）是一套电商系统，使用现阶段主流技术实现。
-涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。
+mall学习教程，架构、业务、技术要点全方位解析。mall项目（50k+star）是一套电商系统，使用现阶段主流技术实现。涵盖了SpringBoot 2.3.0、MyBatis 3.4.6、Elasticsearch 7.6.2、RabbitMQ 3.7.15、Redis 5.0、MongoDB 4.2.5、Mysql5.7等技术，采用Docker容器化部署。
 
 ## 项目地址
 - 后台项目：[https://github.com/macrozheng/mall](https://github.com/macrozheng/mall)
@@ -16,122 +16,119 @@ mall学习教程，架构、业务、技术要点全方位解析。mall项目（
 - 微服务项目：[https://github.com/macrozheng/mall-swarm](https://github.com/macrozheng/mall-swarm)
 
 ## 更好的阅读体验
-- 文档地址：[http://www.macrozheng.com](http://www.macrozheng.com)
+- 文档地址：[https://www.macrozheng.com](https://www.macrozheng.com)
 - 备用地址：[https://macrozheng.github.io/mall-learning](https://macrozheng.github.io/mall-learning)
 
 ## 序章
-- [mall架构及功能概览](https://juejin.im/post/5cf7c305e51d4510b71da5c5)
-- [mall学习所需知识点（推荐资料）](https://juejin.im/post/5cf7c3aef265da1ba84a7fdc)
+
+> 项目架构及数据库概览，推荐一些项目学习所需知识点。
+
+- [mall架构及功能概览](https://www.macrozheng.com/mall/foreword/mall_foreword_01.html)
+- [mall学习所需知识点（推荐资料）](https://www.macrozheng.com/mall/foreword/mall_foreword_02.html)
 
 ## 架构篇
-> 手把手教你搭建一个mall在使用的项目骨架
 
-- [mall整合SpringBoot+MyBatis搭建基本骨架](https://juejin.im/post/5cf7c4a7e51d4577790c1c50)
-- [mall整合Swagger-UI实现在线API文档](https://juejin.im/post/5cf9035cf265da1bb47d54f8)
-- [mall整合Redis实现缓存功能](https://juejin.im/post/5cf90e9ee51d454f6f16eba0)
-- [mall整合SpringSecurity和JWT实现认证和授权（一）](https://juejin.im/post/5cf90fa5e51d455d6d5357d3)
-- [mall整合SpringSecurity和JWT实现认证和授权（二）](https://juejin.im/post/5cfa0933f265da1b8f1ab2da)
-- [mall整合SpringTask实现定时任务](https://juejin.im/post/5cfa0ea16fb9a07eaf2b8261)
-- [mall整合Elasticsearch实现商品搜索](https://juejin.im/post/5cfba3e9f265da1b614fea60)
-- [mall整合Mongodb实现文档操作](https://juejin.im/post/5cfba5b0f265da1bcc1933fe)
-- [mall整合RabbitMQ实现延迟消息](https://juejin.im/post/5cff98986fb9a07ed36ea139)
-- [mall整合OSS实现文件上传](https://juejin.im/post/5cff9944e51d4577555508a9)
+> 手把手教你搭建一个mall在使用的项目骨架，带你逐步熟悉mall所使用的技术栈。
+
+- [mall整合SpringBoot+MyBatis搭建基本骨架](https://www.macrozheng.com/mall/architect/mall_arch_01.html)
+- [mall整合Swagger-UI实现在线API文档](https://www.macrozheng.com/mall/architect/mall_arch_02.html)
+- [mall整合Redis实现缓存功能](https://www.macrozheng.com/mall/architect/mall_arch_03.html)
+- [mall整合SpringSecurity和JWT实现认证和授权（一）](https://www.macrozheng.com/mall/architect/mall_arch_04.html)
+- [mall整合SpringSecurity和JWT实现认证和授权（二）](https://www.macrozheng.com/mall/architect/mall_arch_05.html)
+- [mall整合SpringTask实现定时任务](https://www.macrozheng.com/mall/architect/mall_arch_06.html)
+- [mall整合Elasticsearch实现商品搜索](https://www.macrozheng.com/mall/architect/mall_arch_07.html)
+- [mall整合Mongodb实现文档操作](https://www.macrozheng.com/mall/architect/mall_arch_08.html)
+- [mall整合RabbitMQ实现延迟消息](https://www.macrozheng.com/mall/architect/mall_arch_09.html)
+- [mall整合OSS实现文件上传](https://www.macrozheng.com/mall/architect/mall_arch_10.html)
 
 ## 业务篇
-> 全面解析mall中使用的数据库表结构
 
-- [mall数据库表结构概览](https://juejin.im/post/5d34684c6fb9a07ef562724b)
-- [商品模块数据库表解析（一）](https://juejin.im/post/5d385a7e518825680e4577ee)
-- [商品模块数据库表解析（二）](https://juejin.im/post/5d39ba2cf265da1bc23fbd26)
-- [订单模块数据库表解析（一）](https://juejin.im/post/5d4196fef265da03bd04fa31)
-- [订单模块数据库表解析（二）](https://juejin.im/post/5d46db2a5188255d1e013ca0)
-- [订单模块数据库表解析（三）](https://juejin.im/post/5d497f92e51d4561e0516a9d)
-- [营销模块数据库表解析（一）](https://juejin.im/post/5d5012856fb9a06ad45135a6)
-- [营销模块数据库表解析（二）](https://juejin.im/post/5d555c7ae51d453b386a6302)
-- [营销模块数据库表解析（三）](https://juejin.im/post/5d5bf6676fb9a06b0703c0c5)
+> 全面解析mall中使用的数据库表结构，带你熟悉mall项目中的电商业务。
+
+- [mall数据库表结构概览](https://www.macrozheng.com/mall/database/mall_database_overview.html)
+- [商品模块数据库表解析（一）](https://www.macrozheng.com/mall/database/mall_pms_01.html)
+- [商品模块数据库表解析（二）](https://www.macrozheng.com/mall/database/mall_pms_02.html)
+- [订单模块数据库表解析（一）](https://www.macrozheng.com/mall/database/mall_oms_01.html)
+- [订单模块数据库表解析（二）](https://www.macrozheng.com/mall/database/mall_oms_02.html)
+- [订单模块数据库表解析（三）](https://www.macrozheng.com/mall/database/mall_oms_03.html)
+- [营销模块数据库表解析（一）](https://www.macrozheng.com/mall/database/mall_sms_01.html)
+- [营销模块数据库表解析（二）](https://www.macrozheng.com/mall/database/mall_sms_02.html)
+- [营销模块数据库表解析（三）](https://www.macrozheng.com/mall/database/mall_sms_03.html)
+- [权限管理功能设计与优化](https://www.macrozheng.com/mall/database/mall_permission.html)
 
 ## 技术要点篇
-> mall中一些功能的技术要点解析
 
-- [MyBatis Generator使用过程中踩过的一个坑](https://juejin.im/post/5d107037e51d45599e019de8)
-- [SpringBoot应用中使用AOP记录接口访问日志](https://juejin.im/post/5d2001bb6fb9a07edf276593)
-- [SpringBoot应用整合ELK实现日志收集](https://juejin.im/post/5d2738a2f265da1bac404299)
-- [前后端分离项目，如何解决跨域问题](https://juejin.im/post/5d4c162351882560b9545358)
-- [Java 8都出那么久了，Stream API了解下？](https://juejin.im/post/5d6d2016e51d453c135c5b25)
-- [仅需四步，整合SpringSecurity+JWT实现登录认证！](https://juejin.im/post/5df0e79bf265da33dd2f52af)
-- [前后端分离项目，如何优雅实现文件存储！](https://juejin.im/post/5e0ca2266fb9a0484a45969c)
-- [前后端分离项目，引入Spring Cloud Gateway遇到的一个问题！](https://juejin.im/post/5e13248e5188253ab849d125)
+> mall中一些功能的技术要点解析，这些技术要点和业务结合地比较紧密。
+
+- [MyBatis Generator使用过程中踩过的一个坑](https://www.macrozheng.com/mall/technology/mybatis_mapper.html)
+- [SpringBoot应用中使用AOP记录接口访问日志](https://www.macrozheng.com/mall/technology/aop_log.html)
+- [前后端分离项目，如何解决跨域问题](https://www.macrozheng.com/mall/technology/springboot_cors.html)
+- [Java 8都出那么久了，Stream API了解下？](https://www.macrozheng.com/mall/technology/java_stream.html)
+- [仅需四步，整合SpringSecurity+JWT实现登录认证！](https://www.macrozheng.com/mall/technology/springsecurity_use.html)
+- [前后端分离项目，如何优雅实现文件存储！](https://www.macrozheng.com/mall/technology/minio_use.html)
+- [前后端分离项目，引入Spring Cloud Gateway遇到的一个问题！](https://www.macrozheng.com/mall/technology/gateway_cors.html)
+- [手把手教你搞定权限管理，结合Spring Security实现接口的动态权限控制！](https://www.macrozheng.com/mall/technology/permission_back.html)
+- [手把手教你搞定权限管理，结合Vue实现菜单的动态权限控制！](https://www.macrozheng.com/mall/technology/permission_front.html)
+- [商品SKU功能设计与优化](https://www.macrozheng.com/mall/technology/product_sku.html)
+- [SpringBoot中处理校验逻辑的两种方式，真的很机智！](https://www.macrozheng.com/mall/technology/springboot_validator.html)
+- [使用Redis+AOP优化权限管理功能，这波操作贼爽！](https://www.macrozheng.com/mall/technology/redis_permission.html)
+- [Elasticsearch项目实战，商品搜索功能设计与实现！](https://www.macrozheng.com/mall/technology/product_search.html)
+- [RabbitMQ实现延迟消息居然如此简单，整个插件就完事了！](https://www.macrozheng.com/mall/technology/rabbitmq_delay.html)
+- [给Swagger升级了新版本，没想到居然有这么多坑！](https://www.macrozheng.com/mall/technology/swagger_upgrade.html)
+- [Elasticsearch 升级 7.x 版本后，我感觉掉坑里了！](https://www.macrozheng.com/mall/technology/elasticsearch_upgrade.html)
+- [搞定Mall项目中的权限管理功能，弄懂这些问题就妥了！](https://www.macrozheng.com/mall/technology/mall_permission_question.html)
 
 ## 部署篇
-> mall开发及生产环境的搭建
 
-- [mall在Windows环境下的部署](https://juejin.im/post/5d1362de51882551fe065b61)
-- [mall在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5d1802ab6fb9a07f0a2df5ae)
-- [mall在Linux环境下的部署（基于Docker Compose）](https://juejin.im/post/5d1c98d66fb9a07ebf4b8ad5)
-- [mall在Linux环境下的自动化部署（基于Jenkins）](https://juejin.im/post/5e15d7b16fb9a0484f5c3931)
-- [mall前端项目的安装与部署](https://juejin.im/post/5d2c7c6b518825076377d7b9)
-- [mall-swarm在Windows环境下的部署](https://juejin.im/post/5de3c1a35188256e855b6e54)
-- [mall-swarm在Linux环境下的部署（基于Docker容器）](https://juejin.im/post/5de65bffe51d4557f71a5ec1)
-- [微服务架构下的自动化部署，使用Jenkins来实现！](https://juejin.im/post/5dfa250e51882579dc6f7c90)
+> mall开发及生产环境的搭建，涵盖Windows、Docker、K8S及自动化部署。
 
-
-## 进阶篇
-> 一套涵盖大部分核心组件使用的Spring Cloud教程，包括Spring Cloud Alibaba及分布式事务Seata，基于Spring Cloud Greenwich及SpringBoot 2.1.7
-
-- [Spring Cloud 整体架构概览](https://juejin.im/post/5d764f05e51d4561fb04bfd7)
-- [Spring Cloud Eureka：服务注册与发现](https://juejin.im/post/5d78cd53f265da03d55e8351)
-- [Spring Cloud Ribbon：负载均衡的服务调用](https://juejin.im/post/5d7f9006f265da03951a260c)
-- [Spring Cloud Hystrix：服务容错保护](https://juejin.im/post/5d822d27e51d45621479ad92)
-- [Hystrix Dashboard：断路器执行监控](https://juejin.im/post/5d88cb58f265da03e4679eff)
-- [Spring Cloud OpenFeign：基于Ribbon和Hystrix的声明式服务调用](https://juejin.im/post/5d9c85c3e51d45782c23fab6)
-- [Spring Cloud Zuul：API网关服务](https://juejin.im/post/5d9f2dea6fb9a04e3e724067)
-- [Spring Cloud Config：外部集中化配置管理](https://juejin.im/post/5da4709af265da5baa5b06ac)
-- [Spring Cloud Bus：消息总线](https://juejin.im/post/5da70d1351882509615bea34)
-- [Spring Cloud Sleuth：分布式请求链路跟踪](https://juejin.im/post/5dadb4d36fb9a04e02409a7d)
-- [Spring Cloud Consul：服务治理与配置中心](https://juejin.im/post/5db05582f265da4d4c20180f)
-- [Spring Cloud Gateway：新一代API网关服务](https://juejin.im/post/5db6eed6518825644076d0b6)
-- [Spring Boot Admin：微服务应用监控](https://juejin.im/post/5db98a2d518825649c730f81)
-- [Spring Cloud Security：Oauth2使用入门](https://juejin.im/post/5dc013bae51d456e817cec30)
-- [Spring Cloud Security：Oauth2结合JWT使用](https://juejin.im/post/5dc2bec6f265da4d4f65bebe)
-- [Spring Cloud Security：Oauth2实现单点登录](https://juejin.im/post/5dc95a675188256e040db43f)
-- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](https://juejin.im/post/5dcbf7bc5188250d1f5a78ea)
-- [Spring Cloud Alibaba：Sentinel实现熔断与限流](https://juejin.im/post/5dd29bece51d4561e80f9053)
-- [使用Seata彻底解决Spring Cloud中的分布式事务问题](https://juejin.im/post/5dd53a9d5188255d35425a08)
-- [IDEA中创建和启动SpringBoot应用的正确姿势](https://juejin.im/post/5d8b69366fb9a04e3348b06c)
+- [mall在Windows环境下的部署](https://www.macrozheng.com/mall/deploy/mall_deploy_windows.html)
+- [mall在Linux环境下的部署（基于Docker容器）](https://www.macrozheng.com/mall/deploy/mall_deploy_docker.html)
+- [mall在Linux环境下的部署（基于Docker Compose）](https://www.macrozheng.com/mall/deploy/mall_deploy_docker_compose.html)
+- [mall前端项目的安装与部署](https://www.macrozheng.com/mall/deploy/mall_deploy_web.html)
+- [mall-swarm在Windows环境下的部署](https://www.macrozheng.com/mall/deploy/mall_swarm_deploy_windows.html)
+- [mall-swarm在Linux环境下的部署（基于Docker容器）](https://www.macrozheng.com/mall/deploy/mall_swarm_deploy_docker.html)
+- [mall使用Jenkins实现自动化部署](https://www.macrozheng.com/mall/deploy/mall_deploy_jenkins.html)
+- [mall-swarm使用Jenkins实现自动化部署](https://www.macrozheng.com/mall/deploy/mall_swarm_deploy_jenkins.html)
+- [mall-swarm微服务项目在K8S下的实践！](https://www.macrozheng.com/mall/deploy/mall_swarm_deploy_k8s.html)
 
 ## 参考篇
-> mall相关技术的使用教程
 
-- [开发者必备Mysql命令](https://juejin.im/post/5d00fd40f265da1bb67a11b3)
-- [开发者必备Linux命令](https://juejin.im/post/5d0253845188255e1305c741)
-- [Linux防火墙Firewall和Iptables的使用](https://juejin.im/post/5d0253fe6fb9a07edb39420d)
-- [开发者必备Docker命令](https://juejin.im/post/5d0781f56fb9a07f014ef6be)
-- [使用Maven插件构建Docker镜像](https://juejin.im/post/5d08e3d26fb9a07ed8424488)
-- [使用DockerFile为SpringBoot应用构建Docker镜像](https://juejin.im/post/5d0a25b76fb9a07ed524a438)
-- [使用Docker Compose部署SpringBoot应用](https://juejin.im/user/5cf7c1d7f265da1bc07e28b7)
-- [Hutool中那些常用的工具类和方法](https://juejin.im/post/5d6fb7b0e51d4561c67840de)
-- [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
-- [Nginx的这些妙用，你肯定有不知道的！](https://juejin.im/post/5dee499151882512444014eb)
-- [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](https://juejin.im/post/5df780d3e51d4557ff140b30)
-- [使用Jenkins一键打包部署前端应用，就是这么6！](https://juejin.im/post/5e0360e951882512400ae872)
-- [Github标星19K+Star，10分钟自建对象存储服务！](https://juejin.im/post/5e09f8fbe51d4575a46f05e5)
-- [MySql主从复制，从原理到实践！](https://juejin.im/post/5e1daba46fb9a02fb75d5e92)
-- [你还在代码里做读写分离么，试试这个中间件吧！](https://juejin.im/post/5e22b37ee51d454d523be24d)
+> mall相关技术的参考教程，每篇都是可以独立学习的教程，学习过程中遇到不懂的知识点可以从这里找找。
 
-## 工具篇
-> 一些常用开发工具的使用
-
-- [IDEA常用设置及推荐插件](https://juejin.im/post/5d0458085188256aa76bc678)
-- [Navicat实用功能：数据备份与结构同步](https://juejin.im/post/5d00fc865188255fc6384126)
-- [Postman：API接口调试利器](https://juejin.im/post/5d5a9032e51d4561db5e3a4a)
-- [10分钟搭建自己的Git仓库](https://juejin.im/post/5d63d600e51d453c135c5af3)
-- [IDEA中的Git操作，看这一篇就够了！](https://juejin.im/post/5d667fc6e51d453b5d4d8da5)
-- [虚拟机安装及使用Linux，看这一篇就够了！](https://juejin.im/post/5ddfd1665188256ec024cb7c)
-- [推荐一个项目管理工具，落地基于Scrum的敏捷开发！](https://juejin.im/post/5e4200885188254944669a79)
+- [开发者必备Mysql命令](https://www.macrozheng.com/mall/reference/mysql.html)
+- [还在百度Linux命令？推荐一套我用起来特顺手的命令！](https://www.macrozheng.com/mall/reference/linux_command.html)
+- [Linux防火墙Firewall和Iptables的使用](https://www.macrozheng.com/mall/reference/linux_firewall.html)
+- [还在百度Docker命令？推荐一套我用起来特顺手的命令！](https://www.macrozheng.com/mall/reference/docker_command.html)
+- [使用Maven插件为SpringBoot应用构建Docker镜像](https://www.macrozheng.com/mall/reference/docker_maven.html)
+- [使用DockerFile为SpringBoot应用构建Docker镜像](https://www.macrozheng.com/mall/reference/docker_file.html)
+- [使用Docker Compose部署SpringBoot应用](https://www.macrozheng.com/mall/reference/docker_compose.html)
+- [Hutool中那些常用的工具类和方法 ](https://www.macrozheng.com/mall/reference/hutool_start.html)
+- [Nginx的这些妙用，你肯定有不知道的！](https://www.macrozheng.com/mall/reference/nginx.html)
+- [使用Jenkins一键打包部署SpringBoot应用，就是这么6！](https://www.macrozheng.com/mall/reference/jenkins.html)
+- [使用Jenkins一键打包部署前端应用，就是这么6！](https://www.macrozheng.com/mall/reference/jenkins_vue.html)
+- [Github标星19K+Star，10分钟自建对象存储服务！](https://www.macrozheng.com/mall/reference/minio.html)
+- [Spring Data Redis 最佳实践！](https://www.macrozheng.com/mall/reference/spring_data_redis.html)
+- [Elasticsearch快速入门，掌握这些刚刚好！](https://www.macrozheng.com/mall/reference/elasticsearch_start.html)
+- [MongoDB快速入门，掌握这些刚刚好！](https://www.macrozheng.com/mall/reference/mongodb_start.html)
+- [我常用的自动化部署技巧，贼好用，推荐给大家！](https://www.macrozheng.com/mall/reference/springboot_auto_deploy.html)
+- [连RabbitMQ的5种核心消息模式都不懂，也敢说自己会用消息队列！](https://www.macrozheng.com/mall/reference/rabbitmq_start.html)
+- [SpringBoot应用整合ELK实现日志收集](https://www.macrozheng.com/mall/reference/mall_tiny_elk.html)
+- [你居然还去服务器上捞日志，搭个日志收集系统难道不香么！](https://www.macrozheng.com/mall/reference/mall_elk_advance.html)
+- [给Swagger换了个新皮肤，瞬间高大上了！](https://www.macrozheng.com/mall/reference/knife4j_start.html)
+- [Docker服务开放了这个端口，服务器分分钟变肉机！](https://www.macrozheng.com/mall/reference/docker_protect_socket.html)
+- [居然有人想白嫖我的日志，赶紧开启安全保护压压惊！](https://www.macrozheng.com/mall/reference/elk_security.html)
+- [Nginx如何支持HTTPS？手把手教贼简单！](https://www.macrozheng.com/mall/reference/nginx_https_start.html)
+- [还在手动整合Swagger？Swagger官方Starter是真的香！](https://www.macrozheng.com/mall/reference/swagger_starter.html)
+- [肝了一周总结的SpringBoot实战教程，太实用了！](https://www.macrozheng.com/mall/reference/springboot_start.html)
+- [解放双手！MyBatis官方代码生成工具给力！](https://www.macrozheng.com/mall/reference/mybatis_generator_start.html)
+- [Lombok有啥牛皮的？SpringBoot和IDEA官方都要支持它！](https://www.macrozheng.com/mall/reference/lombok_start.html)
 
 
 ## 公众号
 
-mall项目全套学习教程连载中，关注公众号「**macrozheng**」第一时间获取。
+学习不走弯路，关注公众号「**macrozheng**」，回复「**学习路线**」，获取mall项目专属学习路线！
+
+加微信群交流，公众号后台回复「**加群**」即可。
 
 ![公众号图片](http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg)

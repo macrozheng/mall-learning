@@ -1,0 +1,22 @@
+{
+  // 开启推送
+  "enable": true,
+  // 扫描package，多个用;隔开
+  "basePackage": "com.macro.mall.tiny.controller",
+  // 推送URL，IP端口对应Torna服务器
+  "url": "http://localhost:7700/api",
+  // appKey
+  "appKey": "20211103905498418195988480",
+  // secret
+  "secret": "~#ZS~!*2B3I01vbW0f9iKH,rzj-%Xv^Q",
+  // 模块token
+  "token": "74365d40038d4f648ae65a077d956836",
+  // 调试环境，格式：环境名称,调试路径，多个用"|"隔开
+  "debugEnv": "test,http://localhost:8088",
+  // 推送人
+  "author": "macro",
+  // 打开调试:true/false
+  "debug": true,
+  // 是否替换文档，true：替换，false：不替换（追加）。默认：true
+  "isReplace": true
+}

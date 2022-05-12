@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/flyway?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+  flyway:
+    # 启用Flyway功能
+    enabled: true
+    # 禁用Flyway的clean命令，使用clean命令会删除schema下的所有表
+    clean-disabled: true
+    # 设置Flyway的SQL脚本路径
+    locations: classpath:db/migration
+    # 设置版本信息控制板名称，默认flyway_schema_history
+    table: flyway_schema_history
+    # 在执行migrate命令是需要有flyway_schema_history表，通过baseline命令可以生成该表
+    baseline-on-migrate: true
+    # 指定baseline版本号，低于该版本的SQL脚本在migrate是不会执行
+    baseline-version: 1
+    # 设置字符编码
+    encoding: UTF-8
+    # 不允许不按顺序迁移
+    out-of-order: false
+    # 设置Flyway管控的schema，不设置的话为datasourcel.url中指定的schema
+    schemas: flyway
+    # 执行migrate时开启校验
+    validate-on-migrate: true
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml

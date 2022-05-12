@@ -1,0 +1,46 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/magic_api?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+magic-api:
+  # 配置api管理页面入口
+  web: /magic/web
+  # 配置存储方式
+  resource:
+    # 配置接口资源存储位置，可选file、database、redis
+    type: database
+    # 存储表名
+    tableName: magic_api_file
+    # 使用database、redis存储时的key前缀
+    prefix: /magic-api
+    # 是否是只读模式
+    readonly: false
+  # 启用驼峰命名转换
+  sql-column-case: camel
+  # 分页配置
+  page-config:
+    # 页大小的请求参数名称
+    size: size
+    # 页码的请求参数名称
+    page: page
+    # 未传页码时的默认页码
+    default-page: 1
+    # 未传页大小时的默认页大小
+    default-size: 10
+  # 集成Swagger配置
+  swagger-config:
+    # 文档名称
+    name: MagicAPI 测试接口
+    # 文档标题
+    title: MagicAPI Swagger Docs
+    # 文档描述
+    description: MagicAPI 测试接口信息
+    # 文档版本号
+    version: 1.0
+    # 文档资源位置
+    location: /v2/api-docs/magic-api/swagger2.json

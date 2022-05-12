@@ -1,4 +1,4 @@
-mall项目全套学习教程连载中，[关注公众号](#公众号)第一时间获取。
+学习不走弯路，[关注公众号](#公众号) 回复「学习路线」，获取mall项目专属学习路线！
 # Nginx的这些妙用，你肯定有不知道的！
 
 > 本文将从反向代理、文件压缩、地址重写三方面来讲解Nginx在Docker环境下的使用技巧！
@@ -252,6 +252,47 @@ server {
 ```
 
 - 此时访问旧域名`docs.macrozheng.com`会直接跳转到`www.macrozheng.com`去。
+
+## 按目录划分项目
+
+> 有时候我们需要使用同一个域名来访问不同的前端项目，这时候就需要通过子目录来区分前端项目了。
+
+- 比如说我们需要按以下路径来访问各个前端项目；
+
+```
+www.macrozheng.com #访问文档项目
+www.macrozheng.com/admin #访问后台项目
+www.macrozheng.com/app #访问移动端项目
+```
+
+- 修改www.conf配置文件，添加不同的location规则，要注意`alias`和`root`指令的区别，root不会将location配置的路径去掉，而alias会将location配置的路径去掉。
+
+```
+server {
+    listen       80;
+    server_name  www.macrozheng.com;
+
+    location / {
+        root   /usr/share/nginx/html/www;
+        index  index.html index.htm;
+    }
+
+    location /admin {
+        alias   /usr/share/nginx/html/admin;
+        index  index.html index.htm;
+    }
+
+    location /app {
+        alias   /usr/share/nginx/html/app;
+        index  index.html index.htm;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
 
 ## 公众号
 
