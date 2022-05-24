@@ -1,0 +1,21 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴露端点`/actuator/arthas`
+        include: 'arthas'
+arthas:
+  agent-id: mall-tiny-arthas
+  tunnel-server: ws://arthas-tunnel-server:7777/ws
