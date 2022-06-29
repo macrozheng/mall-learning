@@ -214,7 +214,7 @@ spring:
 - 首先进入Rancher容器内部；
 
 ```bash
-docker exex -it rancher /bin/bash
+docker exec -it rancher /bin/bash
 ```
 
 - 通过`crictl`命令下载应用镜像，下载过程有点慢而且没有进度条，需要耐心等待；
