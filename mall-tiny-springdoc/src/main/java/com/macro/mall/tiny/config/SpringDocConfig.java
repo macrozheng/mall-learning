@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class SpringDocConfig {
-    private static final String SECURITY_SCHEME_NAME = "BearerAuth";
+    private static final String SECURITY_SCHEME_NAME = "Authorization";
     @Bean
     public OpenAPI mallTinyOpenAPI() {
         return new OpenAPI()
