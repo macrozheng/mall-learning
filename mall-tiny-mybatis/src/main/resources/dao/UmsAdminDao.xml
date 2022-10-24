@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.dao.UmsAdminDao">
+    <select id="selectByIdSimple" resultType="com.macro.mall.tiny.model.UmsAdmin">
+        select * from ums_admin where id = #{id}
+    </select>
+
+    <select id="selectById" resultType="com.macro.mall.tiny.model.UmsAdmin">
+        select username,
+               password,
+               icon,
+               email,
+               nick_name   as nickName,
+               note,
+               create_time as createTime,
+               login_time  as loginTime,
+               status
+        from ums_admin
+        where id = #{id}
+    </select>
+
+    <select id="selectByIds" resultType="com.macro.mall.tiny.model.UmsAdmin">
+        select username,
+               password,
+               icon,
+               email,
+               nick_name   as nickName,
+               note,
+               create_time as createTime,
+               login_time  as loginTime,
+               status
+        from ums_admin
+        where id in
+        <foreach collection="ids" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
+
+    <insert id="insert">
+        insert into ums_admin(username, password, icon, email, nick_name, note, create_time, login_time)
+        values (#{username}, #{password}, #{icon}, #{email}, #{nickName}, #{note}, #{createTime}, #{loginTime})
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <insert id="insertBatch">
+        insert into ums_admin(username, password, icon, email, nick_name, note, create_time, login_time) values
+        <foreach collection="entityList" separator="," item="item">
+            (#{item.username}, #{item.password}, #{item.icon}, #{item.email}, #{item.nickName}, #{item.note}, #{item.createTime}, #{item.loginTime})
+        </foreach>
+    </insert>
+
+    <update id="updateById">
+        update ums_admin
+        set username = #{username},
+            password = #{password},
+            icon = #{icon},
+            email = #{email},
+            nick_name = #{nickName},
+            note = #{note},
+            create_time = #{createTime},
+            login_time = #{loginTime}
+        where id = #{id}
+    </update>
+    <update id="updateByIdSelective">
+        update ums_admin
+        <set>
+            <if test="username!=null and username!=''">
+                username = #{username},
+            </if>
+            <if test="password!=null and password!=''">
+                password = #{password},
+            </if>
+            <if test="icon!=null and icon!=''">
+                icon = #{icon},
+            </if>
+            <if test="email!=null and email!=''">
+                email = #{email},
+            </if>
+            <if test="nickName!=null and nickName!=''">
+                nick_name = #{nickName},
+            </if>
+            <if test="note!=null and note!=''">
+                note = #{note},
+            </if>
+            <if test="createTime!=null">
+                create_time = #{createTime},
+            </if>
+            <if test="loginTime!=null">
+                login_time = #{loginTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        delete from  ums_admin where id = #{id}
+    </delete>
+
+    <select id="selectByUsernameAndEmailLike" resultType="com.macro.mall.tiny.model.UmsAdmin">
+        select username,
+               password,
+               icon,
+               email,
+               nick_name   as nickName,
+               note,
+               create_time as createTime,
+               login_time  as loginTime,
+               status
+        from ums_admin
+        where 1=1
+        <if test="username!=null and username!=''">
+            and username like concat('%',#{username},'%')
+        </if>
+        <if test="email!=null and email!=''">
+            and email like concat('%',#{email},'%')
+        </if>
+    </select>
+
+    <select id="selectByUsernameAndEmailLike2" resultType="com.macro.mall.tiny.model.UmsAdmin">
+        select username,
+        password,
+        icon,
+        email,
+        nick_name as nickName,
+        note,
+        create_time as createTime,
+        login_time as loginTime,
+        status
+        from ums_admin
+        where 1=1
+        <choose>
+            <when test="username!=null and username!=''">
+                and username like concat('%',#{username},'%')
+            </when>
+            <when test="email!=null and email!=''">
+                and email like concat('%',#{email},'%')
+            </when>
+            <otherwise>
+                and 1=2
+            </otherwise>
+        </choose>
+    </select>
+    <select id="selectByUsernameAndEmailLike3" resultType="com.macro.mall.tiny.model.UmsAdmin">
+        select username,
+        password,
+        icon,
+        email,
+        nick_name as nickName,
+        note,
+        create_time as createTime,
+        login_time as loginTime,
+        status
+        from ums_admin
+        <where>
+            <if test="username!=null and username!=''">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test="email!=null and email!=''">
+                and email like concat('%',#{email},'%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

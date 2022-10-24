@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.dao.UmsResourceCategoryDao">
+
+    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.model.UmsResourceCategory">
+        <id property="id" column="id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="name" column="name"/>
+        <result property="sort" column="sort"/>
+    </resultMap>
+
+    <resultMap id="selectCategoryWithResourceMap" type="com.macro.mall.tiny.domain.UmsResourceCategoryExt" extends="BaseResultMap">
+        <collection property="resourceList" columnPrefix="resource_" resultMap="com.macro.mall.tiny.dao.UmsResourceDao.BaseResultMap"/>
+    </resultMap>
+
+    <select id="selectCategoryWithResource" resultMap="selectCategoryWithResourceMap">
+        select urc.id,
+               urc.create_time,
+               urc.name,
+               urc.sort,
+               ur.id resource_id,
+               ur.create_time resource_create_time,
+               ur.name resource_name,
+               ur.url resource_url,
+               ur.description resource_description,
+               ur.category_id resource_category_id
+        from ums_resource_category urc
+        left join ums_resource ur on urc.id = ur.category_id
+        where urc.id = #{id}
+    </select>
+</mapper>

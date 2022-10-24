@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.macro.mall.tiny.dao.UmsResourceDao">
+
+    <resultMap id="BaseResultMap" type="com.macro.mall.tiny.model.UmsResource">
+        <id property="id" column="id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="name" column="name"/>
+        <result property="url" column="url"/>
+        <result property="description" column="description"/>
+        <result property="categoryId" column="category_id"/>
+    </resultMap>
+
+    <resultMap id="ResourceWithCategoryMap" type="com.macro.mall.tiny.domain.UmsResourceExt" extends="BaseResultMap">
+        <association property="category" resultMap="com.macro.mall.tiny.dao.UmsResourceCategoryDao.BaseResultMap" columnPrefix="category_"/>
+    </resultMap>
+
+    <select id="selectResourceWithCategory" resultType="com.macro.mall.tiny.domain.UmsResourceExt">
+        select ur.id,
+               ur.create_time  as createTime,
+               ur.name,
+               ur.url,
+               ur.description,
+               ur.category_id  as categoryId,
+               urc.id          as "category.id",
+               urc.name        as "category.name",
+               urc.sort        as "category.sort",
+               urc.create_time as "category.createTime"
+        from ums_resource ur
+                 left join ums_resource_category urc on ur.category_id = urc.id
+        where ur.id = #{id}
+    </select>
+
+    <select id="selectResourceWithCategory2" resultMap="ResourceWithCategoryMap">
+        select ur.id,
+               ur.create_time,
+               ur.name,
+               ur.url,
+               ur.description,
+               ur.category_id,
+               urc.id          as category_id,
+               urc.name        as category_name,
+               urc.sort        as category_sort,
+               urc.create_time as category_create_time
+        from ums_resource ur
+                 left join ums_resource_category urc on ur.category_id = urc.id
+        where ur.id = #{id}
+    </select>
+    <select id="selectListByCategoryId" resultType="com.macro.mall.tiny.model.UmsResource">
+        select * from ums_resource where category_id = #{categoryId}
+    </select>
+</mapper>
