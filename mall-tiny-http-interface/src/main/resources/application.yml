@@ -1,0 +1,12 @@
+server:
+  port: 8086
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+springfox:
+  documentation:
+    enabled: true
+
+remote:
+  baseUrl: http://localhost:8088/
