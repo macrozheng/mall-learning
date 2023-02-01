@@ -41,6 +41,7 @@ docker pull mysql:5.7
 - 使用如下命令启动MySQL服务：
 
 ```bash
+mkdir /mydata/mysql/conf/conf.d /mydata/mysql/conf/mysql.conf.d
 docker run -p 3306:3306 --name mysql \
 -v /mydata/mysql/log:/var/log/mysql \
 -v /mydata/mysql/data:/var/lib/mysql \
