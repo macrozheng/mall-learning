@@ -3,7 +3,10 @@ package com.macro.mall.tiny.example;
 import lombok.Getter;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @Getter注解实现属性懒加载
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 public class GetterLazyExample {
     @Getter(lazy = true)

@@ -4,8 +4,10 @@ import com.github.pagehelper.PageInfo;
 import com.macro.mall.tiny.model.UmsResource;
 
 /**
- * UmsResource的Service接口
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description UmsResource的Service接口
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 public interface UmsResourceService {
 

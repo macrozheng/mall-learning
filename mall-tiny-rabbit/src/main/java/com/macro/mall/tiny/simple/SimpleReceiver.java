@@ -21,7 +21,10 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 简单模式消费者
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 @RabbitListener(queues = "simple.hello")
 public class SimpleReceiver {

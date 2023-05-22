@@ -6,8 +6,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**
- * 商品ES操作类
- * Created by macro on 2018/6/19.
+ * @auther macrozheng
+ * @description 商品ES操作类
+ * @date 2018/6/19
+ * @github https://github.com/macrozheng
  */
 public interface EsProductRepository extends ElasticsearchRepository<EsProduct, Long> {
     /**

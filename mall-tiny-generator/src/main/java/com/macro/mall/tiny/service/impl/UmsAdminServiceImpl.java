@@ -16,8 +16,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * 后台用户管理Service实现类
- * Created by macro on 2020/12/8.
+ * @auther macrozheng
+ * @description 后台用户管理Service实现类
+ * @date 2020/12/8
+ * @github https://github.com/macrozheng
  */
 @Service
 public class UmsAdminServiceImpl implements UmsAdminService {

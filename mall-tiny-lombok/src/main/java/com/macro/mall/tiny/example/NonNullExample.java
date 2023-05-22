@@ -3,7 +3,10 @@ package com.macro.mall.tiny.example;
 import lombok.NonNull;
 
 /**
- * Created by macro on 2020/12/16.
+ * @auther macrozheng
+ * @description @NonNull注解使用示例
+ * @date 2020/12/16
+ * @github https://github.com/macrozheng
  */
 public class NonNullExample {
     private String name;

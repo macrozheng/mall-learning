@@ -15,28 +15,30 @@ import java.util.List;
 
 
 /**
- * 品牌管理Controller
- * Created by macro on 2019/4/19.
+ * @auther macrozheng
+ * @description 品牌管理Controller
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
 @Controller
 @RequestMapping("/brand")
 public class PmsBrandController {
     @Autowired
-    private PmsBrandService demoService;
+    private PmsBrandService brandService;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PmsBrandController.class);
 
-    @RequestMapping(value = "listAll", method = RequestMethod.GET)
+    @RequestMapping(value = "/listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsBrand>> getBrandList() {
-        return CommonResult.success(demoService.listAllBrand());
+        return CommonResult.success(brandService.listAllBrand());
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult createBrand(@RequestBody PmsBrand pmsBrand) {
         CommonResult commonResult;
-        int count = demoService.createBrand(pmsBrand);
+        int count = brandService.createBrand(pmsBrand);
         if (count == 1) {
             commonResult = CommonResult.success(pmsBrand);
             LOGGER.debug("createBrand success:{}", pmsBrand);
@@ -51,7 +53,7 @@ public class PmsBrandController {
     @ResponseBody
     public CommonResult updateBrand(@PathVariable("id") Long id, @RequestBody PmsBrand pmsBrandDto, BindingResult result) {
         CommonResult commonResult;
-        int count = demoService.updateBrand(id, pmsBrandDto);
+        int count = brandService.updateBrand(id, pmsBrandDto);
         if (count == 1) {
             commonResult = CommonResult.success(pmsBrandDto);
             LOGGER.debug("updateBrand success:{}", pmsBrandDto);
@@ -65,7 +67,7 @@ public class PmsBrandController {
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult deleteBrand(@PathVariable("id") Long id) {
-        int count = demoService.deleteBrand(id);
+        int count = brandService.deleteBrand(id);
         if (count == 1) {
             LOGGER.debug("deleteBrand success :id={}", id);
             return CommonResult.success(null);
@@ -79,13 +81,13 @@ public class PmsBrandController {
     @ResponseBody
     public CommonResult<CommonPage<PmsBrand>> listBrand(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                                         @RequestParam(value = "pageSize", defaultValue = "3") Integer pageSize) {
-        List<PmsBrand> brandList = demoService.listBrand(pageNum, pageSize);
+        List<PmsBrand> brandList = brandService.listBrand(pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(brandList));
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<PmsBrand> brand(@PathVariable("id") Long id) {
-        return CommonResult.success(demoService.getBrand(id));
+        return CommonResult.success(brandService.getBrand(id));
     }
 }

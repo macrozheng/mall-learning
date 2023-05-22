@@ -11,12 +11,15 @@ import org.mybatis.generator.internal.util.StringUtility;
 import java.util.Properties;
 
 /**
- * 自定义注释生成器
- * Created by macro on 2018/4/26.
+ * @auther macrozheng
+ * @description 自定义注释生成器
+ * @date 2018/4/26
+ * @github https://github.com/macrozheng
  */
 public class CommentGenerator extends DefaultCommentGenerator {
     private boolean addRemarkComments = false;
     private static final String EXAMPLE_SUFFIX="Example";
+    private static final String MAPPER_SUFFIX="Mapper";
     private static final String API_MODEL_PROPERTY_FULL_CLASS_NAME="io.swagger.annotations.ApiModelProperty";
 
     /**
@@ -35,7 +38,7 @@ public class CommentGenerator extends DefaultCommentGenerator {
     public void addFieldComment(Field field, IntrospectedTable introspectedTable,
                                 IntrospectedColumn introspectedColumn) {
         String remarks = introspectedColumn.getRemarks();
-        //根据参数和备注信息判断是否添加备注信息
+        //根据参数和备注信息判断是否添加swagger注解信息
         if(addRemarkComments&&StringUtility.stringHasValue(remarks)){
 //            addFieldJavaDoc(field, remarks);
             //数据库中特殊字符需要转义
@@ -66,7 +69,7 @@ public class CommentGenerator extends DefaultCommentGenerator {
     public void addJavaFileComment(CompilationUnit compilationUnit) {
         super.addJavaFileComment(compilationUnit);
         //只在model中添加swagger注解类的导入
-        if(!compilationUnit.isJavaInterface()&&!compilationUnit.getType().getFullyQualifiedName().contains(EXAMPLE_SUFFIX)){
+        if(!compilationUnit.getType().getFullyQualifiedName().contains(MAPPER_SUFFIX)&&!compilationUnit.getType().getFullyQualifiedName().contains(EXAMPLE_SUFFIX)){
             compilationUnit.addImportedType(new FullyQualifiedJavaType(API_MODEL_PROPERTY_FULL_CLASS_NAME));
         }
     }

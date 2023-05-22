@@ -1,8 +1,10 @@
 package com.macro.mall.tiny.common.api;
 
 /**
- * 通用返回对象
- * Created by macro on 2019/4/19.
+ * @auther macrozheng
+ * @description 通用返回对象
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
 public class CommonResult<T> {
     private long code;

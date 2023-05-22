@@ -21,7 +21,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 路由模式消息队列配置
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 @Configuration
 public class DirectRabbitConfig {
@@ -44,11 +47,6 @@ public class DirectRabbitConfig {
     @Bean
     public Binding directBinding1a(DirectExchange direct, Queue directQueue1) {
         return BindingBuilder.bind(directQueue1).to(direct).with("orange");
-    }
-
-    @Bean
-    public Binding directBinding1b(DirectExchange direct, Queue directQueue1) {
-        return BindingBuilder.bind(directQueue1).to(direct).with("black");
     }
 
     @Bean

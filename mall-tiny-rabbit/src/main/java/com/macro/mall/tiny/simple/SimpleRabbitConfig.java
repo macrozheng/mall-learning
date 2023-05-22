@@ -21,7 +21,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 简单模式消息队列配置
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 @Configuration
 public class SimpleRabbitConfig {

@@ -12,7 +12,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by macro on 2020/10/15.
+ * @auther macrozheng
+ * @description SpringSecurity需要的用户详情
+ * @date 2020/10/15
+ * @github https://github.com/macrozheng
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

@@ -3,7 +3,10 @@ package com.macro.mall.tiny.example;
 import lombok.extern.java.Log;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @Log注解使用示例
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 @Log
 public class LogExample {

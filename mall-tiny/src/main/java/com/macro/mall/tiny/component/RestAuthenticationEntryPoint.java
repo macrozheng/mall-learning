@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * 当未登录或者token失效访问接口时，自定义的返回结果
- * Created by macro on 2018/5/14.
+ * @auther macrozheng
+ * @description 自定义未登录或者token失效时的返回结果
+ * @date 2018/5/14
+ * @github https://github.com/macrozheng
  */
 @Component
 public class RestAuthenticationEntryPoint implements AuthenticationEntryPoint {

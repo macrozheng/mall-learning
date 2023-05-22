@@ -5,8 +5,12 @@ import lombok.val;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+
 /**
- * Created by macro on 2020/12/16.
+ * @auther macrozheng
+ * @description val注解使用示例
+ * @date 2020/12/16
+ * @github https://github.com/macrozheng
  */
 public class ValExample {
 

@@ -10,17 +10,21 @@ import com.macro.mall.tiny.service.UmsAdminService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
- * 后台用户管理Controller
- * Created by macro on 2020/12/8.
+ * @auther macrozheng
+ * @description 后台用户管理Controller
+ * @date 2020/12/8
+ * @github https://github.com/macrozheng
  */
-@Api(tags = "UmsAdminController", description = "后台用户管理")
 @RestController
+@Api(tags = "UmsAdminController")
+@Tag(name = "UmsAdminController", description = "后台用户管理")
 @RequestMapping("/admin")
 public class UmsAdminController {
 

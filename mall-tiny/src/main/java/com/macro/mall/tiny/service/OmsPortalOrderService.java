@@ -5,8 +5,10 @@ import com.macro.mall.tiny.dto.OrderParam;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * 前台订单管理Service
- * Created by macro on 2018/8/30.
+ * @auther macrozheng
+ * @description 前台订单管理Service
+ * @date 2018/8/30
+ * @github https://github.com/macrozheng
  */
 public interface OmsPortalOrderService {
 

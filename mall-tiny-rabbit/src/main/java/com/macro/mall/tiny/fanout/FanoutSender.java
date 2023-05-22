@@ -21,7 +21,10 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 发布/订阅模式生产者
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 public class FanoutSender {
     private static final Logger LOGGER = LoggerFactory.getLogger(FanoutSender.class);

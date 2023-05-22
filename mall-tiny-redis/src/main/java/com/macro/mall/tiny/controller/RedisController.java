@@ -9,6 +9,7 @@ import com.macro.mall.tiny.service.PmsBrandService;
 import com.macro.mall.tiny.service.RedisService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,11 +21,14 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * redis测试Controller
- * Created by macro on 2020/3/3.
+ * @auther macrozheng
+ * @description redis测试Controller
+ * @date 2020/3/3
+ * @github https://github.com/macrozheng
  */
-@Api(tags = "RedisController", description = "redis测试")
 @Controller
+@Api(tags = "RedisController")
+@Tag(name = "RedisController", description = "redis测试")
 @RequestMapping("/redis")
 public class RedisController {
     @Autowired
@@ -54,7 +58,7 @@ public class RedisController {
         Map<String, Object> value = BeanUtil.beanToMap(brand);
         redisService.hSetAll(key, value);
         Map<Object, Object> cacheValue = redisService.hGetAll(key);
-        PmsBrand cacheBrand = BeanUtil.mapToBean(cacheValue, PmsBrand.class, true);
+        PmsBrand cacheBrand = BeanUtil.toBean(cacheValue, PmsBrand.class);
         return CommonResult.success(cacheBrand);
     }
 

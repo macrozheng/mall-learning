@@ -4,6 +4,7 @@ import com.macro.mall.tiny.common.api.CommonResult;
 import com.macro.mall.tiny.service.UmsMemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,11 +13,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * 会员登录注册管理Controller
- * Created by macro on 2018/8/3.
+ * @auther macrozheng
+ * @description 会员登录注册管理Controller
+ * @date 2018/8/3
+ * @github https://github.com/macrozheng
  */
 @Controller
-@Api(tags = "UmsMemberController", description = "会员登录注册管理")
+@Api(tags = "UmsMemberController")
+@Tag(name = "UmsMemberController", description = "会员登录注册管理")
 @RequestMapping("/sso")
 public class UmsMemberController {
     @Autowired

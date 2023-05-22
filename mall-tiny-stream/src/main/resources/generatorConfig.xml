@@ -41,7 +41,7 @@
         <table tableName="pms_brand">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
-        <table tableName="ums_permission">
+        <table tableName="ums_menu">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>

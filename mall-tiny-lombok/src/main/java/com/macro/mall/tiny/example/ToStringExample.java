@@ -3,7 +3,10 @@ package com.macro.mall.tiny.example;
 import lombok.ToString;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @ToString注解使用示例
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 @ToString
 public class ToStringExample {

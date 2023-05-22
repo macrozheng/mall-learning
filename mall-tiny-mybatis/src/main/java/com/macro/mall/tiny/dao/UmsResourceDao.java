@@ -7,8 +7,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * 自定义UmsResource表查询
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description 自定义UmsResource表查询
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @Repository
 public interface UmsResourceDao {

@@ -21,7 +21,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 通配符模式消息队列配置
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 @Configuration
 public class TopicRabbitConfig {
@@ -47,12 +50,12 @@ public class TopicRabbitConfig {
     }
 
     @Bean
-    public Binding topicBinding1b(TopicExchange topic, Queue topicQueue1) {
-        return BindingBuilder.bind(topicQueue1).to(topic).with("*.*.rabbit");
+    public Binding topicBinding2a(TopicExchange topic, Queue topicQueue2) {
+        return BindingBuilder.bind(topicQueue2).to(topic).with("*.*.rabbit");
     }
 
     @Bean
-    public Binding topicBinding2a(TopicExchange topic, Queue topicQueue2) {
+    public Binding topicBinding2b(TopicExchange topic, Queue topicQueue2) {
         return BindingBuilder.bind(topicQueue2).to(topic).with("lazy.#");
     }
 

@@ -22,7 +22,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Swagger2API文档的配置
+ * @auther macrozheng
+ * @description Swagger2API文档的配置
+ * @date 2022/11/21
+ * @github https://github.com/macrozheng
  */
 @Configuration
 public class Swagger2Config {

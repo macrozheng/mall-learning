@@ -5,7 +5,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @Getter @Setter注解使用示例
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 public class GetterSetterExample {
     @Getter

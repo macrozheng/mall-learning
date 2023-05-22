@@ -9,8 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 用于配置白名单资源路径
- * Created by macro on 2018/11/5.
+ * @auther macrozheng
+ * @description 用于配置白名单资源路径
+ * @date 2018/11/5
+ * @github https://github.com/macrozheng
  */
 @Getter
 @Setter

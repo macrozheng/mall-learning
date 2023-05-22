@@ -7,8 +7,10 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * UmsResourceCategory扩展类
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description UmsResourceCategory扩展类
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @Data
 public class UmsResourceCategoryExt extends UmsResourceCategory {

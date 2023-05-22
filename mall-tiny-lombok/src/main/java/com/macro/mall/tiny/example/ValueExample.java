@@ -3,7 +3,10 @@ package com.macro.mall.tiny.example;
 import lombok.Value;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @Value注解使用示例
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 @Value
 public class ValueExample {

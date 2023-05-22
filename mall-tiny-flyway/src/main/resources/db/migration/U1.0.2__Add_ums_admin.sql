@@ -1,1 +1,0 @@
-DELETE FROM ums_admin;

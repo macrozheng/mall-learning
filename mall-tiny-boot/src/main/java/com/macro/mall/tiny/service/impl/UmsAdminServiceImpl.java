@@ -20,7 +20,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Created by macro on 2020/10/15.
+ * @auther macrozheng
+ * @description UmsAdminService实现类
+ * @date 2020/10/15
+ * @github https://github.com/macrozheng
  */
 @Slf4j
 @Service

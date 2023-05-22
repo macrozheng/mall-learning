@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * 消息队列配置
- * Created by macro on 2018/9/14.
+ * @auther macrozheng
+ * @description 消息队列相关配置
+ * @date 2018/9/14
+ * @github https://github.com/macrozheng
  */
 @Configuration
 public class RabbitMqConfig {
@@ -17,7 +19,7 @@ public class RabbitMqConfig {
      */
     @Bean
     DirectExchange orderDirect() {
-        return (DirectExchange) ExchangeBuilder
+        return ExchangeBuilder
                 .directExchange(QueueEnum.QUEUE_ORDER_CANCEL.getExchange())
                 .durable(true)
                 .build();
@@ -28,7 +30,7 @@ public class RabbitMqConfig {
      */
     @Bean
     DirectExchange orderTtlDirect() {
-        return (DirectExchange) ExchangeBuilder
+        return ExchangeBuilder
                 .directExchange(QueueEnum.QUEUE_TTL_ORDER_CANCEL.getExchange())
                 .durable(true)
                 .build();

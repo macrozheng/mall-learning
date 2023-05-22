@@ -14,8 +14,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
- * MyBatis高级查询测试
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description MyBatis高级查询测试
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @SpringBootTest
 public class MyBatisAdvanceTest {

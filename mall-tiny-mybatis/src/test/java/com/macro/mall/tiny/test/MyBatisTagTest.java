@@ -13,8 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * MyBatis标签测试
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description MyBatis标签测试
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @SpringBootTest
 public class MyBatisTagTest {
