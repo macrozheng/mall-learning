@@ -1,4 +1,5 @@
 # mall学习教程
+
 <p>
     <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
     <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E4%BA%A4%E6%B5%81-%E5%BE%AE%E4%BF%A1%E7%BE%A4-2BA245.svg" alt="交流"></a>
@@ -8,16 +9,18 @@
 </p>
 
 ## 简介
+
 mall学习教程，架构、业务、技术要点全方位解析。mall项目（50k+star）是一套电商系统，使用现阶段主流技术实现。涵盖了SpringBoot 2.3.0、MyBatis 3.4.6、Elasticsearch 7.6.2、RabbitMQ 3.7.15、Redis 5.0、MongoDB 4.2.5、Mysql5.7等技术，采用Docker容器化部署。
 
 ## 项目地址
+
 - 后台项目：[https://github.com/macrozheng/mall](https://github.com/macrozheng/mall)
 - 前端项目：[https://github.com/macrozheng/mall-admin-web](https://github.com/macrozheng/mall-admin-web)
 - 微服务项目：[https://github.com/macrozheng/mall-swarm](https://github.com/macrozheng/mall-swarm)
 
 ## 更好的阅读体验
-- 文档地址：[https://www.macrozheng.com](https://www.macrozheng.com)
-- 备用地址：[https://macrozheng.github.io/mall-learning](https://macrozheng.github.io/mall-learning)
+
+文档地址：[https://www.macrozheng.com](https://www.macrozheng.com)
 
 ## 序章
 
