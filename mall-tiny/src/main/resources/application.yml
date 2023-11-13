@@ -87,3 +87,4 @@ secure:
       - /member/readHistory/**
       - /order/**
       - /minio/**
+      - /sso/**
