@@ -141,7 +141,7 @@ public class HutoolController {
         //使用反射来创建对象
         PmsBrand pmsBrand = ReflectUtil.newInstance(PmsBrand.class);
         //反射执行对象的方法
-        ReflectUtil.invoke(pmsBrand, "setId", 1);
+        ReflectUtil.invoke(pmsBrand, "setId", 1L);
         return CommonResult.success(null, "操作成功");
     }
 
