@@ -5,8 +5,10 @@ import com.macro.mall.tiny.model.UmsResourceCategory;
 import lombok.Data;
 
 /**
- * UmsResource扩展类
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description UmsResource扩展类
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @Data
 public class UmsResourceExt extends UmsResource {

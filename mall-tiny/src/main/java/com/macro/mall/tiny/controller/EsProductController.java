@@ -6,6 +6,7 @@ import com.macro.mall.tiny.nosql.elasticsearch.document.EsProduct;
 import com.macro.mall.tiny.service.EsProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
@@ -14,11 +15,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * 搜索商品管理Controller
- * Created by macro on 2018/6/19.
+ * @auther macrozheng
+ * @description 搜索商品管理Controller
+ * @date 2018/6/19
+ * @github https://github.com/macrozheng
  */
 @Controller
-@Api(tags = "EsProductController", description = "搜索商品管理")
+@Api(tags = "EsProductController")
+@Tag(name = "EsProductController", description = "搜索商品管理")
 @RequestMapping("/esProduct")
 public class EsProductController {
     @Autowired
@@ -69,5 +73,4 @@ public class EsProductController {
         Page<EsProduct> esProductPage = esProductService.search(keyword, pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(esProductPage));
     }
-
 }

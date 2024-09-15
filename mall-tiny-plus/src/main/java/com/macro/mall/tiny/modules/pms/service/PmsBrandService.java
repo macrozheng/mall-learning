@@ -2,7 +2,6 @@ package com.macro.mall.tiny.modules.pms.service;
 
 import com.macro.mall.tiny.modules.pms.model.PmsBrand;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author macro
- * @since 2020-08-20
+ * @since 2023-02-07
  */
 public interface PmsBrandService extends IService<PmsBrand> {
 

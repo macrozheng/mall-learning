@@ -9,6 +9,7 @@ import com.macro.mall.tiny.topic.TopicSender;
 import com.macro.mall.tiny.work.WorkSender;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +17,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description RabbitMQ功能测试Controller
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
-@Api(tags = "RabbitController", description = "RabbitMQ功能测试")
 @Controller
+@Api(tags = "RabbitController")
+@Tag(name = "RabbitController", description = "RabbitMQ功能测试")
 @RequestMapping("/rabbit")
 public class RabbitController {
 

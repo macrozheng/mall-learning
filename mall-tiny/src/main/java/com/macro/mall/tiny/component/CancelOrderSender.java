@@ -11,8 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * 取消订单消息的发出者
- * Created by macro on 2018/9/14.
+ * @auther macrozheng
+ * @description 取消订单消息的发送者
+ * @date 2018/9/14
+ * @github https://github.com/macrozheng
  */
 @Component
 public class CancelOrderSender {

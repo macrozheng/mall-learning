@@ -19,8 +19,10 @@ import java.util.List;
 
 
 /**
- * 商品搜索管理Service实现类
- * Created by macro on 2018/6/19.
+ * @auther macrozheng
+ * @description 搜索商品管理Service实现类
+ * @date 2018/6/19
+ * @github https://github.com/macrozheng
  */
 @Service
 public class EsProductServiceImpl implements EsProductService {
@@ -29,7 +31,6 @@ public class EsProductServiceImpl implements EsProductService {
     private EsProductDao productDao;
     @Autowired
     private EsProductRepository productRepository;
-
     @Override
     public int importAll() {
         List<EsProduct> esProductList = productDao.getAllEsProductList(null);

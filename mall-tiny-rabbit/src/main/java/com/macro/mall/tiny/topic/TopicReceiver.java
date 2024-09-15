@@ -22,7 +22,10 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.util.StopWatch;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 通配符模式消费者
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 public class TopicReceiver {
 

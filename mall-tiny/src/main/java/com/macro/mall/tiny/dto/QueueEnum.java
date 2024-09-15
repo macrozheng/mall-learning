@@ -3,8 +3,10 @@ package com.macro.mall.tiny.dto;
 import lombok.Getter;
 
 /**
- * 消息队列枚举配置
- * Created by macro on 2018/9/14.
+ * @auther macrozheng
+ * @description 消息队列枚举配置
+ * @date 2018/9/14
+ * @github https://github.com/macrozheng
  */
 @Getter
 public enum QueueEnum {
@@ -18,7 +20,7 @@ public enum QueueEnum {
     QUEUE_TTL_ORDER_CANCEL("mall.order.direct.ttl", "mall.order.cancel.ttl", "mall.order.cancel.ttl");
 
     /**
-     * 交换名称
+     * 交换机名称
      */
     private String exchange;
     /**

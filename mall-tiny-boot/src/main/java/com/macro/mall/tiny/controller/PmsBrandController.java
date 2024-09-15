@@ -7,6 +7,7 @@ import com.macro.mall.tiny.service.PmsBrandService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +20,14 @@ import java.util.List;
 
 
 /**
- * 品牌管理Controller
- * Created by macro on 2019/4/19.
+ * @auther macrozheng
+ * @description 品牌管理Controller
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
-@Api(tags = "PmsBrandController", description = "商品品牌管理")
 @Controller
+@Api(tags = "PmsBrandController")
+@Tag(name = "PmsBrandController", description = "商品品牌管理")
 @RequestMapping("/brand")
 public class PmsBrandController {
     @Autowired

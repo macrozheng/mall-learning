@@ -11,8 +11,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * UmsResource的Service接口实现类
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description UmsResource的Service接口实现类
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @Service
 public class UmsResourceServiceImpl implements UmsResourceService {

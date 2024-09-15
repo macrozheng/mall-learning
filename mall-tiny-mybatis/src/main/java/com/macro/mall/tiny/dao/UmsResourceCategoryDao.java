@@ -4,8 +4,10 @@ import com.macro.mall.tiny.domain.UmsResourceCategoryExt;
 import org.springframework.stereotype.Repository;
 
 /**
- * 自定义UmsResourceCategory表查询
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description 自定义UmsResourceCategory表查询
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @Repository
 public interface UmsResourceCategoryDao {

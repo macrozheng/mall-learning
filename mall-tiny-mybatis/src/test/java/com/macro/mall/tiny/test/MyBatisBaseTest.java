@@ -12,8 +12,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.Date;
 
 /**
- * MyBatis基本操作测试
- * Created by macro on 2022/10/20.
+ * @auther macrozheng
+ * @description MyBatis基本操作测试
+ * @date 2022/10/20
+ * @github https://github.com/macrozheng
  */
 @SpringBootTest
 public class MyBatisBaseTest {

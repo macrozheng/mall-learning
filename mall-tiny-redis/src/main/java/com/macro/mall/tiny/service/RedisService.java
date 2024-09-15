@@ -5,8 +5,10 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * redis操作Service
- * Created by macro on 2020/3/3.
+ * @auther macrozheng
+ * @description redis操作Service
+ * @date 2020/3/3
+ * @github https://github.com/macrozheng
  */
 public interface RedisService {
 

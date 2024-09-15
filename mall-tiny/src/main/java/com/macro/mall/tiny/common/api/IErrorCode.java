@@ -1,8 +1,10 @@
 package com.macro.mall.tiny.common.api;
 
 /**
- * 封装API的错误码
- * Created by macro on 2019/4/19.
+ * @auther macrozheng
+ * @description API返回码接口
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
 public interface IErrorCode {
     long getCode();

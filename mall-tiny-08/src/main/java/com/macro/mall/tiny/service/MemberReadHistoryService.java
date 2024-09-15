@@ -6,8 +6,10 @@ import com.macro.mall.tiny.nosql.mongodb.document.MemberReadHistory;
 import java.util.List;
 
 /**
- * 会员浏览记录管理Service
- * Created by macro on 2018/8/3.
+ * @auther macrozheng
+ * @description 会员浏览记录管理Service
+ * @date 2018/8/3
+ * @github https://github.com/macrozheng
  */
 public interface MemberReadHistoryService {
     /**

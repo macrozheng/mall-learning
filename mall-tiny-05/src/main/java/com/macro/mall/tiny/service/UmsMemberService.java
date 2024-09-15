@@ -3,8 +3,10 @@ package com.macro.mall.tiny.service;
 import com.macro.mall.tiny.common.api.CommonResult;
 
 /**
- * 会员管理Service
- * Created by macro on 2018/8/3.
+ * @auther macrozheng
+ * @description 会员管理Service
+ * @date 2018/8/3
+ * @github https://github.com/macrozheng
  */
 public interface UmsMemberService {
 

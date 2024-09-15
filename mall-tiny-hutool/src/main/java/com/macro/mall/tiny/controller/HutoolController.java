@@ -16,14 +16,16 @@ import cn.hutool.core.util.NumberUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.crypto.SecureUtil;
+import cn.hutool.crypto.digest.BCrypt;
 import cn.hutool.crypto.digest.DigestUtil;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONUtil;
 import com.macro.mall.tiny.common.api.CommonResult;
-import com.macro.mall.tiny.mbg.model.PmsBrand;
+import com.macro.mall.tiny.domain.PmsBrand;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -39,10 +41,14 @@ import java.math.BigDecimal;
 import java.util.*;
 
 /**
- * Created by macro on 2019/9/1.
+ * @auther macrozheng
+ * @description Hutool工具类测试
+ * @date 2019/9/1
+ * @github https://github.com/macrozheng
  */
-@Api(tags = "HutoolController", description = "Hutool工具类测试")
 @RestController
+@Api(tags = "HutoolController")
+@Tag(name = "HutoolController", description = "Hutool工具类测试")
 @RequestMapping("/hutool")
 public class HutoolController {
 
@@ -110,7 +116,7 @@ public class HutoolController {
         //格式化字符串
         String template = "这只是个占位符:{}";
         String str2 = StrUtil.format(template, "我是占位符");
-        LOGGER.info("/strUtil format:{}", str2);
+        LOGGER.info("strUtil format:{}", str2);
         return CommonResult.success(null, "操作成功");
     }
 
@@ -121,7 +127,7 @@ public class HutoolController {
         ClassPathResource resource = new ClassPathResource("generator.properties");
         Properties properties = new Properties();
         properties.load(resource.getStream());
-        LOGGER.info("/classPath:{}", properties);
+        LOGGER.info("classPath:{}", properties);
         return CommonResult.success(null, "操作成功");
     }
 
@@ -135,7 +141,7 @@ public class HutoolController {
         //使用反射来创建对象
         PmsBrand pmsBrand = ReflectUtil.newInstance(PmsBrand.class);
         //反射执行对象的方法
-        ReflectUtil.invoke(pmsBrand, "setId", 1);
+        ReflectUtil.invoke(pmsBrand, "setId", 1L);
         return CommonResult.success(null, "操作成功");
     }
 
@@ -171,7 +177,7 @@ public class HutoolController {
         Map<String, Object> map = BeanUtil.beanToMap(brand);
         LOGGER.info("beanUtil bean to map:{}", map);
         //Map转Bean
-        PmsBrand mapBrand = BeanUtil.mapToBean(map, PmsBrand.class, false);
+        PmsBrand mapBrand = BeanUtil.toBean(map, PmsBrand.class);
         LOGGER.info("beanUtil map to bean:{}", mapBrand);
         //Bean属性拷贝
         PmsBrand copyBrand = new PmsBrand();
@@ -192,8 +198,7 @@ public class HutoolController {
         //将以连接符号分隔的字符串再转换为列表
         List<String> splitList = StrUtil.split(joinStr, ',');
         LOGGER.info("collUtil split:{}", splitList);
-        //创建新的Map、Set、List
-        HashMap<Object, Object> newMap = CollUtil.newHashMap();
+        //创建新的Set、List
         HashSet<Object> newHashSet = CollUtil.newHashSet();
         ArrayList<Object> newList = CollUtil.newArrayList();
         //判断列表是否为空
@@ -224,8 +229,8 @@ public class HutoolController {
         Annotation[] annotationList = AnnotationUtil.getAnnotations(HutoolController.class, false);
         LOGGER.info("annotationUtil annotations:{}", annotationList);
         //获取指定类型注解
-        Api api = AnnotationUtil.getAnnotation(HutoolController.class, Api.class);
-        LOGGER.info("annotationUtil api value:{}", api.description());
+        Tag tag = AnnotationUtil.getAnnotation(HutoolController.class, Tag.class);
+        LOGGER.info("annotationUtil tag value:{}", tag.description());
         //获取指定类型注解的值
         Object annotationValue = AnnotationUtil.getAnnotationValue(HutoolController.class, RequestMapping.class);
         LOGGER.info("annotationUtil annotationValue:{}", annotationValue);
@@ -261,6 +266,19 @@ public class HutoolController {
         String str = "123456";
         String md5Str = SecureUtil.md5(str);
         LOGGER.info("secureUtil md5:{}", md5Str);
+        return CommonResult.success(null, "操作成功");
+    }
+
+    @ApiOperation("BCrypt使用：BCrypt加密工具类")
+    @GetMapping("/bCrypt")
+    public CommonResult bCrypt() {
+        //BCrypt加密
+        String str = "123456";
+        String bCryptStr = BCrypt.hashpw(str);
+        LOGGER.info("bCrypt hashpw:{}", bCryptStr);
+        //BCrypt校验
+        boolean result = BCrypt.checkpw(str, bCryptStr);
+        LOGGER.info("bCrypt checkpw:{}", result);
         return CommonResult.success(null, "操作成功");
     }
 

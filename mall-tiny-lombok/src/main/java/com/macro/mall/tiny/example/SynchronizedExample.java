@@ -3,7 +3,10 @@ package com.macro.mall.tiny.example;
 import lombok.*;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @Synchronized注解使用示例
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 @Data
 public class SynchronizedExample {

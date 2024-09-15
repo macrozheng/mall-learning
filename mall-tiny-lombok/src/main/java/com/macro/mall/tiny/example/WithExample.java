@@ -4,7 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.With;
 
 /**
- * Created by macro on 2020/12/17.
+ * @auther macrozheng
+ * @description @With注解使用示例
+ * @date 2020/12/17
+ * @github https://github.com/macrozheng
  */
 @With
 @AllArgsConstructor

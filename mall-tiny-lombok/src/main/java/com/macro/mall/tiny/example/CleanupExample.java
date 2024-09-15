@@ -5,7 +5,10 @@ import lombok.Cleanup;
 import java.io.*;
 
 /**
- * Created by macro on 2020/12/16.
+ * @auther macrozheng
+ * @description @Cleanup注解使用示例
+ * @date 2020/12/16
+ * @github https://github.com/macrozheng
  */
 public class CleanupExample {
     public static void main(String[] args) throws IOException {

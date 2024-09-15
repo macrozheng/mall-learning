@@ -4,6 +4,7 @@ import com.macro.mall.tiny.common.api.CommonResult;
 import com.macro.mall.tiny.service.UmsAdminService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -16,11 +17,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 后台用户管理
- * Created by macro on 2018/4/26.
+ * @auther macrozheng
+ * @description 后台用户管理
+ * @date 2018/4/26
+ * @github https://github.com/macrozheng
  */
 @Controller
-@Api(tags = "UmsAdminController", description = "后台用户管理")
+@Api(tags = "UmsAdminController")
+@Tag(name = "UmsAdminController", description = "后台用户管理")
 @RequestMapping("/admin")
 public class UmsAdminController {
     @Autowired

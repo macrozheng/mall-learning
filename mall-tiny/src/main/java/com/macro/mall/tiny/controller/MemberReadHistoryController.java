@@ -5,6 +5,7 @@ import com.macro.mall.tiny.nosql.mongodb.document.MemberReadHistory;
 import com.macro.mall.tiny.service.MemberReadHistoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -12,11 +13,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * 会员商品浏览记录管理Controller
- * Created by macro on 2018/8/3.
+ * @auther macrozheng
+ * @description 会员商品浏览记录管理Controller
+ * @date 2018/8/3
+ * @github https://github.com/macrozheng
  */
 @Controller
-@Api(tags = "MemberReadHistoryController", description = "会员商品浏览记录管理")
+@Api(tags = "MemberReadHistoryController")
+@Tag(name = "MemberReadHistoryController", description = "会员商品浏览记录管理")
 @RequestMapping("/member/readHistory")
 public class MemberReadHistoryController {
     @Autowired

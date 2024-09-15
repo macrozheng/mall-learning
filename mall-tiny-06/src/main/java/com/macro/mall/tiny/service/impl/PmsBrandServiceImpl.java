@@ -11,8 +11,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * PmsBrandService实现类
- * Created by macro on 2019/4/19.
+ * @auther macrozheng
+ * @description PmsBrandService实现类
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
 @Service
 public class PmsBrandServiceImpl implements PmsBrandService {

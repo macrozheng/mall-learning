@@ -21,7 +21,10 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * Created by macro on 2020/5/19.
+ * @auther macrozheng
+ * @description 路由模式生产者
+ * @date 2020/5/19
+ * @github https://github.com/macrozheng
  */
 public class DirectSender {
 
@@ -40,6 +43,9 @@ public class DirectSender {
 		String key = keys[limitIndex];
 		builder.append(key).append(' ');
 		builder.append(index+1);
+		for (int i = 0; i <= limitIndex; i++) {
+			builder.append('.');
+		}
 		String message = builder.toString();
 		template.convertAndSend(exchangeName, key, message);
 		LOGGER.info(" [x] Sent '{}'", message);

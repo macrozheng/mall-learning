@@ -3,8 +3,10 @@ package com.macro.mall.tiny.service;
 import com.macro.mall.tiny.domain.AdminUserDetails;
 
 /**
- * 后台用于管理Service
- * Created by macro on 2020/10/15.
+ * @auther macrozheng
+ * @description 后台用于管理Service
+ * @date 2020/10/15
+ * @github https://github.com/macrozheng
  */
 public interface UmsAdminService {
     /**

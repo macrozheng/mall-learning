@@ -1,8 +1,10 @@
 package com.macro.mall.tiny.common.api;
 
 /**
- * 枚举了一些常用API操作码
- * Created by macro on 2019/4/19.
+ * @auther macrozheng
+ * @description 枚举了一些常用API操作码
+ * @date 2019/4/19
+ * @github https://github.com/macrozheng
  */
 public enum ResultCode implements IErrorCode {
     SUCCESS(200, "操作成功"),

@@ -9,7 +9,10 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * Created by macro on 2020/12/9.
+ * @auther macrozheng
+ * @description UmsAdmin自定义Dao
+ * @date 2022/11/22
+ * @github https://github.com/macrozheng
  */
 public interface UmsAdminDao {
 

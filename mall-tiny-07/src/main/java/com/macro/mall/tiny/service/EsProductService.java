@@ -6,8 +6,10 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 
 /**
- * 商品搜索管理Service
- * Created by macro on 2018/6/19.
+ * @auther macrozheng
+ * @description 商品搜索管理Service
+ * @date 2018/6/19
+ * @github https://github.com/macrozheng
  */
 public interface EsProductService {
     /**

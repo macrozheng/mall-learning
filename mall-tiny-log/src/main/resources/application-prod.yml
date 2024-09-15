@@ -1,6 +1,0 @@
-logstash:
-  host: logstash-prod
-
-logging:
-  level:
-    root: info

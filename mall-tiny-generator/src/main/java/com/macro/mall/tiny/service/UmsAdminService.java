@@ -8,8 +8,10 @@ import com.macro.mall.tiny.mbg.model.UmsAdmin;
 import java.util.List;
 
 /**
- * 后台用户管理Service
- * Created by macro on 2020/12/8.
+ * @auther macrozheng
+ * @description 后台用户管理Service
+ * @date 2020/12/8
+ * @github https://github.com/macrozheng
  */
 public interface UmsAdminService {
     void create(UmsAdmin entity);

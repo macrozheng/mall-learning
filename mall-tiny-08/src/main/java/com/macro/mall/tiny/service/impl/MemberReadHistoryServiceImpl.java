@@ -11,8 +11,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 会员浏览记录管理Service实现类
- * Created by macro on 2018/8/3.
+ * @auther macrozheng
+ * @description 会员浏览记录管理Service实现类
+ * @date 2018/8/3
+ * @github https://github.com/macrozheng
  */
 @Service
 public class MemberReadHistoryServiceImpl implements MemberReadHistoryService {
