@@ -7,6 +7,8 @@
     <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
 </p>
 
+[![Maintainability](https://cloud.quality-gate.com/dashboard/api/badge?projectName=macrozheng_mall-learning&branchName=master)](https://cloud.quality-gate.com/dashboard/branches/307946#overview)
+
 ## 简介
 
 mall学习教程，架构、业务、技术要点全方位解析。mall项目（60k+star）是一套电商系统，使用现阶段主流技术实现。涵盖了SpringBoot、MyBatis、Elasticsearch、RabbitMQ、Redis、MongoDB、MySQL等技术，采用Docker容器化部署。
